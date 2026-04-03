@@ -589,204 +589,229 @@
   </div>
 
   <script>
-    function irA(seccionId) {
-      document.getElementById(seccionId).scrollIntoView({ behavior: "smooth" });
+  function irA(seccionId) {
+    document.getElementById(seccionId).scrollIntoView({ behavior: "smooth" });
+  }
+
+  function ocultarTodasLasPantallas() {
+    document.getElementById("pantallaBiologia").style.display = "none";
+    document.getElementById("pantallaQuimica").style.display = "none";
+    document.getElementById("pantallaVerbal").style.display = "none";
+    document.getElementById("pantallaNumerica").style.display = "none";
+  }
+
+  function abrirMateria(materia) {
+    document.getElementById("paginaPrincipal").style.display = "none";
+    ocultarTodasLasPantallas();
+
+    if (materia === "biologia") document.getElementById("pantallaBiologia").style.display = "block";
+    if (materia === "quimica") document.getElementById("pantallaQuimica").style.display = "block";
+    if (materia === "verbal") document.getElementById("pantallaVerbal").style.display = "block";
+    if (materia === "numerica") document.getElementById("pantallaNumerica").style.display = "block";
+
+    window.scrollTo(0, 0);
+  }
+
+  function volverInicio() {
+    ocultarTodasLasPantallas();
+    document.getElementById("paginaPrincipal").style.display = "block";
+    window.scrollTo(0, 0);
+  }
+
+  const bancos = {
+    biologia: null,
+    quimica: null,
+    verbal: null,
+    numerica: null
+  };
+
+  const estado = {
+    biologia: { preguntas: [], actual: 0, puntaje: 0, seleccionada: null, modo: "" },
+    quimica: { preguntas: [], actual: 0, puntaje: 0, seleccionada: null, modo: "" },
+    verbal: { preguntas: [], actual: 0, puntaje: 0, seleccionada: null, modo: "" },
+    numerica: { preguntas: [], actual: 0, puntaje: 0, seleccionada: null, modo: "" }
+  };
+
+  function capitalizar(texto) {
+    return texto.charAt(0).toUpperCase() + texto.slice(1);
+  }
+
+  function mezclarPreguntas(array) {
+    const copia = [...array];
+    for (let i = copia.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [copia[i], copia[j]] = [copia[j], copia[i]];
     }
+    return copia;
+  }
 
-    function ocultarTodasLasPantallas() {
-      document.getElementById("pantallaBiologia").style.display = "none";
-      document.getElementById("pantallaQuimica").style.display = "none";
-      document.getElementById("pantallaVerbal").style.display = "none";
-      document.getElementById("pantallaNumerica").style.display = "none";
-    }
+  async function cargarBanco(materia) {
+    if (bancos[materia] !== null) return bancos[materia];
 
-    function abrirMateria(materia) {
-      document.getElementById("paginaPrincipal").style.display = "none";
-      ocultarTodasLasPantallas();
+    try {
+      const respuesta = await fetch(`data/${materia}.json?cache=${Date.now()}`);
 
-      if (materia === "biologia") document.getElementById("pantallaBiologia").style.display = "block";
-      if (materia === "quimica") document.getElementById("pantallaQuimica").style.display = "block";
-      if (materia === "verbal") document.getElementById("pantallaVerbal").style.display = "block";
-      if (materia === "numerica") document.getElementById("pantallaNumerica").style.display = "block";
-
-      window.scrollTo(0, 0);
-    }
-
-    function volverInicio() {
-      ocultarTodasLasPantallas();
-      document.getElementById("paginaPrincipal").style.display = "block";
-      window.scrollTo(0, 0);
-    }
-
-    const bancos = {
-      biologia: null,
-      quimica: null,
-      verbal: null,
-      numerica: null
-    };
-
-    const estado = {
-      biologia: { preguntas: [], actual: 0, puntaje: 0, seleccionada: null, modo: "" },
-      quimica: { preguntas: [], actual: 0, puntaje: 0, seleccionada: null, modo: "" },
-      verbal: { preguntas: [], actual: 0, puntaje: 0, seleccionada: null, modo: "" },
-      numerica: { preguntas: [], actual: 0, puntaje: 0, seleccionada: null, modo: "" }
-    };
-
-    function capitalizar(texto) {
-      return texto.charAt(0).toUpperCase() + texto.slice(1);
-    }
-
-    function mezclarPreguntas(array) {
-      const copia = [...array];
-      for (let i = copia.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [copia[i], copia[j]] = [copia[j], copia[i]];
-      }
-      return copia;
-    }
-
-    async function cargarBanco(materia) {
-      if (bancos[materia] !== null) return bancos[materia];
-
-      try {
-        const respuesta = await fetch(`data/${materia}.json`);
-
-        if (!respuesta.ok) {
-          throw new Error(`No se pudo cargar data/${materia}.json`);
-        }
-
-        bancos[materia] = await respuesta.json();
-        return bancos[materia];
-      } catch (error) {
-        console.error(error);
-        alert(`No se pudo cargar el archivo data/${materia}.json`);
-
-        return null;
-      }
-    }
-
-    async function iniciarMiniExamen(materia) {
-      const banco = await cargarBanco(materia);
-      if (!banco) return;
-
-      const dificultad = document.getElementById(`dificultad${capitalizar(materia)}`).value;
-      const preguntas = banco[dificultad];
-
-      if (!preguntas || preguntas.length === 0) {
-        alert("No hay preguntas disponibles para esta dificultad.");
-        return;
+      if (!respuesta.ok) {
+        throw new Error(`No se pudo cargar data/${materia}.json`);
       }
 
-      estado[materia].preguntas = mezclarPreguntas(preguntas).slice(0, 5);
-      estado[materia].actual = 0;
-      estado[materia].puntaje = 0;
-      estado[materia].seleccionada = null;
-      estado[materia].modo = `Mini examen - ${capitalizar(dificultad)}`;
+      const data = await respuesta.json();
+      bancos[materia] = data;
 
-      empezarMateria(materia);
+      console.log(`Banco cargado de ${materia}:`, data);
+
+      return data;
+    } catch (error) {
+      console.error(error);
+      alert(`No se pudo cargar el archivo data/${materia}.json`);
+      return null;
+    }
+  }
+
+  function obtenerPreguntasPorDificultad(banco, dificultad) {
+    if (!banco) return [];
+
+    if (Array.isArray(banco)) {
+      return banco.filter(p => p.dificultad === dificultad);
     }
 
-    async function iniciarSimulador(materia) {
-      const banco = await cargarBanco(materia);
-      if (!banco) return;
-
-      const dificultad = document.getElementById(`dificultad${capitalizar(materia)}`).value;
-      const preguntas = banco[dificultad];
-
-      if (!preguntas || preguntas.length === 0) {
-        alert("No hay preguntas disponibles para esta dificultad.");
-        return;
-      }
-
-      estado[materia].preguntas = mezclarPreguntas(preguntas).slice(0, 30);
-      estado[materia].actual = 0;
-      estado[materia].puntaje = 0;
-      estado[materia].seleccionada = null;
-      estado[materia].modo = `Simulador - ${capitalizar(dificultad)}`;
-
-      empezarMateria(materia);
+    if (typeof banco === "object" && Array.isArray(banco[dificultad])) {
+      return banco[dificultad];
     }
 
-    function empezarMateria(materia) {
-      document.getElementById(`contenido${capitalizar(materia)}`).style.display = "none";
-      document.getElementById(`resultado${capitalizar(materia)}`).style.display = "none";
-      document.getElementById(`simulador${capitalizar(materia)}`).style.display = "block";
+    return [];
+  }
 
+  async function iniciarMiniExamen(materia) {
+    const banco = await cargarBanco(materia);
+    if (!banco) return;
+
+    const dificultad = document.getElementById(`dificultad${capitalizar(materia)}`).value;
+    const preguntas = obtenerPreguntasPorDificultad(banco, dificultad);
+
+    console.log("Materia:", materia);
+    console.log("Dificultad:", dificultad);
+    console.log("Preguntas encontradas:", preguntas);
+
+    if (!preguntas || preguntas.length === 0) {
+      alert(`No hay preguntas para ${materia} en dificultad ${dificultad}. Revisa el JSON.`);
+      return;
+    }
+
+    estado[materia].preguntas = mezclarPreguntas(preguntas).slice(0, 5);
+    estado[materia].actual = 0;
+    estado[materia].puntaje = 0;
+    estado[materia].seleccionada = null;
+    estado[materia].modo = `Mini examen - ${capitalizar(dificultad)}`;
+
+    empezarMateria(materia);
+  }
+
+  async function iniciarSimulador(materia) {
+    const banco = await cargarBanco(materia);
+    if (!banco) return;
+
+    const dificultad = document.getElementById(`dificultad${capitalizar(materia)}`).value;
+    const preguntas = obtenerPreguntasPorDificultad(banco, dificultad);
+
+    console.log("Materia:", materia);
+    console.log("Dificultad:", dificultad);
+    console.log("Preguntas encontradas:", preguntas);
+
+    if (!preguntas || preguntas.length === 0) {
+      alert(`No hay preguntas para ${materia} en dificultad ${dificultad}. Revisa el JSON.`);
+      return;
+    }
+
+    estado[materia].preguntas = mezclarPreguntas(preguntas).slice(0, 30);
+    estado[materia].actual = 0;
+    estado[materia].puntaje = 0;
+    estado[materia].seleccionada = null;
+    estado[materia].modo = `Simulador - ${capitalizar(dificultad)}`;
+
+    empezarMateria(materia);
+  }
+
+  function empezarMateria(materia) {
+    document.getElementById(`contenido${capitalizar(materia)}`).style.display = "none";
+    document.getElementById(`resultado${capitalizar(materia)}`).style.display = "none";
+    document.getElementById(`simulador${capitalizar(materia)}`).style.display = "block";
+
+    mostrarPregunta(materia);
+  }
+
+  function mostrarPregunta(materia) {
+    const datos = estado[materia];
+    const pregunta = datos.preguntas[datos.actual];
+    const sufijo = capitalizar(materia);
+
+    document.getElementById(`tituloPregunta${sufijo}`).innerText = `Pregunta ${datos.actual + 1}`;
+    document.getElementById(`contadorPregunta${sufijo}`).innerHTML =
+      `<strong>Pregunta ${datos.actual + 1} de ${datos.preguntas.length}</strong>`;
+    document.getElementById(`modo${sufijo}`).innerText = datos.modo;
+    document.getElementById(`preguntaTexto${sufijo}`).innerText = pregunta.pregunta;
+
+    const contenedor = document.getElementById(`opciones${sufijo}`);
+    contenedor.innerHTML = "";
+    datos.seleccionada = null;
+
+    pregunta.opciones.forEach((opcion, index) => {
+      const boton = document.createElement("button");
+      boton.classList.add("opcion-btn");
+      boton.innerText = opcion;
+
+      boton.onclick = function () {
+        document.querySelectorAll(`#opciones${sufijo} .opcion-btn`).forEach(btn => {
+          btn.classList.remove("seleccionada");
+        });
+
+        boton.classList.add("seleccionada");
+        datos.seleccionada = index;
+      };
+
+      contenedor.appendChild(boton);
+    });
+  }
+
+  function siguientePregunta(materia) {
+    const datos = estado[materia];
+
+    if (datos.seleccionada === null) {
+      alert("Selecciona una respuesta antes de continuar.");
+      return;
+    }
+
+    if (datos.seleccionada === datos.preguntas[datos.actual].correcta) {
+      datos.puntaje++;
+    }
+
+    datos.actual++;
+
+    if (datos.actual < datos.preguntas.length) {
       mostrarPregunta(materia);
+    } else {
+      mostrarResultado(materia);
     }
+  }
 
-    function mostrarPregunta(materia) {
-      const datos = estado[materia];
-      const pregunta = datos.preguntas[datos.actual];
-      const sufijo = capitalizar(materia);
+  function mostrarResultado(materia) {
+    const datos = estado[materia];
+    const sufijo = capitalizar(materia);
 
-      document.getElementById(`tituloPregunta${sufijo}`).innerText = `Pregunta ${datos.actual + 1}`;
-      document.getElementById(`contadorPregunta${sufijo}`).innerHTML =
-        `<strong>Pregunta ${datos.actual + 1} de ${datos.preguntas.length}</strong>`;
-      document.getElementById(`modo${sufijo}`).innerText = datos.modo;
-      document.getElementById(`preguntaTexto${sufijo}`).innerText = pregunta.pregunta;
+    document.getElementById(`simulador${sufijo}`).style.display = "none";
+    document.getElementById(`resultado${sufijo}`).style.display = "block";
+    document.getElementById(`textoResultado${sufijo}`).innerText =
+      `Obtuviste ${datos.puntaje} de ${datos.preguntas.length} respuestas correctas.`;
+  }
 
-      const contenedor = document.getElementById(`opciones${sufijo}`);
-      contenedor.innerHTML = "";
-      datos.seleccionada = null;
+  function reiniciarMateria(materia) {
+    const sufijo = capitalizar(materia);
 
-      pregunta.opciones.forEach((opcion, index) => {
-        const boton = document.createElement("button");
-        boton.classList.add("opcion-btn");
-        boton.innerText = opcion;
-
-        boton.onclick = function () {
-          document.querySelectorAll(`#opciones${sufijo} .opcion-btn`).forEach(btn => {
-            btn.classList.remove("seleccionada");
-          });
-
-          boton.classList.add("seleccionada");
-          datos.seleccionada = index;
-        };
-
-        contenedor.appendChild(boton);
-      });
-    }
-
-    function siguientePregunta(materia) {
-      const datos = estado[materia];
-
-      if (datos.seleccionada === null) {
-        alert("Selecciona una respuesta antes de continuar.");
-        return;
-      }
-
-      if (datos.seleccionada === datos.preguntas[datos.actual].correcta) {
-        datos.puntaje++;
-      }
-
-      datos.actual++;
-
-      if (datos.actual < datos.preguntas.length) {
-        mostrarPregunta(materia);
-      } else {
-        mostrarResultado(materia);
-      }
-    }
-
-    function mostrarResultado(materia) {
-      const datos = estado[materia];
-      const sufijo = capitalizar(materia);
-
-      document.getElementById(`simulador${sufijo}`).style.display = "none";
-      document.getElementById(`resultado${sufijo}`).style.display = "block";
-      document.getElementById(`textoResultado${sufijo}`).innerText =
-        `Obtuviste ${datos.puntaje} de ${datos.preguntas.length} respuestas correctas.`;
-    }
-
-    function reiniciarMateria(materia) {
-      const sufijo = capitalizar(materia);
-
-      document.getElementById(`resultado${sufijo}`).style.display = "none";
-      document.getElementById(`simulador${sufijo}`).style.display = "none";
-      document.getElementById(`contenido${sufijo}`).style.display = "block";
-    }
-  </script>
+    document.getElementById(`resultado${sufijo}`).style.display = "none";
+    document.getElementById(`simulador${sufijo}`).style.display = "none";
+    document.getElementById(`contenido${sufijo}`).style.display = "block";
+  }
+</script>
 
 </body>
 </html>

@@ -1,0 +1,17 @@
+[
+  {
+    "pregunta": "¿Cuál es la unidad básica de la vida?",
+    "opciones": ["Átomo", "Célula", "Tejido", "Órgano"],
+    "respuesta": "Célula"
+  },
+  {
+    "pregunta": "¿Dónde se encuentra el ADN en una célula eucariota?",
+    "opciones": ["Citoplasma", "Membrana", "Núcleo", "Ribosoma"],
+    "respuesta": "Núcleo"
+  },
+  {
+    "pregunta": "¿Qué organelo se encarga de producir energía en la célula?",
+    "opciones": ["Ribosoma", "Mitocondria", "Lisosoma", "Núcleo"],
+    "respuesta": "Mitocondria"
+  }
+]

@@ -305,6 +305,8 @@
       <nav>
         <button onclick="irA('inicio')">Inicio</button>
         <button onclick="irA('materias')">Materias</button>
+        <button onclick="irA('quienesSomos')">Quiénes somos</button>
+        <button onclick="irA('feedback')">Feedback</button>
         <button onclick="irA('contacto')">Contacto</button>
       </nav>
     </header>
@@ -338,6 +340,39 @@
           <h3>Habilidad Numérica</h3>
           <p>Razonamiento matemático, proporciones, operaciones y resolución de problemas.</p>
         </div>
+      </div>
+    </section>
+
+    <section class="section" id="quienesSomos">
+      <h2>Quiénes somos</h2>
+      <p>
+        Somos dos amigos con el sueño de apoyar a las personas en su camino hacia medicina.
+        Sabemos que prepararse puede ser complicado, especialmente cuando no hay una guía clara
+        o cuando el estudio se vuelve desordenado.
+      </p>
+      <br>
+      <p>
+        Por eso nació MediGuía, un proyecto creado para reunir simuladores, preguntas de práctica
+        y material de repaso en un solo lugar. Nuestro objetivo es que estudiar sea más claro,
+        más práctico y más enfocado en lo que realmente importa.
+      </p>
+      <br>
+      <p>
+        MediGuía sigue en desarrollo, y poco a poco iremos agregando mejoras para apoyar cada vez
+        mejor a todos los aspirantes.
+      </p>
+    </section>
+
+    <section class="section" id="feedback">
+      <h2>Feedback</h2>
+      <p>
+        Tu opinión nos ayuda a mejorar MediGuía. Si encuentras algún error, tienes una sugerencia
+        o una idea para nuevas funciones, nos encantaría leerla.
+      </p>
+
+      <div class="contacto-box">
+        <p><strong>Muy pronto:</strong> agregaremos un espacio para enviar sugerencias directamente desde la página.</p>
+        <p><strong>Objetivo:</strong> seguir mejorando MediGuía para todos los aspirantes.</p>
       </div>
     </section>
 
@@ -657,9 +692,6 @@
 
       const data = await respuesta.json();
       bancos[materia] = data;
-
-      console.log(`Banco cargado de ${materia}:`, data);
-
       return data;
     } catch (error) {
       console.error(error);
@@ -730,7 +762,6 @@
     document.getElementById(`contenido${capitalizar(materia)}`).style.display = "none";
     document.getElementById(`resultado${capitalizar(materia)}`).style.display = "none";
     document.getElementById(`simulador${capitalizar(materia)}`).style.display = "block";
-
     mostrarPregunta(materia);
   }
 

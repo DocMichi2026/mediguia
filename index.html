@@ -307,7 +307,6 @@
         <button onclick="irA('materias')">Materias</button>
         <button onclick="irA('quienesSomos')">Quiénes somos</button>
         <button onclick="irA('feedback')">Feedback</button>
-        <button onclick="irA('contacto')">Contacto</button>
       </nav>
     </header>
 
@@ -364,25 +363,25 @@
     </section>
 
     <section class="section" id="feedback">
-  <h2>Feedback</h2>
-  <p>
-    Tu opinión nos ayuda a mejorar MediGuía. Si encontraste algún error, tienes una sugerencia
-    o una idea para nuevas funciones, puedes enviarla aquí.
-  </p>
+      <h2>Feedback</h2>
+      <p>
+        Tu opinión nos ayuda a mejorar MediGuía. Si encontraste algún error, tienes una sugerencia
+        o una idea para nuevas funciones, puedes enviarla aquí.
+      </p>
 
-  <div class="contacto-box" style="max-width:900px;">
-    <iframe 
-      src="https://docs.google.com/forms/d/e/1FAIpQLSd8mC7RNbUifO1j2WZniM4ovLF1VRYyZg__YN4K0TKn-WtYlw/viewform?embedded=true" 
-      width="100%" 
-      height="1221" 
-      frameborder="0" 
-      marginheight="0" 
-      marginwidth="0"
-      style="border:none; border-radius:12px;">
-      Cargando…
-    </iframe>
-  </div>
-</section>
+      <div class="contacto-box">
+        <p style="margin-bottom:20px;">
+          Gracias por ayudarnos a seguir mejorando MediGuía 💙
+        </p>
+
+        <a 
+          class="btn" 
+          href="https://docs.google.com/forms/d/e/1FAIpQLSd8mC7RNbUifO1j2WZniM4ovLF1VRYyZg__YN4K0TKn-WtYlw/viewform" 
+          target="_blank">
+          Enviar feedback
+        </a>
+      </div>
+    </section>
 
     <footer>
       <p>© 2026 MediGuía - Creado por DocMichi 🐱</p>
@@ -888,7 +887,7 @@
     document.getElementById(`simulador${sufijo}`).style.display = "none";
     document.getElementById(`contenido${sufijo}`).style.display = "block";
   }
-</script>
+  </script>
 
 </body>
 </html>

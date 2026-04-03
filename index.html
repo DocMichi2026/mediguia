@@ -626,10 +626,10 @@
   };
 
   const estado = {
-    biologia: { preguntas: [], actual: 0, puntaje: 0, seleccionada: null, modo: "" },
-    quimica: { preguntas: [], actual: 0, puntaje: 0, seleccionada: null, modo: "" },
-    verbal: { preguntas: [], actual: 0, puntaje: 0, seleccionada: null, modo: "" },
-    numerica: { preguntas: [], actual: 0, puntaje: 0, seleccionada: null, modo: "" }
+    biologia: { preguntas: [], actual: 0, puntaje: 0, seleccionada: null, modo: "", respuestasUsuario: [] },
+    quimica: { preguntas: [], actual: 0, puntaje: 0, seleccionada: null, modo: "", respuestasUsuario: [] },
+    verbal: { preguntas: [], actual: 0, puntaje: 0, seleccionada: null, modo: "", respuestasUsuario: [] },
+    numerica: { preguntas: [], actual: 0, puntaje: 0, seleccionada: null, modo: "", respuestasUsuario: [] }
   };
 
   function capitalizar(texto) {
@@ -689,10 +689,6 @@
     const dificultad = document.getElementById(`dificultad${capitalizar(materia)}`).value;
     const preguntas = obtenerPreguntasPorDificultad(banco, dificultad);
 
-    console.log("Materia:", materia);
-    console.log("Dificultad:", dificultad);
-    console.log("Preguntas encontradas:", preguntas);
-
     if (!preguntas || preguntas.length === 0) {
       alert(`No hay preguntas para ${materia} en dificultad ${dificultad}. Revisa el JSON.`);
       return;
@@ -703,6 +699,7 @@
     estado[materia].puntaje = 0;
     estado[materia].seleccionada = null;
     estado[materia].modo = `Mini examen - ${capitalizar(dificultad)}`;
+    estado[materia].respuestasUsuario = [];
 
     empezarMateria(materia);
   }
@@ -714,10 +711,6 @@
     const dificultad = document.getElementById(`dificultad${capitalizar(materia)}`).value;
     const preguntas = obtenerPreguntasPorDificultad(banco, dificultad);
 
-    console.log("Materia:", materia);
-    console.log("Dificultad:", dificultad);
-    console.log("Preguntas encontradas:", preguntas);
-
     if (!preguntas || preguntas.length === 0) {
       alert(`No hay preguntas para ${materia} en dificultad ${dificultad}. Revisa el JSON.`);
       return;
@@ -728,6 +721,7 @@
     estado[materia].puntaje = 0;
     estado[materia].seleccionada = null;
     estado[materia].modo = `Simulador - ${capitalizar(dificultad)}`;
+    estado[materia].respuestasUsuario = [];
 
     empezarMateria(materia);
   }
@@ -781,6 +775,8 @@
       return;
     }
 
+    datos.respuestasUsuario.push(datos.seleccionada);
+
     if (datos.seleccionada === datos.preguntas[datos.actual].correcta) {
       datos.puntaje++;
     }
@@ -794,14 +790,66 @@
     }
   }
 
+  function escaparHTML(texto) {
+    return String(texto)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  }
+
   function mostrarResultado(materia) {
     const datos = estado[materia];
     const sufijo = capitalizar(materia);
+    const contenedorResultado = document.getElementById(`resultado${sufijo}`);
 
     document.getElementById(`simulador${sufijo}`).style.display = "none";
-    document.getElementById(`resultado${sufijo}`).style.display = "block";
-    document.getElementById(`textoResultado${sufijo}`).innerText =
-      `Obtuviste ${datos.puntaje} de ${datos.preguntas.length} respuestas correctas.`;
+    contenedorResultado.style.display = "block";
+
+    let html = `
+      <h2>Resultado final ${sufijo === "Biologia" ? "🧪" : sufijo === "Quimica" ? "⚗️" : sufijo === "Verbal" ? "📘" : "🔢"}</h2>
+      <p style="font-size:22px; margin-top:15px;">
+        Obtuviste ${datos.puntaje} de ${datos.preguntas.length} respuestas correctas.
+      </p>
+      <div style="margin-top:25px; text-align:left;">
+    `;
+
+    datos.preguntas.forEach((pregunta, i) => {
+      const respuestaUsuario = datos.respuestasUsuario[i];
+      const indiceCorrecto = pregunta.correcta;
+      const acerto = respuestaUsuario === indiceCorrecto;
+
+      const textoUsuario = respuestaUsuario !== undefined && pregunta.opciones[respuestaUsuario] !== undefined
+        ? pregunta.opciones[respuestaUsuario]
+        : "Sin respuesta";
+
+      const textoCorrecto = pregunta.opciones[indiceCorrecto];
+
+      html += `
+        <div style="margin-bottom:20px; padding:16px; border-radius:14px; background:${acerto ? "#eefaf0" : "#fff4f4"}; border:1px solid ${acerto ? "#b7e4c7" : "#f3b3b3"};">
+          <p style="font-weight:bold; margin-bottom:8px;">Pregunta ${i + 1}: ${escaparHTML(pregunta.pregunta)}</p>
+          <p style="margin-bottom:6px; color:${acerto ? "#1b7f3a" : "#c62828"};">
+            <strong>Tu respuesta:</strong> ${escaparHTML(textoUsuario)}
+          </p>
+          <p style="margin-bottom:6px; color:#1d4f91;">
+            <strong>Respuesta correcta:</strong> ${escaparHTML(textoCorrecto)}
+          </p>
+          <p style="font-weight:bold; color:${acerto ? "#1b7f3a" : "#c62828"};">
+            ${acerto ? "✅ Correcta" : "❌ Incorrecta"}
+          </p>
+        </div>
+      `;
+    });
+
+    html += `
+      </div>
+      <div style="margin-top:25px;">
+        <button class="btn" onclick="reiniciarMateria('${materia}')">🔄 Volver a ${sufijo}</button>
+      </div>
+    `;
+
+    contenedorResultado.innerHTML = html;
   }
 
   function reiniciarMateria(materia) {

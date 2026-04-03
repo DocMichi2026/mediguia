@@ -137,15 +137,6 @@
       transform:translateY(-6px);
     }
 
-    .card img{
-      width:100%;
-      height:170px;
-      object-fit:cover;
-      border-radius:14px;
-      margin-bottom:16px;
-      background:#dceeff;
-    }
-
     .card h3{
       margin-bottom:10px;
       color:#2f80ed;
@@ -368,7 +359,6 @@
   <!-- BIOLOGÍA -->
   <div id="pantallaBiologia" class="pantalla-materia">
     <div class="contenedor-materia">
-
       <div class="boton-volver">
         <button class="btn" onclick="volverInicio()">⬅ Volver al inicio</button>
       </div>
@@ -389,8 +379,6 @@
           <p>• Herencia y genética mendeliana</p>
           <p>• Propiedades químicas y estructurales del ADN</p>
 
-          <br>
-
           <div class="selector-dificultad">
             <label for="dificultadBiologia"><strong>Dificultad:</strong></label>
             <select id="dificultadBiologia">
@@ -401,34 +389,30 @@
           </div>
 
           <div style="margin-top:20px; display:flex; gap:15px; justify-content:center; flex-wrap:wrap;">
-            <button class="btn" onclick="iniciarMiniExamenBiologia()">📝 Mini examen (5)</button>
-            <button class="btn" onclick="iniciarSimuladorBiologia()">📚 Simulador (30)</button>
+            <button class="btn" onclick="iniciarMiniExamen('biologia')">📝 Mini examen (5)</button>
+            <button class="btn" onclick="iniciarSimulador('biologia')">📚 Simulador (30)</button>
           </div>
         </div>
       </div>
 
       <div id="simuladorBiologia" class="mensaje-proximamente" style="display:none;">
-        <h2 id="tituloPregunta">Pregunta 1</h2>
-        <p id="contadorPregunta"><strong>Pregunta 1 de 5</strong></p>
+        <h2 id="tituloPreguntaBiologia">Pregunta 1</h2>
+        <p id="contadorPreguntaBiologia"><strong>Pregunta 1 de 5</strong></p>
         <p id="modoBiologia" style="margin-top:8px; font-weight:bold; color:#2f80ed;"></p>
-        <p id="preguntaTexto" style="margin-top:15px; font-size:20px;"></p>
-
+        <p id="preguntaTextoBiologia" style="margin-top:15px; font-size:20px;"></p>
         <div id="opcionesBiologia" style="margin-top:25px; text-align:left;"></div>
-
         <div style="margin-top:25px;">
-          <button class="btn" onclick="siguientePreguntaBiologia()">Siguiente</button>
+          <button class="btn" onclick="siguientePregunta('biologia')">Siguiente</button>
         </div>
       </div>
 
       <div id="resultadoBiologia" class="mensaje-proximamente" style="display:none;">
         <h2>Resultado final 🧪</h2>
         <p id="textoResultadoBiologia" style="font-size:22px; margin-top:15px;"></p>
-
-        <div style="margin-top:25px; display:flex; gap:15px; justify-content:center; flex-wrap:wrap;">
-          <button class="btn" onclick="reiniciarBiologia()">🔄 Volver a Biología</button>
+        <div style="margin-top:25px;">
+          <button class="btn" onclick="reiniciarMateria('biologia')">🔄 Volver a Biología</button>
         </div>
       </div>
-
     </div>
   </div>
 
@@ -444,18 +428,53 @@
         <p>Área de Química de MediGuía.</p>
       </div>
 
-      <div class="mensaje-proximamente">
-        <h2>Temas de Química</h2>
-        <p>• Estructura atómica</p>
-        <p>• Tabla periódica</p>
-        <p>• Nomenclatura de compuestos inorgánicos</p>
-        <p>• Enlaces químicos</p>
-        <p>• Reacción y ecuación química</p>
+      <div id="contenidoQuimica">
+        <div class="mensaje-proximamente">
+          <h2>Temas de Química</h2>
+          <p>• Estructura atómica</p>
+          <p>• Tabla periódica</p>
+          <p>• Nomenclatura de compuestos inorgánicos</p>
+          <p>• Enlaces químicos</p>
+          <p>• Reacción y ecuación química</p>
+
+          <div class="selector-dificultad">
+            <label for="dificultadQuimica"><strong>Dificultad:</strong></label>
+            <select id="dificultadQuimica">
+              <option value="facil">Fácil</option>
+              <option value="media">Media</option>
+              <option value="dificil">Difícil</option>
+            </select>
+          </div>
+
+          <div style="margin-top:20px; display:flex; gap:15px; justify-content:center; flex-wrap:wrap;">
+            <button class="btn" onclick="iniciarMiniExamen('quimica')">📝 Mini examen (5)</button>
+            <button class="btn" onclick="iniciarSimulador('quimica')">📚 Simulador (30)</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="simuladorQuimica" class="mensaje-proximamente" style="display:none;">
+        <h2 id="tituloPreguntaQuimica">Pregunta 1</h2>
+        <p id="contadorPreguntaQuimica"><strong>Pregunta 1 de 5</strong></p>
+        <p id="modoQuimica" style="margin-top:8px; font-weight:bold; color:#2f80ed;"></p>
+        <p id="preguntaTextoQuimica" style="margin-top:15px; font-size:20px;"></p>
+        <div id="opcionesQuimica" style="margin-top:25px; text-align:left;"></div>
+        <div style="margin-top:25px;">
+          <button class="btn" onclick="siguientePregunta('quimica')">Siguiente</button>
+        </div>
+      </div>
+
+      <div id="resultadoQuimica" class="mensaje-proximamente" style="display:none;">
+        <h2>Resultado final ⚗️</h2>
+        <p id="textoResultadoQuimica" style="font-size:22px; margin-top:15px;"></p>
+        <div style="margin-top:25px;">
+          <button class="btn" onclick="reiniciarMateria('quimica')">🔄 Volver a Química</button>
+        </div>
       </div>
     </div>
   </div>
 
-  <!-- HABILIDAD VERBAL -->
+  <!-- VERBAL -->
   <div id="pantallaVerbal" class="pantalla-materia">
     <div class="contenedor-materia">
       <div class="boton-volver">
@@ -467,29 +486,52 @@
         <p>Área de Habilidad Verbal de MediGuía.</p>
       </div>
 
-      <div class="mensaje-proximamente">
-        <h2>Temas de Habilidad Verbal</h2>
-        <p>• Palabra primitiva</p>
-        <p>• Palabra derivada</p>
-        <p>• Familia de palabras</p>
-        <p>• Prefijos y sufijos</p>
-        <p>• Afijos</p>
-        <p>• Homónimos</p>
-        <p>• Homógrafas</p>
-        <p>• Homófonas</p>
-        <p>• Polisémicas</p>
-        <p>• Parónimos</p>
-        <p>• Sinónimos</p>
-        <p>• Antónimos</p>
-        <p>• Analogías</p>
-        <p>• Analogías continuas</p>
-        <p>• Analogías alternas</p>
-        <p>• Analogías incompletas</p>
+      <div id="contenidoVerbal">
+        <div class="mensaje-proximamente">
+          <h2>Temas de Habilidad Verbal</h2>
+          <p>• Sinónimos y antónimos</p>
+          <p>• Analogías</p>
+          <p>• Relaciones lógicas</p>
+          <p>• Comprensión verbal</p>
+
+          <div class="selector-dificultad">
+            <label for="dificultadVerbal"><strong>Dificultad:</strong></label>
+            <select id="dificultadVerbal">
+              <option value="facil">Fácil</option>
+              <option value="media">Media</option>
+              <option value="dificil">Difícil</option>
+            </select>
+          </div>
+
+          <div style="margin-top:20px; display:flex; gap:15px; justify-content:center; flex-wrap:wrap;">
+            <button class="btn" onclick="iniciarMiniExamen('verbal')">📝 Mini examen (5)</button>
+            <button class="btn" onclick="iniciarSimulador('verbal')">📚 Simulador (30)</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="simuladorVerbal" class="mensaje-proximamente" style="display:none;">
+        <h2 id="tituloPreguntaVerbal">Pregunta 1</h2>
+        <p id="contadorPreguntaVerbal"><strong>Pregunta 1 de 5</strong></p>
+        <p id="modoVerbal" style="margin-top:8px; font-weight:bold; color:#2f80ed;"></p>
+        <p id="preguntaTextoVerbal" style="margin-top:15px; font-size:20px;"></p>
+        <div id="opcionesVerbal" style="margin-top:25px; text-align:left;"></div>
+        <div style="margin-top:25px;">
+          <button class="btn" onclick="siguientePregunta('verbal')">Siguiente</button>
+        </div>
+      </div>
+
+      <div id="resultadoVerbal" class="mensaje-proximamente" style="display:none;">
+        <h2>Resultado final 📘</h2>
+        <p id="textoResultadoVerbal" style="font-size:22px; margin-top:15px;"></p>
+        <div style="margin-top:25px;">
+          <button class="btn" onclick="reiniciarMateria('verbal')">🔄 Volver a Verbal</button>
+        </div>
       </div>
     </div>
   </div>
 
-  <!-- HABILIDAD NUMÉRICA -->
+  <!-- NUMÉRICA -->
   <div id="pantallaNumerica" class="pantalla-materia">
     <div class="contenedor-materia">
       <div class="boton-volver">
@@ -501,24 +543,54 @@
         <p>Área de Habilidad Numérica de MediGuía.</p>
       </div>
 
-      <div class="mensaje-proximamente">
-        <h2>Temas de Habilidad Numérica</h2>
-        <p>• Conjuntos numéricos</p>
-        <p>• Operaciones en el conjunto de los números reales</p>
-        <p>• Potencias</p>
-        <p>• Radicales</p>
-        <p>• Jerarquía de operaciones</p>
-        <p>• Operaciones en el conjunto de los números naturales</p>
-        <p>• Conceptos básicos de álgebra</p>
+      <div id="contenidoNumerica">
+        <div class="mensaje-proximamente">
+          <h2>Temas de Habilidad Numérica</h2>
+          <p>• Operaciones básicas</p>
+          <p>• Proporciones</p>
+          <p>• Álgebra básica</p>
+          <p>• Potencias y radicales</p>
+
+          <div class="selector-dificultad">
+            <label for="dificultadNumerica"><strong>Dificultad:</strong></label>
+            <select id="dificultadNumerica">
+              <option value="facil">Fácil</option>
+              <option value="media">Media</option>
+              <option value="dificil">Difícil</option>
+            </select>
+          </div>
+
+          <div style="margin-top:20px; display:flex; gap:15px; justify-content:center; flex-wrap:wrap;">
+            <button class="btn" onclick="iniciarMiniExamen('numerica')">📝 Mini examen (5)</button>
+            <button class="btn" onclick="iniciarSimulador('numerica')">📚 Simulador (30)</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="simuladorNumerica" class="mensaje-proximamente" style="display:none;">
+        <h2 id="tituloPreguntaNumerica">Pregunta 1</h2>
+        <p id="contadorPreguntaNumerica"><strong>Pregunta 1 de 5</strong></p>
+        <p id="modoNumerica" style="margin-top:8px; font-weight:bold; color:#2f80ed;"></p>
+        <p id="preguntaTextoNumerica" style="margin-top:15px; font-size:20px;"></p>
+        <div id="opcionesNumerica" style="margin-top:25px; text-align:left;"></div>
+        <div style="margin-top:25px;">
+          <button class="btn" onclick="siguientePregunta('numerica')">Siguiente</button>
+        </div>
+      </div>
+
+      <div id="resultadoNumerica" class="mensaje-proximamente" style="display:none;">
+        <h2>Resultado final 🔢</h2>
+        <p id="textoResultadoNumerica" style="font-size:22px; margin-top:15px;"></p>
+        <div style="margin-top:25px;">
+          <button class="btn" onclick="reiniciarMateria('numerica')">🔄 Volver a Numérica</button>
+        </div>
       </div>
     </div>
   </div>
 
   <script>
     function irA(seccionId) {
-      document.getElementById(seccionId).scrollIntoView({
-        behavior: "smooth"
-      });
+      document.getElementById(seccionId).scrollIntoView({ behavior: "smooth" });
     }
 
     function ocultarTodasLasPantallas() {
@@ -532,21 +604,10 @@
       document.getElementById("paginaPrincipal").style.display = "none";
       ocultarTodasLasPantallas();
 
-      if (materia === "biologia") {
-        document.getElementById("pantallaBiologia").style.display = "block";
-      }
-
-      if (materia === "quimica") {
-        document.getElementById("pantallaQuimica").style.display = "block";
-      }
-
-      if (materia === "verbal") {
-        document.getElementById("pantallaVerbal").style.display = "block";
-      }
-
-      if (materia === "numerica") {
-        document.getElementById("pantallaNumerica").style.display = "block";
-      }
+      if (materia === "biologia") document.getElementById("pantallaBiologia").style.display = "block";
+      if (materia === "quimica") document.getElementById("pantallaQuimica").style.display = "block";
+      if (materia === "verbal") document.getElementById("pantallaVerbal").style.display = "block";
+      if (materia === "numerica") document.getElementById("pantallaNumerica").style.display = "block";
 
       window.scrollTo(0, 0);
     }
@@ -557,101 +618,117 @@
       window.scrollTo(0, 0);
     }
 
-    let preguntasBiologia = null;
-    let preguntasActivasBiologia = [];
-    let preguntaActualBiologia = 0;
-    let puntajeBiologia = 0;
-    let respuestaSeleccionadaBiologia = null;
-    let modoBiologiaActual = "";
+    const bancos = {
+      biologia: null,
+      quimica: null,
+      verbal: null,
+      numerica: null
+    };
 
-    async function cargarPreguntasBiologia() {
-      if (preguntasBiologia !== null) return;
+    const estado = {
+      biologia: { preguntas: [], actual: 0, puntaje: 0, seleccionada: null, modo: "" },
+      quimica: { preguntas: [], actual: 0, puntaje: 0, seleccionada: null, modo: "" },
+      verbal: { preguntas: [], actual: 0, puntaje: 0, seleccionada: null, modo: "" },
+      numerica: { preguntas: [], actual: 0, puntaje: 0, seleccionada: null, modo: "" }
+    };
 
-      try {
-        const respuesta = await fetch("data/biologia.json");
-
-        if (!respuesta.ok) {
-          throw new Error("No se pudo cargar data/biologia.json");
-        }
-
-        preguntasBiologia = await respuesta.json();
-      } catch (error) {
-        console.error(error);
-        alert("No se pudieron cargar las preguntas de Biología. Revisa el archivo data/biologia.json");
-      }
+    function capitalizar(texto) {
+      return texto.charAt(0).toUpperCase() + texto.slice(1);
     }
 
     function mezclarPreguntas(array) {
-      let copia = [...array];
-
+      const copia = [...array];
       for (let i = copia.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [copia[i], copia[j]] = [copia[j], copia[i]];
       }
-
       return copia;
     }
 
-    async function iniciarMiniExamenBiologia() {
-      await cargarPreguntasBiologia();
-      if (!preguntasBiologia) return;
+    async function cargarBanco(materia) {
+      if (bancos[materia] !== null) return bancos[materia];
 
-      const dificultad = document.getElementById("dificultadBiologia").value;
-      const banco = preguntasBiologia[dificultad];
+      try {
+        const respuesta = await fetch(`data/${materia}.json`);
 
-      if (!banco || banco.length === 0) {
+        if (!respuesta.ok) {
+          throw new Error(`No se pudo cargar data/${materia}.json`);
+        }
+
+        bancos[materia] = await respuesta.json();
+        return bancos[materia];
+      } catch (error) {
+        console.error(error);
+        alert(`No se pudo cargar el archivo data/${materia}.json`);
+
+        return null;
+      }
+    }
+
+    async function iniciarMiniExamen(materia) {
+      const banco = await cargarBanco(materia);
+      if (!banco) return;
+
+      const dificultad = document.getElementById(`dificultad${capitalizar(materia)}`).value;
+      const preguntas = banco[dificultad];
+
+      if (!preguntas || preguntas.length === 0) {
         alert("No hay preguntas disponibles para esta dificultad.");
         return;
       }
 
-      preguntasActivasBiologia = mezclarPreguntas(banco).slice(0, 5);
-      modoBiologiaActual = "Mini examen - " + dificultad.charAt(0).toUpperCase() + dificultad.slice(1);
+      estado[materia].preguntas = mezclarPreguntas(preguntas).slice(0, 5);
+      estado[materia].actual = 0;
+      estado[materia].puntaje = 0;
+      estado[materia].seleccionada = null;
+      estado[materia].modo = `Mini examen - ${capitalizar(dificultad)}`;
 
-      empezarBiologia();
+      empezarMateria(materia);
     }
 
-    async function iniciarSimuladorBiologia() {
-      await cargarPreguntasBiologia();
-      if (!preguntasBiologia) return;
+    async function iniciarSimulador(materia) {
+      const banco = await cargarBanco(materia);
+      if (!banco) return;
 
-      const dificultad = document.getElementById("dificultadBiologia").value;
-      const banco = preguntasBiologia[dificultad];
+      const dificultad = document.getElementById(`dificultad${capitalizar(materia)}`).value;
+      const preguntas = banco[dificultad];
 
-      if (!banco || banco.length === 0) {
+      if (!preguntas || preguntas.length === 0) {
         alert("No hay preguntas disponibles para esta dificultad.");
         return;
       }
 
-      preguntasActivasBiologia = mezclarPreguntas(banco).slice(0, 30);
-      modoBiologiaActual = "Simulador - " + dificultad.charAt(0).toUpperCase() + dificultad.slice(1);
+      estado[materia].preguntas = mezclarPreguntas(preguntas).slice(0, 30);
+      estado[materia].actual = 0;
+      estado[materia].puntaje = 0;
+      estado[materia].seleccionada = null;
+      estado[materia].modo = `Simulador - ${capitalizar(dificultad)}`;
 
-      empezarBiologia();
+      empezarMateria(materia);
     }
 
-    function empezarBiologia() {
-      document.getElementById("contenidoBiologia").style.display = "none";
-      document.getElementById("resultadoBiologia").style.display = "none";
-      document.getElementById("simuladorBiologia").style.display = "block";
+    function empezarMateria(materia) {
+      document.getElementById(`contenido${capitalizar(materia)}`).style.display = "none";
+      document.getElementById(`resultado${capitalizar(materia)}`).style.display = "none";
+      document.getElementById(`simulador${capitalizar(materia)}`).style.display = "block";
 
-      preguntaActualBiologia = 0;
-      puntajeBiologia = 0;
-      respuestaSeleccionadaBiologia = null;
-
-      mostrarPreguntaBiologia();
+      mostrarPregunta(materia);
     }
 
-    function mostrarPreguntaBiologia() {
-      const pregunta = preguntasActivasBiologia[preguntaActualBiologia];
+    function mostrarPregunta(materia) {
+      const datos = estado[materia];
+      const pregunta = datos.preguntas[datos.actual];
+      const sufijo = capitalizar(materia);
 
-      document.getElementById("tituloPregunta").innerText = "Pregunta " + (preguntaActualBiologia + 1);
-      document.getElementById("contadorPregunta").innerHTML =
-        "<strong>Pregunta " + (preguntaActualBiologia + 1) + " de " + preguntasActivasBiologia.length + "</strong>";
-      document.getElementById("modoBiologia").innerText = modoBiologiaActual;
-      document.getElementById("preguntaTexto").innerText = pregunta.pregunta;
+      document.getElementById(`tituloPregunta${sufijo}`).innerText = `Pregunta ${datos.actual + 1}`;
+      document.getElementById(`contadorPregunta${sufijo}`).innerHTML =
+        `<strong>Pregunta ${datos.actual + 1} de ${datos.preguntas.length}</strong>`;
+      document.getElementById(`modo${sufijo}`).innerText = datos.modo;
+      document.getElementById(`preguntaTexto${sufijo}`).innerText = pregunta.pregunta;
 
-      const contenedorOpciones = document.getElementById("opcionesBiologia");
-      contenedorOpciones.innerHTML = "";
-      respuestaSeleccionadaBiologia = null;
+      const contenedor = document.getElementById(`opciones${sufijo}`);
+      contenedor.innerHTML = "";
+      datos.seleccionada = null;
 
       pregunta.opciones.forEach((opcion, index) => {
         const boton = document.createElement("button");
@@ -659,49 +736,55 @@
         boton.innerText = opcion;
 
         boton.onclick = function () {
-          document.querySelectorAll("#opcionesBiologia .opcion-btn").forEach(btn => {
+          document.querySelectorAll(`#opciones${sufijo} .opcion-btn`).forEach(btn => {
             btn.classList.remove("seleccionada");
           });
 
           boton.classList.add("seleccionada");
-          respuestaSeleccionadaBiologia = index;
+          datos.seleccionada = index;
         };
 
-        contenedorOpciones.appendChild(boton);
+        contenedor.appendChild(boton);
       });
     }
 
-    function siguientePreguntaBiologia() {
-      if (respuestaSeleccionadaBiologia === null) {
+    function siguientePregunta(materia) {
+      const datos = estado[materia];
+
+      if (datos.seleccionada === null) {
         alert("Selecciona una respuesta antes de continuar.");
         return;
       }
 
-      if (respuestaSeleccionadaBiologia === preguntasActivasBiologia[preguntaActualBiologia].correcta) {
-        puntajeBiologia++;
+      if (datos.seleccionada === datos.preguntas[datos.actual].correcta) {
+        datos.puntaje++;
       }
 
-      preguntaActualBiologia++;
+      datos.actual++;
 
-      if (preguntaActualBiologia < preguntasActivasBiologia.length) {
-        mostrarPreguntaBiologia();
+      if (datos.actual < datos.preguntas.length) {
+        mostrarPregunta(materia);
       } else {
-        mostrarResultadoBiologia();
+        mostrarResultado(materia);
       }
     }
 
-    function mostrarResultadoBiologia() {
-      document.getElementById("simuladorBiologia").style.display = "none";
-      document.getElementById("resultadoBiologia").style.display = "block";
+    function mostrarResultado(materia) {
+      const datos = estado[materia];
+      const sufijo = capitalizar(materia);
 
-      document.getElementById("textoResultadoBiologia").innerText =
-        "Obtuviste " + puntajeBiologia + " de " + preguntasActivasBiologia.length + " respuestas correctas.";
+      document.getElementById(`simulador${sufijo}`).style.display = "none";
+      document.getElementById(`resultado${sufijo}`).style.display = "block";
+      document.getElementById(`textoResultado${sufijo}`).innerText =
+        `Obtuviste ${datos.puntaje} de ${datos.preguntas.length} respuestas correctas.`;
     }
 
-    function reiniciarBiologia() {
-      document.getElementById("resultadoBiologia").style.display = "none";
-      document.getElementById("simuladorBiologia").style.display = "none";
-      document.getElementById("contenidoBiologia").style.display = "block";
+    function reiniciarMateria(materia) {
+      const sufijo = capitalizar(materia);
+
+      document.getElementById(`resultado${sufijo}`).style.display = "none";
+      document.getElementById(`simulador${sufijo}`).style.display = "none";
+      document.getElementById(`contenido${sufijo}`).style.display = "block";
     }
   </script>
 

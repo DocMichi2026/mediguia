@@ -1,702 +1,508 @@
-[
-  {
-    "id": 1,
-    "tipo": "Parte - Todo",
-    "pregunta": "Árbol : ____ :: mosca : ____",
-    "opciones": ["hojas : araña", "raíz : polen", "tronco : alas", "bosque : insecto"],
-    "respuesta_correcta": "tronco : alas"
-  },
-  {
-    "id": 2,
-    "tipo": "Función",
-    "pregunta": "Cuchillo : ____ :: lápiz : ____",
-    "opciones": ["filo : punta", "cortar : escribir", "cocina : cuaderno", "metal : madera"],
-    "respuesta_correcta": "cortar : escribir"
-  },
-  {
-    "id": 3,
-    "tipo": "Oposición",
-    "pregunta": "Frío : ____ :: alto : ____",
-    "opciones": ["hielo : torre", "caliente : bajo", "invierno : cielo", "agua : grande"],
-    "respuesta_correcta": "caliente : bajo"
-  },
-  {
-    "id": 4,
-    "tipo": "Producto",
-    "pregunta": "Autor : ____ :: pintor : ____",
-    "opciones": ["libro : pintura", "leer : dibujar", "pluma : pincel", "escritor : arte"],
-    "respuesta_correcta": "libro : pintura"
-  },
-  {
-    "id": 5,
-    "tipo": "Conjunto - Elemento",
-    "pregunta": "Perro : ____ :: pez : ____",
-    "opciones": ["jauría : cardumen", "ladrar : nadar", "cola : aleta", "casa : agua"],
-    "respuesta_correcta": "jauría : cardumen"
-  },
-  {
-    "id": 6,
-    "tipo": "Instrumento - Usuario",
-    "pregunta": "Bisturí : ____ :: pincel : ____",
-    "opciones": ["cirujano : pintor", "hospital : cuadro", "operar : colorear", "metal : madera"],
-    "respuesta_correcta": "cirujano : pintor"
-  },
-  {
-    "id": 7,
-    "tipo": "Instrumento - Lo que mide",
-    "pregunta": "Termómetro : ____ :: cronómetro : ____",
-    "opciones": ["calor : altura", "temperatura : tiempo", "médico : atleta", "grados : reloj"],
-    "respuesta_correcta": "temperatura : tiempo"
-  },
-  {
-    "id": 8,
-    "tipo": "Órgano - Función",
-    "pregunta": "Pulmón : ____ :: estómago : ____",
-    "opciones": ["aire : comida", "respiración : digestión", "costilla : hígado", "sangre : hambre"],
-    "respuesta_correcta": "respiración : digestión"
-  },
-  {
-    "id": 9,
-    "tipo": "Ciencia - Objeto de estudio",
-    "pregunta": "Plantas : ____ :: estrellas : ____",
-    "opciones": ["zoología : química", "botánica : astronomía", "bosque : cielo", "vida : universo"],
-    "respuesta_correcta": "botánica : astronomía"
-  },
-  {
-    "id": 10,
-    "tipo": "Etapa - Desarrollo",
-    "pregunta": "Renacuajo : ____ :: capullo : ____",
-    "opciones": ["rana : mariposa", "agua : alas", "sapo : insecto", "charco : flor"],
-    "respuesta_correcta": "rana : mariposa"
-  },
-  {
-    "id": 11,
-    "tipo": "Parte - Todo",
-    "pregunta": "Rueda : ____ :: capítulo : ____",
-    "opciones": ["camino : cuento", "automóvil : libro", "llanta : página", "motor : portada"],
-    "respuesta_correcta": "automóvil : libro"
-  },
-  {
-    "id": 12,
-    "tipo": "Función",
-    "pregunta": "Tijera : ____ :: martillo : ____",
-    "opciones": ["cortar : golpear", "mano : clavo", "metal : hierro", "abrir : cerrar"],
-    "respuesta_correcta": "cortar : golpear"
-  },
-  {
-    "id": 13,
-    "tipo": "Causa - Efecto",
-    "pregunta": "Lluvia : ____ :: ejercicio : ____",
-    "opciones": ["paraguas : deporte", "inundación : cansancio", "agua : sudor", "nube : dolor"],
-    "respuesta_correcta": "inundación : cansancio"
-  },
-  {
-    "id": 14,
-    "tipo": "Oposición",
-    "pregunta": "Oscuro : ____ :: efímero : ____",
-    "opciones": ["sombra : largo", "claro : duradero", "noche : eterno", "gris : corto"],
-    "respuesta_correcta": "claro : duradero"
-  },
-  {
-    "id": 15,
-    "tipo": "Género - Especie",
-    "pregunta": "Ave : ____ :: felino : ____",
-    "opciones": ["nido : garra", "paloma : león", "volar : rugir", "pluma : tigre"],
-    "respuesta_correcta": "paloma : león"
-  },
-  {
-    "id": 16,
-    "tipo": "Especie - Género",
-    "pregunta": "Ballena : ____ :: yen : ____",
-    "opciones": ["océano : Japón", "cetáceo : moneda", "pez : dinero", "mamífero : banco"],
-    "respuesta_correcta": "cetáceo : moneda"
-  },
-  {
-    "id": 17,
-    "tipo": "Todo - Parte",
-    "pregunta": "Casa : ____ :: silla : ____",
-    "opciones": ["techo : respaldo", "pared : piso", "puerta : sentarse", "hogar : madera"],
-    "respuesta_correcta": "techo : respaldo"
-  },
-  {
-    "id": 18,
-    "tipo": "Parte - Todo",
-    "pregunta": "Tímpano : ____ :: hoja : ____",
-    "opciones": ["oído : árbol", "sonido : bosque", "oreja : planta", "nervio : rama"],
-    "respuesta_correcta": "oído : árbol"
-  },
-  {
-    "id": 19,
-    "tipo": "Continente - Contenido",
-    "pregunta": "Vino : ____ :: gas : ____",
-    "opciones": ["bodega : tanque", "odre : balón", "botella : globo", "copa : aire"],
-    "respuesta_correcta": "odre : balón"
-  },
-  {
-    "id": 20,
-    "tipo": "Ubicación",
-    "pregunta": "Auto : ____ :: avión : ____",
-    "opciones": ["llanta : ala", "garaje : hangar", "calle : pista", "motor : cabina"],
-    "respuesta_correcta": "garaje : hangar"
-  },
-  {
-    "id": 21,
-    "tipo": "Causa - Efecto",
-    "pregunta": "Chispa : ____ :: virus : ____",
-    "opciones": ["humo : tos", "incendio : enfermedad", "luz : fiebre", "fuego : medicina"],
-    "respuesta_correcta": "incendio : enfermedad"
-  },
-  {
-    "id": 22,
-    "tipo": "Secuencialidad",
-    "pregunta": "Noviazgo : ____ :: bachiller : ____",
-    "opciones": ["pareja : trabajo", "matrimonio : licenciado", "amor : universidad", "anillo : título"],
-    "respuesta_correcta": "matrimonio : licenciado"
-  },
-  {
-    "id": 23,
-    "tipo": "Reciprocidad",
-    "pregunta": "Predador : ____ :: trampero : ____",
-    "opciones": ["presa : trampa", "selva : red", "caza : bosque", "animal : arma"],
-    "respuesta_correcta": "presa : trampa"
-  },
-  {
-    "id": 24,
-    "tipo": "Producto",
-    "pregunta": "Zapatero : ____ :: sastre : ____",
-    "opciones": ["zapato : terno", "cuero : tela", "coser : medir", "suela : hilo"],
-    "respuesta_correcta": "zapato : terno"
-  },
-  {
-    "id": 25,
-    "tipo": "Instrumento - Usuario",
-    "pregunta": "Profesor : ____ :: químico : ____",
-    "opciones": ["tiza : probeta", "clase : laboratorio", "alumno : reacción", "escuela : ciencia"],
-    "respuesta_correcta": "tiza : probeta"
-  },
-  {
-    "id": 26,
-    "tipo": "Característica",
-    "pregunta": "Azúcar : ____ :: sol : ____",
-    "opciones": ["dulce : brillo", "blanco : calor", "café : luz", "sabor : fuego"],
-    "respuesta_correcta": "dulce : brillo"
-  },
-  {
-    "id": 27,
-    "tipo": "Sinonimia",
-    "pregunta": "Rápido : ____ :: feliz : ____",
-    "opciones": ["veloz : alegre", "correr : sonreír", "tiempo : emoción", "fuerte : contento"],
-    "respuesta_correcta": "veloz : alegre"
-  },
-  {
-    "id": 28,
-    "tipo": "Oposición",
-    "pregunta": "Subir : ____ :: entrar : ____",
-    "opciones": ["cima : puerta", "bajar : salir", "caer : abrir", "escalar : volver"],
-    "respuesta_correcta": "bajar : salir"
-  },
-  {
-    "id": 29,
-    "tipo": "Función",
-    "pregunta": "Linterna : ____ :: llave : ____",
-    "opciones": ["luz : puerta", "iluminar : abrir", "pilas : cerrar", "noche : candado"],
-    "respuesta_correcta": "iluminar : abrir"
-  },
-  {
-    "id": 30,
-    "tipo": "Producto",
-    "pregunta": "Algodón : ____ :: petróleo : ____",
-    "opciones": ["camisa : plástico", "tejido : gasolina", "fibra : humo", "hilo : combustible"],
-    "respuesta_correcta": "tejido : gasolina"
-  },
-  {
-    "id": 31,
-    "tipo": "Instrumento - Usuario",
-    "pregunta": "Martillo : ____ :: pluma : ____",
-    "opciones": ["carpintero : escritor", "clavo : papel", "golpear : redactar", "metal : tinta"],
-    "respuesta_correcta": "carpintero : escritor"
-  },
-  {
-    "id": 32,
-    "tipo": "Conjunto - Elemento",
-    "pregunta": "Bandada : ____ :: piara : ____",
-    "opciones": ["ave : cerdo", "pájaro : granja", "nido : corral", "pluma : hocico"],
-    "respuesta_correcta": "ave : cerdo"
-  },
-  {
-    "id": 33,
-    "tipo": "Parte - Todo",
-    "pregunta": "Página : ____ :: pétalo : ____",
-    "opciones": ["cuento : jardín", "libro : flor", "papel : planta", "texto : rosa"],
-    "respuesta_correcta": "libro : flor"
-  },
-  {
-    "id": 34,
-    "tipo": "Causa - Efecto",
-    "pregunta": "Estudio : ____ :: calor : ____",
-    "opciones": ["examen : verano", "conocimiento : dilatación", "libro : fuego", "nota : expansión"],
-    "respuesta_correcta": "conocimiento : dilatación"
-  },
-  {
-    "id": 35,
-    "tipo": "Secuencialidad",
-    "pregunta": "Miércoles : ____ :: adultez : ____",
-    "opciones": ["jueves : senectud", "viernes : juventud", "semana : vejez", "martes : infancia"],
-    "respuesta_correcta": "jueves : senectud"
-  },
-  {
-    "id": 36,
-    "tipo": "Característica",
-    "pregunta": "Hipérbole : ____ :: diseñador : ____",
-    "opciones": ["figura : arte", "exageración : creatividad", "literatura : moda", "palabra : dibujo"],
-    "respuesta_correcta": "exageración : creatividad"
-  },
-  {
-    "id": 37,
-    "tipo": "Género - Especie",
-    "pregunta": "Primate : ____ :: combustible : ____",
-    "opciones": ["mono : fuego", "chimpancé : carbón", "selva : gasolina", "mamífero : petróleo"],
-    "respuesta_correcta": "chimpancé : carbón"
-  },
-  {
-    "id": 38,
-    "tipo": "Especie - Género",
-    "pregunta": "Lechuga : ____ :: violín : ____",
-    "opciones": ["verdura : instrumento", "hoja : cuerda", "ensalada : música", "planta : orquesta"],
-    "respuesta_correcta": "verdura : instrumento"
-  },
-  {
-    "id": 39,
-    "tipo": "Instrumento - Lo que mide",
-    "pregunta": "Balanza : ____ :: altímetro : ____",
-    "opciones": ["masa : montaña", "peso : altura", "gramos : cielo", "objeto : vuelo"],
-    "respuesta_correcta": "peso : altura"
-  },
-  {
-    "id": 40,
-    "tipo": "Función",
-    "pregunta": "Escoba : ____ :: licuadora : ____",
-    "opciones": ["limpiar : triturar", "palo : cocina", "barrer : vaso", "suelo : fruta"],
-    "respuesta_correcta": "limpiar : triturar"
-  },
-  {
-    "id": 41,
-    "tipo": "Oposición",
-    "pregunta": "Aprobar : ____ :: encender : ____",
-    "opciones": ["lograr : fuego", "reprobar : apagar", "estudiar : cerrar", "nota : luz"],
-    "respuesta_correcta": "reprobar : apagar"
-  },
-  {
-    "id": 42,
-    "tipo": "Complementariedad",
-    "pregunta": "Candado : ____ :: aguja : ____",
-    "opciones": ["metal : costura", "llave : hilo", "puerta : tela", "cerrar : coser"],
-    "respuesta_correcta": "llave : hilo"
-  },
-  {
-    "id": 43,
-    "tipo": "Cogenéricas",
-    "pregunta": "Mesa : ____ :: camisa : ____",
-    "opciones": ["madera : tela", "silla : pantalón", "mueble : ropa", "casa : armario"],
-    "respuesta_correcta": "silla : pantalón"
-  },
-  {
-    "id": 44,
-    "tipo": "Reciprocidad",
-    "pregunta": "Vendedor : ____ :: médico : ____",
-    "opciones": ["cliente : paciente", "dinero : salud", "tienda : hospital", "producto : receta"],
-    "respuesta_correcta": "cliente : paciente"
-  },
-  {
-    "id": 45,
-    "tipo": "Ubicación",
-    "pregunta": "Barco : ____ :: tren : ____",
-    "opciones": ["puerto : estación", "agua : riel", "mar : ciudad", "ancla : vagón"],
-    "respuesta_correcta": "puerto : estación"
-  },
-  {
-    "id": 46,
-    "tipo": "Producto",
-    "pregunta": "Panadero : ____ :: alfarero : ____",
-    "opciones": ["pan : vasija", "harina : barro", "horno : rueda", "masa : jarra"],
-    "respuesta_correcta": "pan : vasija"
-  },
-  {
-    "id": 47,
-    "tipo": "Característica",
-    "pregunta": "Limón : ____ :: nieve : ____",
-    "opciones": ["ácido : fría", "verde : blanca", "fruta : agua", "jugo : invierno"],
-    "respuesta_correcta": "ácido : fría"
-  },
-  {
-    "id": 48,
-    "tipo": "Causa - Efecto",
-    "pregunta": "Golpe : ____ :: incendio : ____",
-    "opciones": ["dolor : ceniza", "herida : destrucción", "caída : humo", "puño : fuego"],
-    "respuesta_correcta": "herida : destrucción"
-  },
-  {
-    "id": 49,
-    "tipo": "Secuencialidad",
-    "pregunta": "Infancia : ____ :: semilla : ____",
-    "opciones": ["juventud : planta", "escuela : árbol", "niñez : fruto", "madurez : flor"],
-    "respuesta_correcta": "juventud : planta"
-  },
-  {
-    "id": 50,
-    "tipo": "Parte - Todo",
-    "pregunta": "Tecla : ____ :: diente : ____",
-    "opciones": ["piano : boca", "música : sonrisa", "mano : comida", "teclado : mandíbula"],
-    "respuesta_correcta": "piano : boca"
-  },
-  {
-    "id": 51,
-    "tipo": "Función",
-    "pregunta": "Regla : ____ :: borrador : ____",
-    "opciones": ["medir : borrar", "escuela : papel", "línea : error", "recta : cuaderno"],
-    "respuesta_correcta": "medir : borrar"
-  },
-  {
-    "id": 52,
-    "tipo": "Instrumento - Usuario",
-    "pregunta": "Micrófono : ____ :: volante : ____",
-    "opciones": ["cantante : conductor", "música : carro", "voz : ruta", "escenario : calle"],
-    "respuesta_correcta": "cantante : conductor"
-  },
-  {
-    "id": 53,
-    "tipo": "Conjunto - Elemento",
-    "pregunta": "Bosque : ____ :: archipiélago : ____",
-    "opciones": ["árbol : isla", "selva : mar", "rama : costa", "hoja : playa"],
-    "respuesta_correcta": "árbol : isla"
-  },
-  {
-    "id": 54,
-    "tipo": "Oposición",
-    "pregunta": "Ganar : ____ :: recordar : ____",
-    "opciones": ["perder : olvidar", "jugar : pensar", "trofeo : memoria", "competir : aprender"],
-    "respuesta_correcta": "perder : olvidar"
-  },
-  {
-    "id": 55,
-    "tipo": "Género - Especie",
-    "pregunta": "Instrumento : ____ :: fruta : ____",
-    "opciones": ["guitarra : mango", "música : árbol", "cuerda : banano", "piano : semilla"],
-    "respuesta_correcta": "guitarra : mango"
-  },
-  {
-    "id": 56,
-    "tipo": "Especie - Género",
-    "pregunta": "Rosa : ____ :: tiburón : ____",
-    "opciones": ["jardín : mar", "flor : pez", "espina : aleta", "planta : animal"],
-    "respuesta_correcta": "flor : pez"
-  },
-  {
-    "id": 57,
-    "tipo": "Continente - Contenido",
-    "pregunta": "Agua : ____ :: café : ____",
-    "opciones": ["vaso : taza", "botella : cucharita", "jarra : azúcar", "grifo : termo"],
-    "respuesta_correcta": "vaso : taza"
-  },
-  {
-    "id": 58,
-    "tipo": "Producto",
-    "pregunta": "Legislador : ____ :: carpintero : ____",
-    "opciones": ["ley : mesa", "congreso : martillo", "norma : madera", "juez : silla"],
-    "respuesta_correcta": "ley : mesa"
-  },
-  {
-    "id": 59,
-    "tipo": "Característica",
-    "pregunta": "Carbón : ____ :: algodón : ____",
-    "opciones": ["negro : suave", "duro : blanco", "sucio : limpio", "roca : tela"],
-    "respuesta_correcta": "negro : suave"
-  },
-  {
-    "id": 60,
-    "tipo": "Causa - Efecto",
-    "pregunta": "Miedo : ____ :: hambre : ____",
-    "opciones": ["terror : comer", "sudor : apetito", "huida : comida", "temblor : ansiedad"],
-    "respuesta_correcta": "huida : comida"
-  },
-  {
-    "id": 61,
-    "tipo": "Secuencialidad",
-    "pregunta": "Desayuno : ____ :: primavera : ____",
-    "opciones": ["almuerzo : verano", "comida : invierno", "cena : otoño", "mañana : calor"],
-    "respuesta_correcta": "almuerzo : verano"
-  },
-  {
-    "id": 62,
-    "tipo": "Parte - Todo",
-    "pregunta": "Ventana : ____ :: teclado : ____",
-    "opciones": ["casa : computadora", "vidrio : pantalla", "puerta : monitor", "cuarto : laptop"],
-    "respuesta_correcta": "casa : computadora"
-  },
-  {
-    "id": 63,
-    "tipo": "Función",
-    "pregunta": "Paraguas : ____ :: refrigerador : ____",
-    "opciones": ["lluvia : frío", "cubrir : enfriar", "agua : comida", "mano : cocina"],
-    "respuesta_correcta": "cubrir : enfriar"
-  },
-  {
-    "id": 64,
-    "tipo": "Reciprocidad",
-    "pregunta": "Comprador : ____ :: juez : ____",
-    "opciones": ["mercado : ley", "vendedor : acusado", "precio : sentencia", "dinero : juicio"],
-    "respuesta_correcta": "vendedor : acusado"
-  },
-  {
-    "id": 65,
-    "tipo": "Instrumento - Usuario",
-    "pregunta": "Cámara : ____ :: teclado : ____",
-    "opciones": ["fotógrafo : pianista", "foto : música", "lente : nota", "imagen : canción"],
-    "respuesta_correcta": "fotógrafo : pianista"
-  },
-  {
-    "id": 66,
-    "tipo": "Conjunto - Elemento",
-    "pregunta": "Clero : ____ :: ejército : ____",
-    "opciones": ["sacerdote : soldado", "iglesia : guerra", "fe : arma", "templo : cuartel"],
-    "respuesta_correcta": "sacerdote : soldado"
-  },
-  {
-    "id": 67,
-    "tipo": "Oposición",
-    "pregunta": "Rico : ____ :: limpio : ____",
-    "opciones": ["pobre : sucio", "dinero : jabón", "lujo : orden", "gastar : lavar"],
-    "respuesta_correcta": "pobre : sucio"
-  },
-  {
-    "id": 68,
-    "tipo": "Sinonimia",
-    "pregunta": "Calmo : ____ :: iniciar : ____",
-    "opciones": ["quieto : empezar", "lento : seguir", "suave : terminar", "sereno : avanzar"],
-    "respuesta_correcta": "quieto : empezar"
-  },
-  {
-    "id": 69,
-    "tipo": "Complementariedad",
-    "pregunta": "Mesa : ____ :: taza : ____",
-    "opciones": ["mantel : plato", "silla : plato", "comer : beber", "madera : vidrio"],
-    "respuesta_correcta": "silla : plato"
-  },
-  {
-    "id": 70,
-    "tipo": "Género - Especie",
-    "pregunta": "Mamífero : ____ :: ave : ____",
-    "opciones": ["perro : águila", "animal : pluma", "leche : nido", "tigre : vuelo"],
-    "respuesta_correcta": "perro : águila"
-  },
-  {
-    "id": 71,
-    "tipo": "Ubicación",
-    "pregunta": "Paciente : ____ :: alumno : ____",
-    "opciones": ["hospital : escuela", "doctor : maestro", "sala : pupitre", "enfermedad : tarea"],
-    "respuesta_correcta": "hospital : escuela"
-  },
-  {
-    "id": 72,
-    "tipo": "Característica",
-    "pregunta": "Fuego : ____ :: miel : ____",
-    "opciones": ["calor : dulzura", "rojo : amarilla", "llama : abeja", "quema : pegajosa"],
-    "respuesta_correcta": "calor : dulzura"
-  },
-  {
-    "id": 73,
-    "tipo": "Producto",
-    "pregunta": "Herrero : ____ :: agricultor : ____",
-    "opciones": ["hierro : tierra", "reja : cosecha", "martillo : semilla", "metal : maíz"],
-    "respuesta_correcta": "reja : cosecha"
-  },
-  {
-    "id": 74,
-    "tipo": "Causa - Efecto",
-    "pregunta": "Estornudo : ____ :: fiebre : ____",
-    "opciones": ["resfriado : infección", "nariz : calor", "tos : dolor", "gripe : enfermedad"],
-    "respuesta_correcta": "resfriado : infección"
-  },
-  {
-    "id": 75,
-    "tipo": "Secuencialidad",
-    "pregunta": "Lunes : ____ :: enero : ____",
-    "opciones": ["martes : febrero", "domingo : marzo", "semana : año", "día : mes"],
-    "respuesta_correcta": "martes : febrero"
-  },
-  {
-    "id": 76,
-    "tipo": "Parte - Todo",
-    "pregunta": "Pétalo : ____ :: dedo : ____",
-    "opciones": ["rosa : mano", "jardín : brazo", "flor : pie", "hoja : cuerpo"],
-    "respuesta_correcta": "rosa : mano"
-  },
-  {
-    "id": 77,
-    "tipo": "Función",
-    "pregunta": "Ventilador : ____ :: horno : ____",
-    "opciones": ["aire : cocina", "enfriar : calentar", "aspas : fuego", "ruido : pan"],
-    "respuesta_correcta": "enfriar : calentar"
-  },
-  {
-    "id": 78,
-    "tipo": "Instrumento - Lo que mide",
-    "pregunta": "Regla : ____ :: vaso medidor : ____",
-    "opciones": ["línea : altura", "longitud : volumen", "ancho : cocina", "medida : agua"],
-    "respuesta_correcta": "longitud : volumen"
-  },
-  {
-    "id": 79,
-    "tipo": "Conjunto - Elemento",
-    "pregunta": "Rebaño : ____ :: biblioteca : ____",
-    "opciones": ["oveja : libro", "pastor : lector", "lana : página", "campo : estante"],
-    "respuesta_correcta": "oveja : libro"
-  },
-  {
-    "id": 80,
-    "tipo": "Oposición",
-    "pregunta": "Inicio : ____ :: victoria : ____",
-    "opciones": ["mitad : esfuerzo", "final : derrota", "arranque : premio", "primero : caída"],
-    "respuesta_correcta": "final : derrota"
-  },
-  {
-    "id": 81,
-    "tipo": "Sinonimia",
-    "pregunta": "Ruido : ____ :: bonito : ____",
-    "opciones": ["sonido : hermoso", "eco : feo", "música : lindo", "voz : elegante"],
-    "respuesta_correcta": "sonido : hermoso"
-  },
-  {
-    "id": 82,
-    "tipo": "Complementariedad",
-    "pregunta": "Zapato : ____ :: camisa : ____",
-    "opciones": ["pie : pantalón", "cordón : botón", "suela : manga", "ropa : armario"],
-    "respuesta_correcta": "cordón : botón"
-  },
-  {
-    "id": 83,
-    "tipo": "Cogenéricas",
-    "pregunta": "Banano : ____ :: tomate : ____",
-    "opciones": ["fruta : vegetal", "manzana : papa", "amarillo : rojo", "árbol : planta"],
-    "respuesta_correcta": "manzana : papa"
-  },
-  {
-    "id": 84,
-    "tipo": "Género - Especie",
-    "pregunta": "Mueble : ____ :: insecto : ____",
-    "opciones": ["mesa : abeja", "silla : mariposa", "madera : alas", "casa : jardín"],
-    "respuesta_correcta": "mesa : abeja"
-  },
-  {
-    "id": 85,
-    "tipo": "Especie - Género",
-    "pregunta": "Camisa : ____ :: guitarra : ____",
-    "opciones": ["ropa : instrumento", "tela : cuerda", "manga : música", "botón : sonido"],
-    "respuesta_correcta": "ropa : instrumento"
-  },
-  {
-    "id": 86,
-    "tipo": "Continente - Contenido",
-    "pregunta": "Carta : ____ :: agua : ____",
-    "opciones": ["sobre : botella", "papel : vaso", "correo : líquido", "escritura : jarra"],
-    "respuesta_correcta": "sobre : botella"
-  },
-  {
-    "id": 87,
-    "tipo": "Ubicación",
-    "pregunta": "Libro : ____ :: ropa : ____",
-    "opciones": ["biblioteca : armario", "página : cajón", "lectura : tela", "mesa : habitación"],
-    "respuesta_correcta": "biblioteca : armario"
-  },
-  {
-    "id": 88,
-    "tipo": "Causa - Efecto",
-    "pregunta": "Sol : ____ :: estudio : ____",
-    "opciones": ["sombra : diploma", "bronceado : aprendizaje", "calor : tarea", "día : nota"],
-    "respuesta_correcta": "bronceado : aprendizaje"
-  },
-  {
-    "id": 89,
-    "tipo": "Secuencialidad",
-    "pregunta": "Bebé : ____ :: primaria : ____",
-    "opciones": ["niño : secundaria", "juguete : universidad", "mamá : bachillerato", "cuna : clase"],
-    "respuesta_correcta": "niño : secundaria"
-  },
-  {
-    "id": 90,
-    "tipo": "Producto",
-    "pregunta": "Cocinero : ____ :: músico : ____",
-    "opciones": ["comida : canción", "chef : concierto", "sartén : guitarra", "receta : nota"],
-    "respuesta_correcta": "comida : canción"
-  },
-  {
-    "id": 91,
-    "tipo": "Instrumento - Usuario",
-    "pregunta": "Computadora : ____ :: raqueta : ____",
-    "opciones": ["programador : tenista", "tecla : red", "pantalla : pelota", "internet : cancha"],
-    "respuesta_correcta": "programador : tenista"
-  },
-  {
-    "id": 92,
-    "tipo": "Característica",
-    "pregunta": "Nube : ____ :: roca : ____",
-    "opciones": ["blanca : dura", "lluvia : montaña", "cielo : pesada", "vapor : gris"],
-    "respuesta_correcta": "blanca : dura"
-  },
-  {
-    "id": 93,
-    "tipo": "Parte - Todo",
-    "pregunta": "Aleta : ____ :: página : ____",
-    "opciones": ["pez : cuaderno", "agua : libro", "mar : texto", "nadar : escribir"],
-    "respuesta_correcta": "pez : cuaderno"
-  },
-  {
-    "id": 94,
-    "tipo": "Función",
-    "pregunta": "Reloj : ____ :: semáforo : ____",
-    "opciones": ["hora : calle", "medir : regular", "tiempo : tránsito", "minuto : color"],
-    "respuesta_correcta": "medir : regular"
-  },
-  {
-    "id": 95,
-    "tipo": "Conjunto - Elemento",
-    "pregunta": "Alfabeto : ____ :: ejército : ____",
-    "opciones": ["letra : soldado", "palabra : arma", "idioma : guerra", "frase : batalla"],
-    "respuesta_correcta": "letra : soldado"
-  },
-  {
-    "id": 96,
-    "tipo": "Oposición",
-    "pregunta": "Abierto : ____ :: cerca : ____",
-    "opciones": ["cerrado : lejos", "puerta : distancia", "ventana : muro", "paso : lejos"],
-    "respuesta_correcta": "cerrado : lejos"
-  },
-  {
-    "id": 97,
-    "tipo": "Sinonimia",
-    "pregunta": "Valiente : ____ :: delgado : ____",
-    "opciones": ["fuerte : fino", "intrépido : flaco", "héroe : débil", "atrevido : pequeño"],
-    "respuesta_correcta": "intrépido : flaco"
-  },
-  {
-    "id": 98,
-    "tipo": "Reciprocidad",
-    "pregunta": "Maestro : ____ :: abogado : ____",
-    "opciones": ["alumno : cliente", "escuela : juez", "clase : ley", "libro : caso"],
-    "respuesta_correcta": "alumno : cliente"
-  },
-  {
-    "id": 99,
-    "tipo": "Complementariedad",
-    "pregunta": "Teléfono : ____ :: lámpara : ____",
-    "opciones": ["cargador : foco", "pantalla : cable", "llamada : luz", "mano : mesa"],
-    "respuesta_correcta": "cargador : foco"
-  },
-  {
-    "id": 100,
-    "tipo": "Causa - Efecto",
-    "pregunta": "Práctica : ____ :: esfuerzo : ____",
-    "opciones": ["talento : trabajo", "mejora : logro", "disciplina : cansancio", "repetición : premio"],
-    "respuesta_correcta": "mejora : logro"
-  }
-]
+{
+  "facil": [
+    {
+      "pregunta": "Bisturí : ____ :: pincel : ____",
+      "opciones": ["cirujano : pintor", "hospital : cuadro", "operar : colorear", "metal : madera"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Perro : ____ :: gato : ____",
+      "opciones": ["animal : animal", "ladrar : maullar", "mascota : mascota", "cola : bigote"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "Libro : ____ :: cuchillo : ____",
+      "opciones": ["leer : cortar", "papel : metal", "autor : chef", "biblioteca : cocina"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Sol : ____ :: luna : ____",
+      "opciones": ["día : noche", "luz : sombra", "calor : frío", "estrella : satélite"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Avión : ____ :: barco : ____",
+      "opciones": ["aire : agua", "cielo : mar", "vuelo : navegar", "piloto : capitán"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Zapato : ____ :: guante : ____",
+      "opciones": ["pie : mano", "caminar : agarrar", "ropa : ropa", "suela : tela"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Llave : ____ :: martillo : ____",
+      "opciones": ["abrir : golpear", "puerta : clavo", "metal : hierro", "cerrar : romper"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Correr : ____ :: nadar : ____",
+      "opciones": ["rápido : lento", "tierra : agua", "piernas : brazos", "deporte : ejercicio"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "Maestro : ____ :: doctor : ____",
+      "opciones": ["escuela : hospital", "enseñar : curar", "alumno : paciente", "tiza : medicina"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "Pan : ____ :: leche : ____",
+      "opciones": ["comer : beber", "trigo : vaca", "horno : refrigerador", "desayuno : cena"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Ojo : ____ :: oído : ____",
+      "opciones": ["ver : oír", "luz : sonido", "visión : audición", "mirar : escuchar"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Tijera : ____ :: aguja : ____",
+      "opciones": ["cortar : coser", "papel : tela", "metal : hilo", "herramienta : instrumento"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Pez : ____ :: pájaro : ____",
+      "opciones": ["agua : aire", "nadar : volar", "mar : cielo", "aleta : ala"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Cuchara : ____ :: tenedor : ____",
+      "opciones": ["sopa : carne", "comer : pinchar", "metal : acero", "plato : mesa"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "Lápiz : ____ :: borrador : ____",
+      "opciones": ["escribir : borrar", "grafito : goma", "papel : error", "mano : hoja"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Profesor : ____ :: juez : ____",
+      "opciones": ["enseñar : juzgar", "escuela : tribunal", "alumno : acusado", "tarea : sentencia"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Motor : ____ :: corazón : ____",
+      "opciones": ["máquina : cuerpo", "energía : vida", "funcionar : latir", "impulsar : bombear"],
+      "correcta": 3
+    },
+    {
+      "pregunta": "Semilla : ____ :: idea : ____",
+      "opciones": ["planta : proyecto", "tierra : mente", "crecer : pensar", "vida : acción"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Autor : ____ :: pintor : ____",
+      "opciones": ["libro : cuadro", "escribir : pintar", "letra : color", "idea : imagen"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Sed : ____ :: hambre : ____",
+      "opciones": ["agua : comida", "beber : comer", "líquido : sólido", "vaso : plato"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Raíz : ____ :: cimiento : ____",
+      "opciones": ["árbol : edificio", "planta : casa", "tierra : cemento", "agua : base"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Vacuna : ____ :: medicina : ____",
+      "opciones": ["prevenir : curar", "inyección : pastilla", "hospital : farmacia", "salud : enfermedad"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Teclado : ____ :: volante : ____",
+      "opciones": ["computadora : carro", "escribir : manejar", "teclas : ruedas", "mano : camino"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "Escoba : ____ :: trapeador : ____",
+      "opciones": ["barrer : limpiar", "suelo : agua", "casa : piso", "limpieza : aseo"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Dentista : ____ :: panadero : ____",
+      "opciones": ["dientes : pan", "consultorio : horno", "curar : hornear", "paciente : cliente"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "Llanta : ____ :: zapato : ____",
+      "opciones": ["carro : pie", "rodar : caminar", "hule : cuero", "suelo : calle"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Nido : ____ :: cueva : ____",
+      "opciones": ["pájaro : oso", "árbol : montaña", "hogar : refugio", "ramas : roca"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Cuaderno : ____ :: vaso : ____",
+      "opciones": ["escribir : beber", "papel : vidrio", "escuela : cocina", "hoja : agua"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Pluma : ____ :: pincel : ____",
+      "opciones": ["escribir : pintar", "tinta : color", "mano : lienzo", "papel : cuadro"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Reloj : ____ :: termómetro : ____",
+      "opciones": ["hora : temperatura", "medir : medir", "tiempo : calor", "pared : cuerpo"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Camisa : ____ :: anillo : ____",
+      "opciones": ["ropa : joya", "vestir : adornar", "algodón : oro", "botón : dedo"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Papel : ____ :: madera : ____",
+      "opciones": ["cuaderno : mesa", "escribir : construir", "árbol : bosque", "libro : silla"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Helado : ____ :: sopa : ____",
+      "opciones": ["frío : caliente", "dulce : salado", "postre : comida", "cono : plato"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Pez : ____ :: caballo : ____",
+      "opciones": ["aleta : pata", "agua : tierra", "nadar : correr", "mar : campo"],
+      "correcta": 2
+    }
+  ],
+  "media": [
+    {
+      "pregunta": "Brújula : ____ :: mapa : ____",
+      "opciones": ["orientar : ubicar", "norte : ruta", "explorador : viajero", "dirección : lugar"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Teoría : ____ :: experimento : ____",
+      "opciones": ["explicación : comprobación", "idea : práctica", "ciencia : laboratorio", "pensar : hacer"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Lluvia : ____ :: sequía : ____",
+      "opciones": ["agua : falta", "abundancia : escasez", "nube : calor", "clima : tierra"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "Silencio : ____ :: ruido : ____",
+      "opciones": ["ausencia : presencia", "paz : caos", "callar : gritar", "tranquilidad : sonido"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Alfabeto : ____ :: números : ____",
+      "opciones": ["letras : cifras", "idioma : matemática", "palabra : cálculo", "lenguaje : cantidad"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Huevo : ____ :: semilla : ____",
+      "opciones": ["animal : planta", "vida : crecimiento", "cáscara : tierra", "pollito : árbol"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Médico : ____ :: mecánico : ____",
+      "opciones": ["hospital : taller", "curar : reparar", "paciente : carro", "salud : máquina"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "Río : ____ :: vena : ____",
+      "opciones": ["agua : sangre", "corriente : circulación", "caudal : pulso", "mar : corazón"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Biblioteca : ____ :: farmacia : ____",
+      "opciones": ["libros : medicinas", "leer : curar", "silencio : salud", "estudio : alivio"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Candado : ____ :: paraguas : ____",
+      "opciones": ["cerrar : cubrir", "llave : lluvia", "metal : tela", "proteger : mojar"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Tronco : ____ :: columna : ____",
+      "opciones": ["árbol : cuerpo", "madera : hueso", "base : soporte", "raíz : espalda"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Párrafo : ____ :: capítulo : ____",
+      "opciones": ["texto : libro", "oración : novela", "lectura : historia", "frase : cuento"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Ancla : ____ :: freno : ____",
+      "opciones": ["detener : detener", "barco : carro", "mar : camino", "peso : velocidad"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Microscopio : ____ :: telescopio : ____",
+      "opciones": ["pequeño : lejano", "ver : observar", "laboratorio : cielo", "ciencia : astronomía"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Miel : ____ :: veneno : ____",
+      "opciones": ["abeja : serpiente", "dulzura : daño", "flor : colmillo", "alimento : peligro"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "Aplauso : ____ :: silbido : ____",
+      "opciones": ["aprobación : desaprobación", "manos : boca", "teatro : estadio", "felicidad : molestia"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Puente : ____ :: túnel : ____",
+      "opciones": ["encima : debajo", "río : montaña", "paso : paso", "camino : carretera"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Brote : ____ :: chispa : ____",
+      "opciones": ["planta : fuego", "crecimiento : incendio", "semilla : fósforo", "verde : calor"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Pestaña : ____ :: cortina : ____",
+      "opciones": ["ojo : ventana", "proteger : cubrir", "cara : casa", "cabello : tela"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Juramento : ____ :: promesa : ____",
+      "opciones": ["formal : informal", "ley : amistad", "cumplir : decir", "verdad : palabra"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Escenario : ____ :: cancha : ____",
+      "opciones": ["actor : deportista", "teatro : juego", "luces : balón", "público : árbitro"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Borrador : ____ :: ensayo : ____",
+      "opciones": ["corregir : perfeccionar", "error : versión", "papel : presentación", "escribir : entregar"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "Mango : ____ :: hoja : ____",
+      "opciones": ["cuchillo : árbol", "sujetar : cortar", "fruta : papel", "metal : rama"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Huella : ____ :: eco : ____",
+      "opciones": ["rastro : sonido", "pie : voz", "camino : montaña", "marca : repetición"],
+      "correcta": 3
+    },
+    {
+      "pregunta": "Techo : ____ :: paraguas : ____",
+      "opciones": ["casa : persona", "cubrir : proteger", "lluvia : tormenta", "arriba : mano"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Espejo : ____ :: retrato : ____",
+      "opciones": ["reflejo : representación", "cara : pintura", "verse : dibujar", "cristal : lienzo"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Prólogo : ____ :: epílogo : ____",
+      "opciones": ["inicio : final", "libro : historia", "autor : lector", "introducción : conclusión"],
+      "correcta": 3
+    },
+    {
+      "pregunta": "Mordida : ____ :: picadura : ____",
+      "opciones": ["diente : aguijón", "animal : insecto", "dolor : hinchazón", "ataque : defensa"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Escudo : ____ :: filtro : ____",
+      "opciones": ["defender : purificar", "guerra : agua", "metal : papel", "proteger : separar"],
+      "correcta": 3
+    },
+    {
+      "pregunta": "Cosecha : ____ :: pesca : ____",
+      "opciones": ["campo : mar", "agricultor : pescador", "recolectar : capturar", "fruto : pez"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "Tinta : ____ :: sangre : ____",
+      "opciones": ["escribir : vivir", "pluma : cuerpo", "mancha : herida", "líquido : líquido"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Escalera : ____ :: ascensor : ____",
+      "opciones": ["subir : elevar", "peldaños : botones", "edificio : torre", "caminar : motor"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Rugido : ____ :: susurro : ____",
+      "opciones": ["fuerza : suavidad", "león : boca", "ruido : silencio", "gritar : hablar"],
+      "correcta": 0
+    }
+  ],
+  "dificil": [
+    {
+      "pregunta": "Prisión : ____ :: jaula : ____",
+      "opciones": ["preso : ave", "encierro : cautiverio", "guardia : barrotes", "castigo : animal"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Brasa : ____ :: ceniza : ____",
+      "opciones": ["calor : residuo", "fuego : polvo", "arder : terminar", "rojo : gris"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Borrasca : ____ :: brisa : ____",
+      "opciones": ["intensidad : suavidad", "viento : aire", "tormenta : calma", "fuerza : descanso"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Esqueleto : ____ :: andamio : ____",
+      "opciones": ["cuerpo : edificio", "hueso : metal", "soporte : construcción", "interno : externo"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Orquesta : ____ :: constelación : ____",
+      "opciones": ["músicos : estrellas", "director : cielo", "armonía : espacio", "sonido : luz"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Tesis : ____ :: sentencia : ____",
+      "opciones": ["defensa : fallo", "universidad : tribunal", "argumento : decisión", "estudio : justicia"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "Relámpago : ____ :: trueno : ____",
+      "opciones": ["luz : sonido", "cielo : tormenta", "rápido : fuerte", "electricidad : eco"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Boceto : ____ :: maqueta : ____",
+      "opciones": ["dibujo : modelo", "idea : proyecto", "papel : cartón", "diseño : construcción"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Veredicto : ____ :: diagnóstico : ____",
+      "opciones": ["juez : médico", "culpabilidad : enfermedad", "decisión : conclusión", "tribunal : hospital"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "Naufragio : ____ :: incendio : ____",
+      "opciones": ["barco : edificio", "agua : fuego", "hundimiento : destrucción", "mar : ciudad"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "Péndulo : ____ :: brújula : ____",
+      "opciones": ["oscilación : orientación", "reloj : norte", "movimiento : dirección", "tiempo : viaje"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Semáforo : ____ :: campana : ____",
+      "opciones": ["regular : avisar", "calle : iglesia", "luz : sonido", "alto : llamada"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Murmullo : ____ :: estruendo : ____",
+      "opciones": ["bajo : alto", "suavidad : intensidad", "voz : explosión", "silencio : ruido"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "Arado : ____ :: bisturí : ____",
+      "opciones": ["tierra : piel", "campo : cirugía", "agricultor : médico", "abrir : cortar"],
+      "correcta": 3
+    },
+    {
+      "pregunta": "Prólogo : ____ :: índice : ____",
+      "opciones": ["introducir : organizar", "libro : capítulos", "inicio : orden", "texto : páginas"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Lágrima : ____ :: sudor : ____",
+      "opciones": ["tristeza : esfuerzo", "ojo : piel", "llanto : calor", "dolor : trabajo"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Bóveda : ____ :: sótano : ____",
+      "opciones": ["arriba : abajo", "techo : piso", "edificio : casa", "altura : profundidad"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Silueta : ____ :: resumen : ____",
+      "opciones": ["contorno : síntesis", "figura : texto", "imagen : idea", "forma : contenido"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Rayo : ____ :: bisturí : ____",
+      "opciones": ["cortar : incidir", "electricidad : cirugía", "cielo : cuerpo", "precisión : rapidez"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Perecedero : ____ :: eterno : ____",
+      "opciones": ["temporal : permanente", "frágil : inmortal", "finito : infinito", "mortal : divino"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "Clausura : ____ :: inauguración : ____",
+      "opciones": ["cierre : apertura", "final : inicio", "despedida : bienvenida", "evento : ceremonia"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Páramo : ____ :: oasis : ____",
+      "opciones": ["aridez : alivio", "desierto : agua", "soledad : vida", "sequedad : vegetación"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Anécdota : ____ :: biografía : ____",
+      "opciones": ["episodio : vida", "cuento : persona", "memoria : historia", "relato : autor"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Crisálida : ____ :: embrión : ____",
+      "opciones": ["transformación : desarrollo", "mariposa : humano", "capullo : vientre", "insecto : bebé"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Sombra : ____ :: eco : ____",
+      "opciones": ["luz : sonido", "reflejo : repetición", "oscuridad : ruido", "figura : voz"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "Retina : ____ :: tímpano : ____",
+      "opciones": ["ojo : oído", "visión : audición", "luz : vibración", "percibir : escuchar"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Juez : ____ :: árbitro : ____",
+      "opciones": ["ley : reglamento", "tribunal : cancha", "sentencia : partido", "justicia : juego"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Relojero : ____ :: sastre : ____",
+      "opciones": ["reparar : coser", "reloj : traje", "precisión : medida", "taller : tela"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "Grieta : ____ :: cicatriz : ____",
+      "opciones": ["pared : piel", "ruptura : curación", "fractura : herida", "marca : señal"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Brújula : ____ :: conciencia : ____",
+      "opciones": ["orienta : guía", "norte : moral", "viajero : persona", "camino : decisión"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Plegaria : ____ :: decreto : ____",
+      "opciones": ["súplica : mandato", "iglesia : gobierno", "fe : autoridad", "pedir : ordenar"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Germen : ____ :: rumor : ____",
+      "opciones": ["origen : difusión", "microbio : noticia", "enfermedad : chisme", "inicio : expansión"],
+      "correcta": 3
+    },
+    {
+      "pregunta": "Umbral : ____ :: frontera : ____",
+      "opciones": ["entrada : límite", "puerta : país", "paso : división", "casa : territorio"],
+      "correcta": 0
+    }
+  ]
+}

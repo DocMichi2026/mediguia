@@ -1,917 +1,508 @@
-[
-  {
-    "id": 1,
-    "tema": "Niveles de organización",
-    "pregunta": "¿Cuál es el nivel de organización biológica más pequeño con propiedades de vida?",
-    "opciones": ["Átomo", "Molécula", "Célula", "Tejido"],
-    "respuesta_correcta": "Célula"
-  },
-  {
-    "id": 2,
-    "tema": "Niveles de organización",
-    "pregunta": "¿Qué nivel de organización incluye varias poblaciones de diferentes especies en una misma área?",
-    "opciones": ["Comunidad", "Organismo", "Ecosistema", "Biosfera"],
-    "respuesta_correcta": "Comunidad"
-  },
-  {
-    "id": 3,
-    "tema": "Niveles de organización",
-    "pregunta": "¿Qué nivel de organización resulta de la unión de órganos que trabajan coordinadamente?",
-    "opciones": ["Tejido", "Sistema", "Población", "Organelo"],
-    "respuesta_correcta": "Sistema"
-  },
-  {
-    "id": 4,
-    "tema": "Niveles de organización",
-    "pregunta": "¿Cuál de las siguientes secuencias está ordenada de menor a mayor nivel de organización?",
-    "opciones": [
-      "Tejido - célula - órgano - sistema",
-      "Célula - tejido - órgano - sistema",
-      "Órgano - tejido - célula - organismo",
-      "Molécula - átomo - célula - tejido"
-    ],
-    "respuesta_correcta": "Célula - tejido - órgano - sistema"
-  },
-  {
-    "id": 5,
-    "tema": "Niveles de organización",
-    "pregunta": "¿Qué nivel incluye a todos los ecosistemas del planeta?",
-    "opciones": ["Comunidad", "Biosfera", "Población", "Bioma"],
-    "respuesta_correcta": "Biosfera"
-  },
-  {
-    "id": 6,
-    "tema": "Características de los seres vivos",
-    "pregunta": "¿Cuál es una característica fundamental de los seres vivos?",
-    "opciones": ["Carecen de organización", "Mantienen homeostasis", "No responden al ambiente", "No usan energía"],
-    "respuesta_correcta": "Mantienen homeostasis"
-  },
-  {
-    "id": 7,
-    "tema": "Características de los seres vivos",
-    "pregunta": "La capacidad de mantener condiciones internas relativamente estables se llama:",
-    "opciones": ["Metabolismo", "Homeostasis", "Evolución", "Irritabilidad"],
-    "respuesta_correcta": "Homeostasis"
-  },
-  {
-    "id": 8,
-    "tema": "Características de los seres vivos",
-    "pregunta": "¿Cuál de los siguientes ejemplos representa homeostasis?",
-    "opciones": [
-      "La evaporación del agua",
-      "La regulación de la temperatura corporal",
-      "La oxidación del hierro",
-      "La formación de nubes"
-    ],
-    "respuesta_correcta": "La regulación de la temperatura corporal"
-  },
-  {
-    "id": 9,
-    "tema": "Características de los seres vivos",
-    "pregunta": "¿Cuál de los siguientes NO es un ser vivo?",
-    "opciones": ["Bacteria", "Hongo", "Cristal", "Protozoo"],
-    "respuesta_correcta": "Cristal"
-  },
-  {
-    "id": 10,
-    "tema": "Características de los seres vivos",
-    "pregunta": "¿Cuál propiedad diferencia mejor a un ser vivo de la materia inanimada?",
-    "opciones": ["Tiene masa", "Ocupa espacio", "Realiza metabolismo", "Puede moverse por fuerzas externas"],
-    "respuesta_correcta": "Realiza metabolismo"
-  },
-  {
-    "id": 11,
-    "tema": "Bioelementos",
-    "pregunta": "¿Cuál bioelemento es esencial porque forma la base estructural de las moléculas orgánicas?",
-    "opciones": ["Sodio", "Carbono", "Calcio", "Hierro"],
-    "respuesta_correcta": "Carbono"
-  },
-  {
-    "id": 12,
-    "tema": "Bioelementos",
-    "pregunta": "¿Qué bioelemento es fundamental en aminoácidos y ácidos nucleicos?",
-    "opciones": ["Nitrógeno", "Magnesio", "Cloro", "Potasio"],
-    "respuesta_correcta": "Nitrógeno"
-  },
-  {
-    "id": 13,
-    "tema": "Agua",
-    "pregunta": "¿Cuál propiedad del agua permite amortiguar cambios bruscos de temperatura?",
-    "opciones": ["Alta tensión superficial", "Alto calor específico", "Baja densidad", "Baja cohesión"],
-    "respuesta_correcta": "Alto calor específico"
-  },
-  {
-    "id": 14,
-    "tema": "Agua",
-    "pregunta": "El agua es una molécula:",
-    "opciones": ["Apolar", "Polar", "Iónica", "Neutra en estructura"],
-    "respuesta_correcta": "Polar"
-  },
-  {
-    "id": 15,
-    "tema": "Agua",
-    "pregunta": "¿Cuál es la importancia biológica principal del agua?",
-    "opciones": [
-      "Funciona solo como reserva energética",
-      "Es un excelente solvente para reacciones biológicas",
-      "Forma enlaces iónicos permanentes",
-      "No participa en reacciones metabólicas"
-    ],
-    "respuesta_correcta": "Es un excelente solvente para reacciones biológicas"
-  },
-  {
-    "id": 16,
-    "tema": "Agua",
-    "pregunta": "La cohesión entre moléculas de agua se debe principalmente a:",
-    "opciones": ["Puentes de hidrógeno", "Enlaces iónicos", "Fuerzas nucleares", "Enlaces peptídicos"],
-    "respuesta_correcta": "Puentes de hidrógeno"
-  },
-  {
-    "id": 17,
-    "tema": "Carbohidratos",
-    "pregunta": "¿Cuál es la función principal de los carbohidratos en los seres vivos?",
-    "opciones": [
-      "Almacenar información genética",
-      "Servir como fuente inmediata de energía",
-      "Formar membranas exclusivamente",
-      "Transportar oxígeno"
-    ],
-    "respuesta_correcta": "Servir como fuente inmediata de energía"
-  },
-  {
-    "id": 18,
-    "tema": "Carbohidratos",
-    "pregunta": "¿Cuál de los siguientes es un monosacárido?",
-    "opciones": ["Almidón", "Glucosa", "Glucógeno", "Celulosa"],
-    "respuesta_correcta": "Glucosa"
-  },
-  {
-    "id": 19,
-    "tema": "Carbohidratos",
-    "pregunta": "¿Qué polisacárido funciona como reserva energética en animales?",
-    "opciones": ["Celulosa", "Quitina", "Glucógeno", "Sacarosa"],
-    "respuesta_correcta": "Glucógeno"
-  },
-  {
-    "id": 20,
-    "tema": "Carbohidratos",
-    "pregunta": "¿Cuál polisacárido es estructural en la pared celular vegetal?",
-    "opciones": ["Glucógeno", "Almidón", "Celulosa", "Maltosa"],
-    "respuesta_correcta": "Celulosa"
-  },
-  {
-    "id": 21,
-    "tema": "Lípidos",
-    "pregunta": "¿Cuál es una función importante de los lípidos?",
-    "opciones": [
-      "Catalizar todas las reacciones",
-      "Reserva energética de largo plazo",
-      "Formar ribosomas",
-      "Codificar proteínas"
-    ],
-    "respuesta_correcta": "Reserva energética de largo plazo"
-  },
-  {
-    "id": 22,
-    "tema": "Lípidos",
-    "pregunta": "Los fosfolípidos son importantes porque:",
-    "opciones": [
-      "Forman la membrana celular",
-      "Almacenan información genética",
-      "Son enzimas digestivas",
-      "Transportan impulsos nerviosos"
-    ],
-    "respuesta_correcta": "Forman la membrana celular"
-  },
-  {
-    "id": 23,
-    "tema": "Lípidos",
-    "pregunta": "¿Qué característica distingue a muchos lípidos?",
-    "opciones": [
-      "Son solubles en agua",
-      "Son hidrofóbicos",
-      "Están formados por nucleótidos",
-      "Siempre contienen nitrógeno"
-    ],
-    "respuesta_correcta": "Son hidrofóbicos"
-  },
-  {
-    "id": 24,
-    "tema": "Lípidos",
-    "pregunta": "El colesterol es un ejemplo de:",
-    "opciones": ["Carbohidrato", "Ácido nucleico", "Lípido", "Proteína"],
-    "respuesta_correcta": "Lípido"
-  },
-  {
-    "id": 25,
-    "tema": "Proteínas",
-    "pregunta": "Las proteínas están formadas por unidades llamadas:",
-    "opciones": ["Monosacáridos", "Ácidos grasos", "Aminoácidos", "Nucleótidos"],
-    "respuesta_correcta": "Aminoácidos"
-  },
-  {
-    "id": 26,
-    "tema": "Proteínas",
-    "pregunta": "¿Cuál de las siguientes es una función de las proteínas?",
-    "opciones": [
-      "Almacenar la información hereditaria principal",
-      "Actuar como enzimas",
-      "Formar glucosa",
-      "Constituir ATP"
-    ],
-    "respuesta_correcta": "Actuar como enzimas"
-  },
-  {
-    "id": 27,
-    "tema": "Proteínas",
-    "pregunta": "El enlace que une aminoácidos en una proteína se llama:",
-    "opciones": ["Glucosídico", "Peptídico", "Fosfodiéster", "Puente salino"],
-    "respuesta_correcta": "Peptídico"
-  },
-  {
-    "id": 28,
-    "tema": "Proteínas",
-    "pregunta": "¿Cuál proteína cumple función de transporte de oxígeno en humanos?",
-    "opciones": ["Insulina", "Colágeno", "Hemoglobina", "Actina"],
-    "respuesta_correcta": "Hemoglobina"
-  },
-  {
-    "id": 29,
-    "tema": "Ácidos nucleicos",
-    "pregunta": "¿Cuál es la unidad básica de los ácidos nucleicos?",
-    "opciones": ["Aminoácido", "Monosacárido", "Nucleótido", "Ácido graso"],
-    "respuesta_correcta": "Nucleótido"
-  },
-  {
-    "id": 30,
-    "tema": "Ácidos nucleicos",
-    "pregunta": "¿Cuál de los siguientes componentes forma parte de un nucleótido?",
-    "opciones": [
-      "Ácido graso, aminoácido y base",
-      "Fosfato, pentosa y base nitrogenada",
-      "Glucosa, fosfolípido y base",
-      "Ribosa, glicerol y fosfato"
-    ],
-    "respuesta_correcta": "Fosfato, pentosa y base nitrogenada"
-  },
-  {
-    "id": 31,
-    "tema": "Teoría celular",
-    "pregunta": "La teoría celular establece que todos los seres vivos están formados por:",
-    "opciones": ["Tejidos", "Células", "Átomos", "Órganos"],
-    "respuesta_correcta": "Células"
-  },
-  {
-    "id": 32,
-    "tema": "Teoría celular",
-    "pregunta": "¿Cuál enunciado pertenece a la teoría celular?",
-    "opciones": [
-      "Las células surgen por generación espontánea",
-      "Toda célula proviene de otra célula preexistente",
-      "Los organismos no tienen estructura básica común",
-      "La célula solo existe en animales"
-    ],
-    "respuesta_correcta": "Toda célula proviene de otra célula preexistente"
-  },
-  {
-    "id": 33,
-    "tema": "Célula",
-    "pregunta": "¿Cuál es la principal diferencia entre una célula procariota y una eucariota?",
-    "opciones": [
-      "La procariota no tiene material genético",
-      "La eucariota no posee membrana",
-      "La procariota no tiene núcleo definido",
-      "La eucariota carece de citoplasma"
-    ],
-    "respuesta_correcta": "La procariota no tiene núcleo definido"
-  },
-  {
-    "id": 34,
-    "tema": "Célula",
-    "pregunta": "¿En cuál tipo de célula se encuentran organelos membranosos?",
-    "opciones": ["Procariota", "Eucariota", "Bacteriana únicamente", "Ninguna"],
-    "respuesta_correcta": "Eucariota"
-  },
-  {
-    "id": 35,
-    "tema": "Membrana celular",
-    "pregunta": "La membrana plasmática está compuesta principalmente por:",
-    "opciones": [
-      "Una bicapa de fosfolípidos",
-      "Celulosa y proteínas",
-      "ADN y ARN",
-      "Triglicéridos puros"
-    ],
-    "respuesta_correcta": "Una bicapa de fosfolípidos"
-  },
-  {
-    "id": 36,
-    "tema": "Membrana celular",
-    "pregunta": "La función principal de la membrana celular es:",
-    "opciones": [
-      "Sintetizar proteínas",
-      "Controlar el paso de sustancias",
-      "Producir ATP",
-      "Almacenar calcio"
-    ],
-    "respuesta_correcta": "Controlar el paso de sustancias"
-  },
-  {
-    "id": 37,
-    "tema": "Transporte celular",
-    "pregunta": "¿Qué tipo de transporte no requiere gasto directo de energía?",
-    "opciones": ["Difusión simple", "Transporte activo", "Endocitosis", "Exocitosis"],
-    "respuesta_correcta": "Difusión simple"
-  },
-  {
-    "id": 38,
-    "tema": "Transporte celular",
-    "pregunta": "El movimiento de agua a través de una membrana semipermeable se llama:",
-    "opciones": ["Difusión facilitada", "Osmosis", "Exocitosis", "Fagocitosis"],
-    "respuesta_correcta": "Osmosis"
-  },
-  {
-    "id": 39,
-    "tema": "Transporte celular",
-    "pregunta": "¿Cuál transporte usa proteínas de membrana pero no ATP cuando va a favor del gradiente?",
-    "opciones": ["Difusión facilitada", "Transporte activo", "Pinocitosis", "Exocitosis"],
-    "respuesta_correcta": "Difusión facilitada"
-  },
-  {
-    "id": 40,
-    "tema": "Transporte celular",
-    "pregunta": "El paso de sustancias de baja concentración a alta concentración requiere generalmente:",
-    "opciones": ["Osmosis", "Difusión simple", "Transporte activo", "Difusión pasiva"],
-    "respuesta_correcta": "Transporte activo"
-  },
-  {
-    "id": 41,
-    "tema": "Transporte celular",
-    "pregunta": "La incorporación de partículas grandes hacia el interior celular se llama:",
-    "opciones": ["Exocitosis", "Endocitosis", "Difusión", "Ósmosis"],
-    "respuesta_correcta": "Endocitosis"
-  },
-  {
-    "id": 42,
-    "tema": "Transporte celular",
-    "pregunta": "La liberación de sustancias al exterior de la célula mediante vesículas se llama:",
-    "opciones": ["Fagocitosis", "Endocitosis", "Exocitosis", "Difusión facilitada"],
-    "respuesta_correcta": "Exocitosis"
-  },
-  {
-    "id": 43,
-    "tema": "Organelos celulares",
-    "pregunta": "¿Qué organelo contiene la mayor parte del ADN en células eucariotas?",
-    "opciones": ["Mitocondria", "Núcleo", "Lisosoma", "Golgi"],
-    "respuesta_correcta": "Núcleo"
-  },
-  {
-    "id": 44,
-    "tema": "Organelos celulares",
-    "pregunta": "¿Cuál es la función principal del nucléolo?",
-    "opciones": [
-      "Síntesis de ATP",
-      "Ensamblaje de ribosomas",
-      "Digestión intracelular",
-      "Formación de lípidos"
-    ],
-    "respuesta_correcta": "Ensamblaje de ribosomas"
-  },
-  {
-    "id": 45,
-    "tema": "Organelos celulares",
-    "pregunta": "¿Qué organelo es conocido como la central energética de la célula?",
-    "opciones": ["Lisosoma", "Mitocondria", "Ribosoma", "Retículo rugoso"],
-    "respuesta_correcta": "Mitocondria"
-  },
-  {
-    "id": 46,
-    "tema": "Organelos celulares",
-    "pregunta": "El retículo endoplásmico rugoso participa principalmente en:",
-    "opciones": [
-      "Síntesis de proteínas",
-      "Digestión de macromoléculas",
-      "Respiración celular",
-      "Síntesis de ADN"
-    ],
-    "respuesta_correcta": "Síntesis de proteínas"
-  },
-  {
-    "id": 47,
-    "tema": "Organelos celulares",
-    "pregunta": "El retículo endoplásmico liso participa principalmente en:",
-    "opciones": [
-      "Síntesis de lípidos",
-      "Formación de ribosomas",
-      "Empaque de ADN",
-      "Degradación de glucosa"
-    ],
-    "respuesta_correcta": "Síntesis de lípidos"
-  },
-  {
-    "id": 48,
-    "tema": "Organelos celulares",
-    "pregunta": "¿Qué organelo modifica, empaqueta y distribuye proteínas?",
-    "opciones": ["Núcleo", "Complejo de Golgi", "Mitocondria", "Citoesqueleto"],
-    "respuesta_correcta": "Complejo de Golgi"
-  },
-  {
-    "id": 49,
-    "tema": "Organelos celulares",
-    "pregunta": "Los lisosomas contienen enzimas encargadas de:",
-    "opciones": [
-      "La fotosíntesis",
-      "La digestión intracelular",
-      "La síntesis de glucosa",
-      "La replicación del ADN"
-    ],
-    "respuesta_correcta": "La digestión intracelular"
-  },
-  {
-    "id": 50,
-    "tema": "Organelos celulares",
-    "pregunta": "El citoesqueleto ayuda principalmente a:",
-    "opciones": [
-      "Almacenar genes",
-      "Dar soporte y permitir movimiento celular",
-      "Fabricar ATP",
-      "Producir ARN mensajero"
-    ],
-    "respuesta_correcta": "Dar soporte y permitir movimiento celular"
-  },
-  {
-    "id": 51,
-    "tema": "Energía",
-    "pregunta": "En biología, la energía se define como la capacidad de:",
-    "opciones": ["Cambiar genes", "Realizar trabajo", "Formar membranas", "Duplicar cromosomas"],
-    "respuesta_correcta": "Realizar trabajo"
-  },
-  {
-    "id": 52,
-    "tema": "Termodinámica",
-    "pregunta": "La primera ley de la termodinámica indica que la energía:",
-    "opciones": [
-      "Se destruye en cada reacción",
-      "No se crea ni se destruye, solo se transforma",
-      "Solo existe en células vivas",
-      "Aumenta espontáneamente"
-    ],
-    "respuesta_correcta": "No se crea ni se destruye, solo se transforma"
-  },
-  {
-    "id": 53,
-    "tema": "Termodinámica",
-    "pregunta": "La segunda ley de la termodinámica se relaciona con el aumento de:",
-    "opciones": ["Masa", "Entropía", "Glucosa", "Presión osmótica"],
-    "respuesta_correcta": "Entropía"
-  },
-  {
-    "id": 54,
-    "tema": "ATP",
-    "pregunta": "La principal molécula portadora de energía utilizable por la célula es:",
-    "opciones": ["ADN", "ATP", "ARN", "Glucógeno"],
-    "respuesta_correcta": "ATP"
-  },
-  {
-    "id": 55,
-    "tema": "ATP",
-    "pregunta": "ATP significa:",
-    "opciones": [
-      "Ácido trifosfórico total",
-      "Adenosín trifosfato",
-      "Adenina trifosfatada",
-      "Ácido tricarboxílico primario"
-    ],
-    "respuesta_correcta": "Adenosín trifosfato"
-  },
-  {
-    "id": 56,
-    "tema": "Enzimas",
-    "pregunta": "Las enzimas aceleran reacciones químicas porque:",
-    "opciones": [
-      "Aumentan la energía de activación",
-      "Disminuyen la energía de activación",
-      "Se consumen por completo",
-      "Cambian el producto final"
-    ],
-    "respuesta_correcta": "Disminuyen la energía de activación"
-  },
-  {
-    "id": 57,
-    "tema": "Enzimas",
-    "pregunta": "Las enzimas son generalmente:",
-    "opciones": ["Lípidos", "Ácidos nucleicos", "Proteínas", "Vitaminas"],
-    "respuesta_correcta": "Proteínas"
-  },
-  {
-    "id": 58,
-    "tema": "Metabolismo",
-    "pregunta": "El anabolismo consiste en:",
-    "opciones": [
-      "Degradar moléculas y liberar energía",
-      "Sintetizar moléculas complejas",
-      "Eliminar desechos por exocitosis",
-      "Transportar agua por ósmosis"
-    ],
-    "respuesta_correcta": "Sintetizar moléculas complejas"
-  },
-  {
-    "id": 59,
-    "tema": "Metabolismo",
-    "pregunta": "El catabolismo se caracteriza por:",
-    "opciones": [
-      "Construcción de biomoléculas",
-      "Consumo exclusivo de ATP sin liberación",
-      "Degradación de sustancias y liberación de energía",
-      "Replicación del ADN"
-    ],
-    "respuesta_correcta": "Degradación de sustancias y liberación de energía"
-  },
-  {
-    "id": 60,
-    "tema": "Respiración celular",
-    "pregunta": "La respiración celular aeróbica requiere:",
-    "opciones": ["Luz solar", "Oxígeno", "Clorofila", "Nitrógeno"],
-    "respuesta_correcta": "Oxígeno"
-  },
-  {
-    "id": 61,
-    "tema": "Respiración celular",
-    "pregunta": "La glucólisis ocurre en:",
-    "opciones": ["Núcleo", "Citoplasma", "Mitocondria interna", "Lisosoma"],
-    "respuesta_correcta": "Citoplasma"
-  },
-  {
-    "id": 62,
-    "tema": "Respiración celular",
-    "pregunta": "El ciclo de Krebs se lleva a cabo en:",
-    "opciones": ["Citoplasma", "Membrana plasmática", "Matriz mitocondrial", "Núcleo"],
-    "respuesta_correcta": "Matriz mitocondrial"
-  },
-  {
-    "id": 63,
-    "tema": "Respiración celular",
-    "pregunta": "La cadena de transporte de electrones ocurre principalmente en:",
-    "opciones": [
-      "La membrana interna mitocondrial",
-      "El nucléolo",
-      "El citoplasma",
-      "El aparato de Golgi"
-    ],
-    "respuesta_correcta": "La membrana interna mitocondrial"
-  },
-  {
-    "id": 64,
-    "tema": "Respiración celular",
-    "pregunta": "¿Cuál proceso produce ATP sin requerir oxígeno en condiciones anaeróbicas?",
-    "opciones": ["Fermentación", "Ciclo de Krebs", "Cadena respiratoria", "Transcripción"],
-    "respuesta_correcta": "Fermentación"
-  },
-  {
-    "id": 65,
-    "tema": "Respiración celular",
-    "pregunta": "La principal función de la glucólisis es:",
-    "opciones": [
-      "Dividir glucosa y obtener energía inicial",
-      "Formar ADN",
-      "Degradar proteínas",
-      "Sintetizar fosfolípidos"
-    ],
-    "respuesta_correcta": "Dividir glucosa y obtener energía inicial"
-  },
-  {
-    "id": 66,
-    "tema": "División celular",
-    "pregunta": "La cromatina es:",
-    "opciones": [
-      "ADN descondensado asociado a proteínas",
-      "Un tipo de lípido nuclear",
-      "Un organelo digestivo",
-      "Una enzima replicativa"
-    ],
-    "respuesta_correcta": "ADN descondensado asociado a proteínas"
-  },
-  {
-    "id": 67,
-    "tema": "División celular",
-    "pregunta": "Los cromosomas se observan con mayor claridad durante:",
-    "opciones": ["Interfase", "División celular", "Homeostasis", "Respiración anaerobia"],
-    "respuesta_correcta": "División celular"
-  },
-  {
-    "id": 68,
-    "tema": "Ciclo celular",
-    "pregunta": "¿En qué fase del ciclo celular se replica el ADN?",
-    "opciones": ["G1", "S", "G2", "M"],
-    "respuesta_correcta": "S"
-  },
-  {
-    "id": 69,
-    "tema": "Ciclo celular",
-    "pregunta": "La interfase incluye las fases:",
-    "opciones": ["G1, S y G2", "Profase, metafase y anafase", "Mitosis y citocinesis", "Solo S y M"],
-    "respuesta_correcta": "G1, S y G2"
-  },
-  {
-    "id": 70,
-    "tema": "Mitosis",
-    "pregunta": "La mitosis produce generalmente:",
-    "opciones": [
-      "Cuatro células haploides",
-      "Dos células hijas genéticamente iguales",
-      "Tres células diploides",
-      "Gametas diferentes"
-    ],
-    "respuesta_correcta": "Dos células hijas genéticamente iguales"
-  },
-  {
-    "id": 71,
-    "tema": "Mitosis",
-    "pregunta": "¿En qué etapa de la mitosis se alinean los cromosomas en el ecuador celular?",
-    "opciones": ["Profase", "Metafase", "Anafase", "Telofase"],
-    "respuesta_correcta": "Metafase"
-  },
-  {
-    "id": 72,
-    "tema": "Mitosis",
-    "pregunta": "¿En qué fase de la mitosis se separan las cromátidas hermanas?",
-    "opciones": ["Profase", "Metafase", "Anafase", "Telofase"],
-    "respuesta_correcta": "Anafase"
-  },
-  {
-    "id": 73,
-    "tema": "Ciclo celular",
-    "pregunta": "El control del ciclo celular es importante porque:",
-    "opciones": [
-      "Evita la producción de ATP",
-      "Previene divisiones descontroladas",
-      "Impide la síntesis de proteínas",
-      "Detiene toda actividad celular"
-    ],
-    "respuesta_correcta": "Previene divisiones descontroladas"
-  },
-  {
-    "id": 74,
-    "tema": "Meiosis",
-    "pregunta": "La meiosis produce:",
-    "opciones": [
-      "Dos células diploides iguales",
-      "Cuatro células haploides",
-      "Una célula somática",
-      "Dos núcleos sin ADN"
-    ],
-    "respuesta_correcta": "Cuatro células haploides"
-  },
-  {
-    "id": 75,
-    "tema": "Meiosis",
-    "pregunta": "La meiosis es importante porque:",
-    "opciones": [
-      "Aumenta siempre el número de cromosomas",
-      "Permite formar gametos",
-      "Solo ocurre en bacterias",
-      "Evita la variabilidad genética"
-    ],
-    "respuesta_correcta": "Permite formar gametos"
-  },
-  {
-    "id": 76,
-    "tema": "Meiosis",
-    "pregunta": "¿Qué proceso contribuye a la variabilidad genética durante la meiosis?",
-    "opciones": ["Fotosíntesis", "Entrecruzamiento", "Difusión", "Fermentación"],
-    "respuesta_correcta": "Entrecruzamiento"
-  },
-  {
-    "id": 77,
-    "tema": "Reproducción",
-    "pregunta": "Los gametos humanos son:",
-    "opciones": [
-      "Diploides",
-      "Haploides",
-      "Tetraploides",
-      "Siempre idénticos entre sí"
-    ],
-    "respuesta_correcta": "Haploides"
-  },
-  {
-    "id": 78,
-    "tema": "Reproducción",
-    "pregunta": "La fecundación consiste en:",
-    "opciones": [
-      "La división del cigoto",
-      "La unión de dos gametos",
-      "La formación de cromatina",
-      "La separación de cromosomas homólogos"
-    ],
-    "respuesta_correcta": "La unión de dos gametos"
-  },
-  {
-    "id": 79,
-    "tema": "Genética mendeliana",
-    "pregunta": "La herencia es:",
-    "opciones": [
-      "La pérdida de información genética",
-      "La transmisión de características de padres a hijos",
-      "La síntesis de proteínas en ribosomas",
-      "La división del citoplasma"
-    ],
-    "respuesta_correcta": "La transmisión de características de padres a hijos"
-  },
-  {
-    "id": 80,
-    "tema": "Genética mendeliana",
-    "pregunta": "Un gen puede definirse como:",
-    "opciones": [
-      "Una proteína estructural",
-      "Una unidad de información hereditaria",
-      "Un organelo membranoso",
-      "Una célula reproductora"
-    ],
-    "respuesta_correcta": "Una unidad de información hereditaria"
-  },
-  {
-    "id": 81,
-    "tema": "Genética mendeliana",
-    "pregunta": "En genética mendeliana, un rasgo dominante se expresa:",
-    "opciones": [
-      "Solo en homocigotos recesivos",
-      "Cuando está presente al menos un alelo dominante",
-      "Solo en bacterias",
-      "Únicamente en mujeres"
-    ],
-    "respuesta_correcta": "Cuando está presente al menos un alelo dominante"
-  },
-  {
-    "id": 82,
-    "tema": "Genética mendeliana",
-    "pregunta": "¿Qué combinación representa un genotipo homocigoto?",
-    "opciones": ["Aa", "BB", "Ab", "aB"],
-    "respuesta_correcta": "BB"
-  },
-  {
-    "id": 83,
-    "tema": "Genética mendeliana",
-    "pregunta": "¿Qué combinación representa un genotipo heterocigoto?",
-    "opciones": ["AA", "aa", "Aa", "BB"],
-    "respuesta_correcta": "Aa"
-  },
-  {
-    "id": 84,
-    "tema": "Cromosomas",
-    "pregunta": "Los autosomas son:",
-    "opciones": [
-      "Cromosomas sexuales",
-      "Cromosomas no sexuales",
-      "Moléculas de ARN",
-      "Solo cromosomas bacterianos"
-    ],
-    "respuesta_correcta": "Cromosomas no sexuales"
-  },
-  {
-    "id": 85,
-    "tema": "Cromosomas",
-    "pregunta": "Los cromosomas sexuales en humanos son:",
-    "opciones": ["A y B", "X y Y", "1 y 2", "M y N"],
-    "respuesta_correcta": "X y Y"
-  },
-  {
-    "id": 86,
-    "tema": "Cromosomas",
-    "pregunta": "Los cromosomas homólogos son aquellos que:",
-    "opciones": [
-      "Tienen información para los mismos rasgos",
-      "Solo aparecen en procariotas",
-      "No contienen genes",
-      "Son siempre idénticos en secuencia"
-    ],
-    "respuesta_correcta": "Tienen información para los mismos rasgos"
-  },
-  {
-    "id": 87,
-    "tema": "Determinación del sexo",
-    "pregunta": "En humanos, el sexo biológico del descendiente depende del cromosoma aportado por:",
-    "opciones": ["La madre", "El padre", "Ambos siempre X", "El cigoto después de la mitosis"],
-    "respuesta_correcta": "El padre"
-  },
-  {
-    "id": 88,
-    "tema": "Determinación del sexo",
-    "pregunta": "¿Qué combinación cromosómica corresponde generalmente al sexo femenino en humanos?",
-    "opciones": ["XY", "XX", "YY", "XO siempre"],
-    "respuesta_correcta": "XX"
-  },
-  {
-    "id": 89,
-    "tema": "ADN",
-    "pregunta": "La molécula que almacena la información hereditaria es:",
-    "opciones": ["ATP", "ADN", "Lípido", "Glucógeno"],
-    "respuesta_correcta": "ADN"
-  },
-  {
-    "id": 90,
-    "tema": "ADN",
-    "pregunta": "¿Cuál azúcar forma parte del ADN?",
-    "opciones": ["Ribosa", "Desoxirribosa", "Glucosa", "Fructosa"],
-    "respuesta_correcta": "Desoxirribosa"
-  },
-  {
-    "id": 91,
-    "tema": "ADN",
-    "pregunta": "¿Cuáles son las bases nitrogenadas del ADN?",
-    "opciones": [
-      "Adenina, timina, citosina y guanina",
-      "Adenina, uracilo, citosina y guanina",
-      "Timina, uracilo, ribosa y fosfato",
-      "Guanina, glucosa, citosina y adenina"
-    ],
-    "respuesta_correcta": "Adenina, timina, citosina y guanina"
-  },
-  {
-    "id": 92,
-    "tema": "ADN",
-    "pregunta": "En el ADN, la adenina se une con:",
-    "opciones": ["Guanina", "Citosina", "Timina", "Uracilo"],
-    "respuesta_correcta": "Timina"
-  },
-  {
-    "id": 93,
-    "tema": "ADN",
-    "pregunta": "En el ADN, la citosina se aparea con:",
-    "opciones": ["Adenina", "Guanina", "Timina", "Uracilo"],
-    "respuesta_correcta": "Guanina"
-  },
-  {
-    "id": 94,
-    "tema": "ADN",
-    "pregunta": "La estructura del ADN se describe como:",
-    "opciones": [
-      "Cadena simple lineal",
-      "Doble hélice",
-      "Bicapa lipídica",
-      "Cadena proteica"
-    ],
-    "respuesta_correcta": "Doble hélice"
-  },
-  {
-    "id": 95,
-    "tema": "ADN",
-    "pregunta": "La replicación del ADN ocurre para:",
-    "opciones": [
-      "Producir ATP",
-      "Copiar la información genética antes de la división celular",
-      "Sintetizar lípidos",
-      "Eliminar genes defectuosos"
-    ],
-    "respuesta_correcta": "Copiar la información genética antes de la división celular"
-  },
-  {
-    "id": 96,
-    "tema": "ADN",
-    "pregunta": "La replicación del ADN se considera semiconservativa porque:",
-    "opciones": [
-      "Conserva una célula intacta",
-      "Cada molécula nueva conserva una hebra original y una nueva",
-      "Solo copia genes dominantes",
-      "Usa únicamente nucleótidos viejos"
-    ],
-    "respuesta_correcta": "Cada molécula nueva conserva una hebra original y una nueva"
-  },
-  {
-    "id": 97,
-    "tema": "Biomoléculas",
-    "pregunta": "¿Cuál biomolécula tiene función principal de almacenamiento y transmisión de información genética?",
-    "opciones": ["Lípidos", "Proteínas", "Ácidos nucleicos", "Carbohidratos"],
-    "respuesta_correcta": "Ácidos nucleicos"
-  },
-  {
-    "id": 98,
-    "tema": "Comparación celular",
-    "pregunta": "¿Cuál estructura está presente tanto en células procariotas como eucariotas?",
-    "opciones": ["Núcleo", "Mitocondria", "Membrana plasmática", "Complejo de Golgi"],
-    "respuesta_correcta": "Membrana plasmática"
-  },
-  {
-    "id": 99,
-    "tema": "Metabolismo celular",
-    "pregunta": "¿Qué relación existe entre enzimas y metabolismo?",
-    "opciones": [
-      "Las enzimas frenan todas las rutas metabólicas",
-      "Las enzimas catalizan reacciones metabólicas",
-      "Las enzimas reemplazan al ATP",
-      "Las enzimas destruyen el ADN siempre"
-    ],
-    "respuesta_correcta": "Las enzimas catalizan reacciones metabólicas"
-  },
-  {
-    "id": 100,
-    "tema": "Integración de temas",
-    "pregunta": "¿Qué proceso conecta directamente la herencia biológica con la división celular?",
-    "opciones": [
-      "La replicación del ADN antes de la división",
-      "La difusión simple de glucosa",
-      "La exocitosis de proteínas",
-      "La síntesis de fosfolípidos"
-    ],
-    "respuesta_correcta": "La replicación del ADN antes de la división"
-  }
-]
+{
+  "facil": [
+    {
+      "pregunta": "¿Cuál es la unidad básica de los seres vivos?",
+      "opciones": ["Órgano", "Tejido", "Célula", "Sistema"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Qué molécula almacena la información genética?",
+      "opciones": ["ATP", "ADN", "Glucosa", "Lípido"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿En qué organelo ocurre principalmente la respiración celular?",
+      "opciones": ["Núcleo", "Mitocondria", "Ribosoma", "Lisosoma"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué proceso permite el paso de agua por la membrana celular?",
+      "opciones": ["Endocitosis", "Osmosis", "Mitosis", "Fermentación"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué molécula transporta energía en la célula?",
+      "opciones": ["ADN", "ATP", "ARN", "Proteína"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cuál es una biomolécula?",
+      "opciones": ["Carbohidrato", "Piedra", "Metal", "Arena"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Cuál es un ejemplo de lípido?",
+      "opciones": ["Agua", "Grasa", "Oxígeno", "Sal"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿La mitosis produce cuántas células hijas?",
+      "opciones": ["1", "2", "3", "4"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿La homeostasis ayuda a mantener qué?",
+      "opciones": ["El desorden", "La estabilidad interna", "La división celular", "El tamaño"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué estructura contiene el material genético en la célula eucariota?",
+      "opciones": ["Núcleo", "Golgi", "Citoplasma", "Membrana"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Qué organelo fabrica proteínas?",
+      "opciones": ["Ribosoma", "Lisosoma", "Vacuola", "Centriolo"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Qué color tiene normalmente la clorofila?",
+      "opciones": ["Rojo", "Azul", "Verde", "Amarillo"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Qué necesitan las plantas para realizar fotosíntesis?",
+      "opciones": ["Luz solar", "Solo sal", "Solo arena", "Solo oxígeno"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Qué gas usan las plantas en la fotosíntesis?",
+      "opciones": ["Oxígeno", "Nitrógeno", "Dióxido de carbono", "Helio"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Qué gas liberan las plantas durante la fotosíntesis?",
+      "opciones": ["Oxígeno", "Hidrógeno", "Carbono", "Metano"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Cuál es la función principal de la membrana celular?",
+      "opciones": ["Controlar el paso de sustancias", "Fabricar ADN", "Romper alimentos", "Producir luz"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Qué tipo de célula tiene núcleo definido?",
+      "opciones": ["Procariota", "Eucariota", "Bacteriana", "Viral"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué organismo pertenece al reino Animal?",
+      "opciones": ["Hongo", "Perro", "Alga", "Bacteria"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué organismo pertenece al reino Fungi?",
+      "opciones": ["León", "Pino", "Champiñón", "Ameba"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Qué parte de la planta absorbe agua y minerales?",
+      "opciones": ["Hoja", "Flor", "Raíz", "Fruto"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Cuál es la principal fuente de energía para la mayoría de los ecosistemas?",
+      "opciones": ["La Luna", "El Sol", "El agua", "El viento"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué sistema del cuerpo humano transporta sangre?",
+      "opciones": ["Digestivo", "Nervioso", "Circulatorio", "Óseo"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Qué órgano bombea la sangre?",
+      "opciones": ["Pulmón", "Cerebro", "Corazón", "Riñón"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Qué órgano se encarga principalmente del intercambio de gases?",
+      "opciones": ["Pulmón", "Estómago", "Hígado", "Páncreas"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Qué aparato descompone los alimentos?",
+      "opciones": ["Respiratorio", "Digestivo", "Excretor", "Reproductor"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cómo se llama el proceso por el cual las plantas producen su alimento?",
+      "opciones": ["Respiración", "Fotosíntesis", "Digestión", "Circulación"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué parte de la célula contiene un líquido gelatinoso donde están los organelos?",
+      "opciones": ["Citoplasma", "Pared celular", "Cápsula", "Cromosoma"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Cuál es un carbohidrato simple?",
+      "opciones": ["Glucosa", "Colágeno", "Triglicérido", "ADN"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Qué vitamina se produce en la piel con ayuda de la luz solar?",
+      "opciones": ["Vitamina A", "Vitamina C", "Vitamina D", "Vitamina K"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Qué grupo de seres vivos fabrica su propio alimento?",
+      "opciones": ["Consumidores", "Descomponedores", "Autótrofos", "Parásitos"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Qué ser vivo es unicelular?",
+      "opciones": ["Perro", "Árbol", "Bacteria", "Hongo grande"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Qué estructura protege y da forma a la célula vegetal?",
+      "opciones": ["Membrana nuclear", "Pared celular", "Lisosoma", "Ribosoma"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué componente del cuerpo humano permite el movimiento junto con los músculos?",
+      "opciones": ["Huesos", "Nervios", "Pestañas", "Uñas"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Qué tejido conecta y da soporte a otras estructuras del cuerpo?",
+      "opciones": ["Epitelial", "Muscular", "Conectivo", "Nervioso"],
+      "correcta": 2
+    }
+  ],
+  "media": [
+    {
+      "pregunta": "¿Cuál es la función principal de las enzimas?",
+      "opciones": ["Transportar oxígeno", "Acelerar reacciones químicas", "Almacenar ADN", "Fabricar lípidos"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué diferencia principal hay entre anabolismo y catabolismo?",
+      "opciones": ["Uno destruye ADN", "Uno construye y el otro degrada", "Ambos son iguales", "Ninguno usa energía"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué tipo de transporte celular requiere energía?",
+      "opciones": ["Difusión simple", "Osmosis", "Transporte activo", "Difusión facilitada"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Qué biomolécula está formada por aminoácidos?",
+      "opciones": ["Proteínas", "Lípidos", "Carbohidratos", "Vitaminas"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Cuál es una característica de las células procariotas?",
+      "opciones": ["Tienen núcleo verdadero", "No tienen núcleo verdadero", "Tienen mitocondrias", "Tienen cloroplastos"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿En qué fase ocurre la duplicación del ADN antes de la mitosis?",
+      "opciones": ["Profase", "Metafase", "Interfase", "Anafase"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Qué parte de la célula regula el paso de sustancias?",
+      "opciones": ["Núcleo", "Membrana celular", "Mitocondria", "Ribosoma"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué proceso forma gametos?",
+      "opciones": ["Mitosis", "Meiosis", "Difusión", "Respiración"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué contiene una molécula de nucleótido?",
+      "opciones": ["Aminoácidos", "Pentosa, base y fosfato", "Solo glucosa", "Solo proteínas"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué ocurre en la fermentación?",
+      "opciones": ["Se usa oxígeno", "No interviene oxígeno como en la respiración aeróbica", "Se duplica el ADN", "Se forman tejidos"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué tipo de reproducción genera descendencia genéticamente idéntica?",
+      "opciones": ["Sexual", "Asexual", "Alternante", "Mendeliana"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué estructura de la hoja permite el intercambio gaseoso?",
+      "opciones": ["Xilema", "Estoma", "Pétalo", "Cutícula ósea"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cuál es la principal función del xilema en las plantas?",
+      "opciones": ["Transportar azúcares", "Transportar agua y minerales", "Fabricar polen", "Producir semillas"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cuál es la principal función del floema en las plantas?",
+      "opciones": ["Transportar savia elaborada", "Transportar solo agua", "Absorber luz", "Crear raíces"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Qué nivel de organización sigue después del tejido?",
+      "opciones": ["Sistema", "Órgano", "Célula", "Molécula"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué orgánulo contiene enzimas digestivas en la célula animal?",
+      "opciones": ["Lisosoma", "Ribosoma", "Nucléolo", "Centrosoma"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Qué proceso permite la entrada de partículas grandes a la célula?",
+      "opciones": ["Difusión", "Osmosis", "Endocitosis", "Evaporación"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Qué proceso permite la salida de sustancias en vesículas fuera de la célula?",
+      "opciones": ["Exocitosis", "Fagocitosis", "Mitosis", "Osmosis"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Qué ocurre en la metafase de la mitosis?",
+      "opciones": ["Se duplican los cromosomas", "Los cromosomas se alinean en el centro", "Se divide el citoplasma", "Desaparece el ADN"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué ocurre en la anafase?",
+      "opciones": ["Se forman dos núcleos", "Se alinean las cromátidas", "Se separan las cromátidas hermanas", "Se destruye la membrana"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Qué molécula lleva la información del ADN hacia los ribosomas?",
+      "opciones": ["ARN mensajero", "ATP", "Glucógeno", "Celulosa"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Cuál es el monosacárido más utilizado como fuente de energía celular?",
+      "opciones": ["Glucosa", "Fructosa", "Lactosa", "Celulosa"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Qué biomolécula cumple función estructural y energética de reserva a largo plazo?",
+      "opciones": ["Lípidos", "Vitaminas", "Sales", "ARN"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Cuál es la función principal del sistema nervioso?",
+      "opciones": ["Digerir alimentos", "Coordinar y controlar respuestas", "Transportar oxígeno", "Producir hormonas digestivas únicamente"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué glándula regula muchas funciones corporales mediante hormonas?",
+      "opciones": ["Páncreas únicamente", "Hipófisis", "Bazo", "Apéndice"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué componente sanguíneo participa principalmente en la defensa del organismo?",
+      "opciones": ["Glóbulos rojos", "Plaquetas", "Glóbulos blancos", "Plasma seco"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Qué componente sanguíneo ayuda a la coagulación?",
+      "opciones": ["Leucocitos", "Plaquetas", "Hemoglobina", "Linfocitos T"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué molécula dentro de los glóbulos rojos transporta oxígeno?",
+      "opciones": ["Insulina", "Hemoglobina", "Colágeno", "Queratina"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué parte del aparato digestivo absorbe la mayor parte de nutrientes?",
+      "opciones": ["Estómago", "Esófago", "Intestino delgado", "Intestino grueso"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Qué órgano produce bilis?",
+      "opciones": ["Páncreas", "Hígado", "Estómago", "Bazo"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué tipo de relación ecológica ocurre cuando un organismo se beneficia y el otro se perjudica?",
+      "opciones": ["Mutualismo", "Comensalismo", "Parasitismo", "Cooperación"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Cómo se llama la secuencia de organismos donde uno sirve de alimento a otro?",
+      "opciones": ["Pirámide ósea", "Cadena alimentaria", "Mitosis ecológica", "Homeostasis"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué organismo ocupa el primer nivel trófico?",
+      "opciones": ["Consumidor primario", "Descomponedor", "Productor", "Depredador tope"],
+      "correcta": 2
+    }
+  ],
+  "dificil": [
+    {
+      "pregunta": "¿Qué vía metabólica ocurre primero en la respiración celular?",
+      "opciones": ["Ciclo de Krebs", "Cadena de electrones", "Glucólisis", "Fermentación"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Qué organelo modifica, empaqueta y distribuye proteínas?",
+      "opciones": ["Núcleo", "Complejo de Golgi", "Mitocondria", "Lisosoma"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cuál es la relación correcta entre cromatina y cromosomas?",
+      "opciones": ["Son estructuras sin relación", "La cromatina se condensa para formar cromosomas", "Los cromosomas forman proteínas", "La cromatina destruye ADN"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué proceso mantiene constante el equilibrio interno del organismo?",
+      "opciones": ["Mutación", "Homeostasis", "Fermentación", "Fecundación"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cuál es la función principal del nucléolo?",
+      "opciones": ["Generar ATP", "Sintetizar ribosomas", "Transportar lípidos", "Dirigir meiosis"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué estructuras separa la meiosis?",
+      "opciones": ["Solo tejidos", "Cromosomas homólogos y luego cromátidas", "Solo membranas", "Proteínas"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué ley de la termodinámica explica que la energía no se crea ni se destruye?",
+      "opciones": ["Primera ley", "Segunda ley", "Tercera ley", "Ley celular"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Qué molécula contiene las bases nitrogenadas adenina, timina, citosina y guanina?",
+      "opciones": ["ARN", "ATP", "ADN", "Proteína"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Qué proceso ocurre cuando una célula engloba partículas grandes?",
+      "opciones": ["Exocitosis", "Endocitosis", "Difusión", "Glucólisis"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cuál es la función principal del citoesqueleto?",
+      "opciones": ["Almacenar información genética", "Dar soporte y organización a la célula", "Fabricar glucosa", "Romper proteínas"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué ocurre en la profase I de la meiosis que no ocurre en la mitosis?",
+      "opciones": ["Alineación en el ecuador", "Entrecruzamiento de cromosomas homólogos", "División del citoplasma", "Desaparición del nucléolo"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cuál es la principal diferencia entre ADN y ARN?",
+      "opciones": ["El ADN tiene uracilo", "El ARN tiene timina", "El ARN suele ser monocatenario y tiene uracilo", "Son idénticos"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Qué enzima rompe las uniones de hidrógeno para separar las cadenas de ADN en la replicación?",
+      "opciones": ["Helicasa", "Ligasa", "Amilasa", "Catalasa"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Qué enzima une fragmentos de ADN durante la replicación?",
+      "opciones": ["Helicasa", "Ligasa", "Pepsina", "Lactasa"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cuál es el producto principal del ciclo de Calvin?",
+      "opciones": ["ATP atmosférico", "Glucosa o compuestos orgánicos derivados", "Oxígeno", "Aminoácidos directamente"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Dónde se localiza la clorofila en la célula vegetal?",
+      "opciones": ["En el núcleo", "En los tilacoides del cloroplasto", "En la pared celular", "En los ribosomas"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué sucede con los electrones en la cadena de transporte electrónico?",
+      "opciones": ["Se almacenan sin cambio", "Liberan energía gradualmente para producir ATP", "Desaparecen", "Se convierten en ADN"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué tipo de mutación altera un solo nucleótido del ADN?",
+      "opciones": ["Cromosómica", "Puntual", "Genómica", "Citoplasmática"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué establece la primera ley de Mendel?",
+      "opciones": ["Los caracteres se mezclan", "Los alelos se segregan al formar gametos", "Todos los rasgos son dominantes", "El ADN se duplica en la fecundación"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué establece la segunda ley de Mendel?",
+      "opciones": ["Dominancia incompleta obligatoria", "Distribución independiente de ciertos caracteres", "Todos los genes están ligados", "La meiosis no influye"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué es un alelo dominante?",
+      "opciones": ["El que siempre desaparece", "El que se expresa en heterocigosis", "El que solo aparece en plantas", "El que no tiene ADN"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué significa que un organismo sea heterocigoto?",
+      "opciones": ["Tiene dos alelos iguales", "No tiene genes", "Tiene dos alelos diferentes para un carácter", "Tiene dos cromosomas menos"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Qué estructura del nefrón participa principalmente en la filtración inicial de la sangre?",
+      "opciones": ["Asa de Henle", "Glomérulo", "Uréter", "Alvéolo"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿En qué parte del sistema respiratorio ocurre principalmente el intercambio gaseoso?",
+      "opciones": ["Tráquea", "Bronquios", "Alvéolos", "Laringe"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Qué célula del páncreas produce insulina?",
+      "opciones": ["Hepatocito", "Célula beta", "Neurona", "Eritrocito"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cuál es la función principal de la insulina?",
+      "opciones": ["Elevar la glucosa en sangre", "Favorecer la entrada de glucosa a las células", "Destruir proteínas", "Transportar oxígeno"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué describe mejor la selección natural?",
+      "opciones": ["Todos sobreviven por igual", "Los individuos mejor adaptados tienen más probabilidad de dejar descendencia", "Los organismos eligen mutar", "Los genes no cambian nunca"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué ocurre en la sucesión ecológica primaria?",
+      "opciones": ["Empieza en un área sin suelo previo", "Siempre inicia en un bosque maduro", "Nunca participa el suelo", "Solo ocurre en océanos"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Qué es un nicho ecológico?",
+      "opciones": ["Solo el lugar físico donde vive una especie", "El papel y función de una especie en su ecosistema", "Un tipo de tejido", "Un grupo de genes"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué ocurre cuando dos especies compiten por el mismo recurso limitado?",
+      "opciones": ["Siempre se fusionan", "Se produce competencia interespecífica", "Se crea mitosis", "Se genera homeostasis genética"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cuál es la principal función de los descomponedores en un ecosistema?",
+      "opciones": ["Producir luz", "Reciclar materia orgánica y devolver nutrientes", "Consumir solo productores", "Crear oxígeno sin materia"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué relación ecológica ocurre cuando ambas especies se benefician?",
+      "opciones": ["Parasitismo", "Mutualismo", "Competencia", "Depredación"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué parte del ADN contiene la información para sintetizar una proteína?",
+      "opciones": ["Lípido", "Gen", "Ribosoma", "Centríolo"],
+      "correcta": 1
+    }
+  ]
+}

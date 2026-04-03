@@ -1,932 +1,508 @@
-[
-  {
-    "id": 1,
-    "tema": "Estructura atómica",
-    "pregunta": "¿Qué es un átomo?",
-    "opciones": [
-      "La partícula más pequeña de un elemento que conserva sus propiedades",
-      "Una combinación de varios compuestos",
-      "Una sustancia formada solo por neutrones",
-      "Una mezcla homogénea"
-    ],
-    "respuesta_correcta": "La partícula más pequeña de un elemento que conserva sus propiedades"
-  },
-  {
-    "id": 2,
-    "tema": "Estructura atómica",
-    "pregunta": "¿Qué es un elemento químico?",
-    "opciones": [
-      "Una sustancia formada por átomos con el mismo número atómico",
-      "Una mezcla de dos metales",
-      "Una unión de moléculas distintas",
-      "Un compuesto que se puede separar físicamente"
-    ],
-    "respuesta_correcta": "Una sustancia formada por átomos con el mismo número atómico"
-  },
-  {
-    "id": 3,
-    "tema": "Estructura atómica",
-    "pregunta": "¿Qué es una molécula?",
-    "opciones": [
-      "La unión de dos o más átomos enlazados",
-      "Una partícula sin carga",
-      "Un solo protón",
-      "La región externa del átomo"
-    ],
-    "respuesta_correcta": "La unión de dos o más átomos enlazados"
-  },
-  {
-    "id": 4,
-    "tema": "Estructura atómica",
-    "pregunta": "¿Cuál partícula subatómica tiene carga positiva?",
-    "opciones": ["Electrón", "Neutrón", "Protón", "Fotón"],
-    "respuesta_correcta": "Protón"
-  },
-  {
-    "id": 5,
-    "tema": "Estructura atómica",
-    "pregunta": "¿Cuál partícula subatómica tiene carga negativa?",
-    "opciones": ["Electrón", "Protón", "Neutrón", "Núcleo"],
-    "respuesta_correcta": "Electrón"
-  },
-  {
-    "id": 6,
-    "tema": "Estructura atómica",
-    "pregunta": "¿Cuál partícula subatómica no tiene carga?",
-    "opciones": ["Protón", "Electrón", "Neutrón", "Ión"],
-    "respuesta_correcta": "Neutrón"
-  },
-  {
-    "id": 7,
-    "tema": "Estructura atómica",
-    "pregunta": "¿Dónde se localizan los protones en el átomo?",
-    "opciones": ["En los orbitales", "En el núcleo", "En la corteza", "En los niveles de energía externos"],
-    "respuesta_correcta": "En el núcleo"
-  },
-  {
-    "id": 8,
-    "tema": "Estructura atómica",
-    "pregunta": "¿Dónde se localizan los electrones en el átomo?",
-    "opciones": ["Solo en el núcleo", "En la nube electrónica", "Dentro de los protones", "En el neutrón"],
-    "respuesta_correcta": "En la nube electrónica"
-  },
-  {
-    "id": 9,
-    "tema": "Estructura atómica",
-    "pregunta": "El número atómico de un elemento corresponde al número de:",
-    "opciones": ["Neutrones", "Protones", "Electrones y neutrones", "Niveles de energía"],
-    "respuesta_correcta": "Protones"
-  },
-  {
-    "id": 10,
-    "tema": "Estructura atómica",
-    "pregunta": "El número másico se obtiene sumando:",
-    "opciones": [
-      "Protones y electrones",
-      "Neutrones y electrones",
-      "Protones y neutrones",
-      "Electrones y orbitales"
-    ],
-    "respuesta_correcta": "Protones y neutrones"
-  },
-  {
-    "id": 11,
-    "tema": "Estructura atómica",
-    "pregunta": "¿Qué son los isótopos?",
-    "opciones": [
-      "Átomos del mismo elemento con diferente número de neutrones",
-      "Átomos con igual masa y diferente número atómico",
-      "Moléculas con el mismo número de electrones",
-      "Iones de distinto elemento"
-    ],
-    "respuesta_correcta": "Átomos del mismo elemento con diferente número de neutrones"
-  },
-  {
-    "id": 12,
-    "tema": "Estructura atómica",
-    "pregunta": "Dos isótopos de un mismo elemento tienen igual número de:",
-    "opciones": ["Neutrones", "Protones", "Niveles", "Masa atómica"],
-    "respuesta_correcta": "Protones"
-  },
-  {
-    "id": 13,
-    "tema": "Estructura atómica",
-    "pregunta": "Si un átomo tiene número atómico 8, ¿cuántos protones posee?",
-    "opciones": ["16", "8", "4", "10"],
-    "respuesta_correcta": "8"
-  },
-  {
-    "id": 14,
-    "tema": "Estructura atómica",
-    "pregunta": "Si un átomo neutro tiene 12 protones, ¿cuántos electrones posee?",
-    "opciones": ["10", "12", "14", "24"],
-    "respuesta_correcta": "12"
-  },
-  {
-    "id": 15,
-    "tema": "Estructura atómica",
-    "pregunta": "Si un átomo tiene número másico 23 y número atómico 11, ¿cuántos neutrones tiene?",
-    "opciones": ["11", "12", "23", "34"],
-    "respuesta_correcta": "12"
-  },
-  {
-    "id": 16,
-    "tema": "Tabla periódica",
-    "pregunta": "¿Qué organiza la tabla periódica principalmente?",
-    "opciones": [
-      "Los compuestos según su masa",
-      "Los elementos según su número atómico",
-      "Las moléculas según su volumen",
-      "Los isótopos por color"
-    ],
-    "respuesta_correcta": "Los elementos según su número atómico"
-  },
-  {
-    "id": 17,
-    "tema": "Tabla periódica",
-    "pregunta": "Las filas horizontales de la tabla periódica se llaman:",
-    "opciones": ["Grupos", "Series", "Períodos", "Familias"],
-    "respuesta_correcta": "Períodos"
-  },
-  {
-    "id": 18,
-    "tema": "Tabla periódica",
-    "pregunta": "Las columnas verticales de la tabla periódica se llaman:",
-    "opciones": ["Períodos", "Niveles", "Grupos", "Series"],
-    "respuesta_correcta": "Grupos"
-  },
-  {
-    "id": 19,
-    "tema": "Tabla periódica",
-    "pregunta": "¿Dónde se localizan en general los metales en la tabla periódica?",
-    "opciones": [
-      "En la parte izquierda y centro",
-      "Solo en la esquina superior derecha",
-      "Únicamente en el grupo 18",
-      "En la parte inferior derecha exclusivamente"
-    ],
-    "respuesta_correcta": "En la parte izquierda y centro"
-  },
-  {
-    "id": 20,
-    "tema": "Tabla periódica",
-    "pregunta": "¿Dónde se localizan en general los no metales?",
-    "opciones": [
-      "En la parte derecha de la tabla",
-      "Solo en los períodos 6 y 7",
-      "En el centro de la tabla",
-      "Únicamente en los lantánidos"
-    ],
-    "respuesta_correcta": "En la parte derecha de la tabla"
-  },
-  {
-    "id": 21,
-    "tema": "Tabla periódica",
-    "pregunta": "Los metaloides se ubican generalmente:",
-    "opciones": [
-      "En una zona intermedia entre metales y no metales",
-      "Solo entre gases nobles",
-      "Exclusivamente en el grupo 1",
-      "Solo en la serie de actínidos"
-    ],
-    "respuesta_correcta": "En una zona intermedia entre metales y no metales"
-  },
-  {
-    "id": 22,
-    "tema": "Tabla periódica",
-    "pregunta": "¿Cuál de los siguientes es un metal?",
-    "opciones": ["Oxígeno", "Sodio", "Cloro", "Azufre"],
-    "respuesta_correcta": "Sodio"
-  },
-  {
-    "id": 23,
-    "tema": "Tabla periódica",
-    "pregunta": "¿Cuál de los siguientes es un no metal?",
-    "opciones": ["Hierro", "Calcio", "Bromo", "Aluminio"],
-    "respuesta_correcta": "Bromo"
-  },
-  {
-    "id": 24,
-    "tema": "Tabla periódica",
-    "pregunta": "¿Cuál de los siguientes es un metaloide?",
-    "opciones": ["Silicio", "Potasio", "Magnesio", "Neón"],
-    "respuesta_correcta": "Silicio"
-  },
-  {
-    "id": 25,
-    "tema": "Tabla periódica",
-    "pregunta": "Los elementos representativos pertenecen principalmente a:",
-    "opciones": [
-      "Los bloques s y p",
-      "Solo al bloque d",
-      "Solo al bloque f",
-      "Únicamente al grupo 18"
-    ],
-    "respuesta_correcta": "Los bloques s y p"
-  },
-  {
-    "id": 26,
-    "tema": "Tabla periódica",
-    "pregunta": "Los elementos de transición pertenecen principalmente al bloque:",
-    "opciones": ["s", "p", "d", "f"],
-    "respuesta_correcta": "d"
-  },
-  {
-    "id": 27,
-    "tema": "Tabla periódica",
-    "pregunta": "Los elementos de transición interna corresponden a:",
-    "opciones": [
-      "Lantánidos y actínidos",
-      "Halógenos y gases nobles",
-      "Alcalinos y alcalinotérreos",
-      "Metales y no metales"
-    ],
-    "respuesta_correcta": "Lantánidos y actínidos"
-  },
-  {
-    "id": 28,
-    "tema": "Tabla periódica",
-    "pregunta": "¿Cuál de los siguientes es un elemento diatómico en su estado natural?",
-    "opciones": ["Na", "Cl2", "Ca", "Al"],
-    "respuesta_correcta": "Cl2"
-  },
-  {
-    "id": 29,
-    "tema": "Tabla periódica",
-    "pregunta": "¿Cuál de los siguientes pertenece a los gases nobles?",
-    "opciones": ["Helio", "Cloro", "Sodio", "Calcio"],
-    "respuesta_correcta": "Helio"
-  },
-  {
-    "id": 30,
-    "tema": "Tabla periódica",
-    "pregunta": "La electronegatividad es la capacidad de un átomo para:",
-    "opciones": [
-      "Perder protones",
-      "Atraer electrones en un enlace",
-      "Aumentar su masa",
-      "Emitir neutrones"
-    ],
-    "respuesta_correcta": "Atraer electrones en un enlace"
-  },
-  {
-    "id": 31,
-    "tema": "Tabla periódica",
-    "pregunta": "El radio atómico se refiere a:",
-    "opciones": [
-      "La distancia media del núcleo al electrón más externo",
-      "La cantidad de protones",
-      "La masa del núcleo",
-      "La energía de un enlace"
-    ],
-    "respuesta_correcta": "La distancia media del núcleo al electrón más externo"
-  },
-  {
-    "id": 32,
-    "tema": "Tabla periódica",
-    "pregunta": "La energía de ionización es la energía necesaria para:",
-    "opciones": [
-      "Agregar un neutrón al núcleo",
-      "Quitar un electrón de un átomo gaseoso",
-      "Romper un protón",
-      "Unir dos átomos"
-    ],
-    "respuesta_correcta": "Quitar un electrón de un átomo gaseoso"
-  },
-  {
-    "id": 33,
-    "tema": "Tabla periódica",
-    "pregunta": "El carácter metálico de un elemento se relaciona con su tendencia a:",
-    "opciones": [
-      "Ganar electrones",
-      "Compartir neutrones",
-      "Perder electrones",
-      "Formar solo enlaces covalentes"
-    ],
-    "respuesta_correcta": "Perder electrones"
-  },
-  {
-    "id": 34,
-    "tema": "Tabla periódica",
-    "pregunta": "A lo largo de un período, la electronegatividad generalmente:",
-    "opciones": ["Disminuye", "Aumenta", "No cambia", "Desaparece"],
-    "respuesta_correcta": "Aumenta"
-  },
-  {
-    "id": 35,
-    "tema": "Tabla periódica",
-    "pregunta": "Al descender en un grupo, el radio atómico generalmente:",
-    "opciones": ["Disminuye", "Aumenta", "Se vuelve cero", "No presenta tendencia"],
-    "respuesta_correcta": "Aumenta"
-  },
-  {
-    "id": 36,
-    "tema": "Tabla periódica",
-    "pregunta": "A lo largo de un período, el radio atómico suele:",
-    "opciones": ["Aumentar", "Disminuir", "Permanecer igual", "Volverse infinito"],
-    "respuesta_correcta": "Disminuir"
-  },
-  {
-    "id": 37,
-    "tema": "Tabla periódica",
-    "pregunta": "¿Dónde se localiza el número atómico en la tabla periódica?",
-    "opciones": [
-      "Como el número que identifica a cada elemento",
-      "Como el color del cuadro",
-      "Como el nombre del grupo",
-      "Como la valencia única"
-    ],
-    "respuesta_correcta": "Como el número que identifica a cada elemento"
-  },
-  {
-    "id": 38,
-    "tema": "Tabla periódica",
-    "pregunta": "El peso atómico mostrado en la tabla periódica representa:",
-    "opciones": [
-      "La masa promedio de los isótopos del elemento",
-      "El número exacto de protones",
-      "La suma fija de protones y electrones",
-      "Solo la masa del neutrón"
-    ],
-    "respuesta_correcta": "La masa promedio de los isótopos del elemento"
-  },
-  {
-    "id": 39,
-    "tema": "Masa atómica y fórmula",
-    "pregunta": "La masa fórmula de un compuesto se obtiene sumando:",
-    "opciones": [
-      "Las cargas de sus iones",
-      "Las masas atómicas de todos sus átomos",
-      "Solo los protones",
-      "Solo los electrones de valencia"
-    ],
-    "respuesta_correcta": "Las masas atómicas de todos sus átomos"
-  },
-  {
-    "id": 40,
-    "tema": "Masa atómica y fórmula",
-    "pregunta": "¿Cuál es la masa fórmula aproximada del H2O?",
-    "opciones": ["18 u", "10 u", "16 u", "20 u"],
-    "respuesta_correcta": "18 u"
-  },
-  {
-    "id": 41,
-    "tema": "Mol",
-    "pregunta": "¿Qué es un mol?",
-    "opciones": [
-      "Una unidad de cantidad de sustancia",
-      "Una partícula subatómica",
-      "Un enlace químico",
-      "Una unidad de energía"
-    ],
-    "respuesta_correcta": "Una unidad de cantidad de sustancia"
-  },
-  {
-    "id": 42,
-    "tema": "Mol",
-    "pregunta": "El número de Avogadro es aproximadamente:",
-    "opciones": [
-      "6.02 x 10^23",
-      "3.00 x 10^8",
-      "9.8 x 10^2",
-      "1.66 x 10^-24"
-    ],
-    "respuesta_correcta": "6.02 x 10^23"
-  },
-  {
-    "id": 43,
-    "tema": "Mol",
-    "pregunta": "Un mol de átomos contiene:",
-    "opciones": [
-      "6.02 x 10^23 átomos",
-      "1.00 x 10^23 átomos",
-      "12 átomos",
-      "Un número variable sin relación"
-    ],
-    "respuesta_correcta": "6.02 x 10^23 átomos"
-  },
-  {
-    "id": 44,
-    "tema": "Mol",
-    "pregunta": "Un mol de moléculas de agua contiene:",
-    "opciones": [
-      "6.02 x 10^23 moléculas",
-      "3.01 x 10^23 moléculas",
-      "18 moléculas",
-      "1 molécula"
-    ],
-    "respuesta_correcta": "6.02 x 10^23 moléculas"
-  },
-  {
-    "id": 45,
-    "tema": "Mol",
-    "pregunta": "¿Cuántos moles hay en 12.04 x 10^23 partículas?",
-    "opciones": ["1 mol", "2 mol", "0.5 mol", "12 mol"],
-    "respuesta_correcta": "2 mol"
-  },
-  {
-    "id": 46,
-    "tema": "Mol",
-    "pregunta": "¿Cuántas partículas hay en 0.5 mol?",
-    "opciones": [
-      "3.01 x 10^23",
-      "6.02 x 10^23",
-      "1.204 x 10^24",
-      "5.0 x 10^22"
-    ],
-    "respuesta_correcta": "3.01 x 10^23"
-  },
-  {
-    "id": 47,
-    "tema": "Mol",
-    "pregunta": "¿Cuántos gramos hay en 1 mol de carbono aproximadamente?",
-    "opciones": ["6 g", "12 g", "18 g", "24 g"],
-    "respuesta_correcta": "12 g"
-  },
-  {
-    "id": 48,
-    "tema": "Mol",
-    "pregunta": "¿Cuántos moles representan 18 g de agua?",
-    "opciones": ["0.5 mol", "1 mol", "2 mol", "18 mol"],
-    "respuesta_correcta": "1 mol"
-  },
-  {
-    "id": 49,
-    "tema": "Mol",
-    "pregunta": "¿Cuántos gramos hay en 2 moles de oxígeno molecular O2?",
-    "opciones": ["16 g", "32 g", "64 g", "48 g"],
-    "respuesta_correcta": "64 g"
-  },
-  {
-    "id": 50,
-    "tema": "Mol",
-    "pregunta": "¿Cuántos moles hay en 44 g de CO2?",
-    "opciones": ["1 mol", "2 mol", "0.5 mol", "4 mol"],
-    "respuesta_correcta": "1 mol"
-  },
-  {
-    "id": 51,
-    "tema": "Conversiones",
-    "pregunta": "1 kilogramo equivale a:",
-    "opciones": ["10 g", "100 g", "1000 g", "10000 g"],
-    "respuesta_correcta": "1000 g"
-  },
-  {
-    "id": 52,
-    "tema": "Conversiones",
-    "pregunta": "1 gramo equivale a:",
-    "opciones": ["10 mg", "100 mg", "1000 mg", "10000 mg"],
-    "respuesta_correcta": "1000 mg"
-  },
-  {
-    "id": 53,
-    "tema": "Conversiones",
-    "pregunta": "1 litro equivale a:",
-    "opciones": ["10 mL", "100 mL", "1000 mL", "10000 mL"],
-    "respuesta_correcta": "1000 mL"
-  },
-  {
-    "id": 54,
-    "tema": "Conversiones",
-    "pregunta": "2500 mg equivalen a:",
-    "opciones": ["0.25 g", "2.5 g", "25 g", "250 g"],
-    "respuesta_correcta": "2.5 g"
-  },
-  {
-    "id": 55,
-    "tema": "Conversiones",
-    "pregunta": "0.75 L equivalen a:",
-    "opciones": ["75 mL", "750 mL", "7.5 mL", "7500 mL"],
-    "respuesta_correcta": "750 mL"
-  },
-  {
-    "id": 56,
-    "tema": "Configuración electrónica",
-    "pregunta": "La configuración electrónica describe:",
-    "opciones": [
-      "La distribución de electrones en niveles y subniveles",
-      "La cantidad de neutrones del átomo",
-      "La masa del elemento",
-      "La forma del núcleo"
-    ],
-    "respuesta_correcta": "La distribución de electrones en niveles y subniveles"
-  },
-  {
-    "id": 57,
-    "tema": "Configuración electrónica",
-    "pregunta": "¿Cuántos electrones puede alojar el subnivel s?",
-    "opciones": ["1", "2", "6", "10"],
-    "respuesta_correcta": "2"
-  },
-  {
-    "id": 58,
-    "tema": "Configuración electrónica",
-    "pregunta": "¿Cuántos electrones puede alojar el subnivel p?",
-    "opciones": ["2", "4", "6", "8"],
-    "respuesta_correcta": "6"
-  },
-  {
-    "id": 59,
-    "tema": "Configuración electrónica",
-    "pregunta": "¿Cuál es la configuración electrónica semidesarrollada correcta para el litio (Z=3)?",
-    "opciones": ["1s2 2s1", "1s2 2s2", "1s2 2p1", "1s1 2s2"],
-    "respuesta_correcta": "1s2 2s1"
-  },
-  {
-    "id": 60,
-    "tema": "Configuración electrónica",
-    "pregunta": "¿Cuál es la configuración electrónica semidesarrollada correcta para el oxígeno (Z=8)?",
-    "opciones": ["1s2 2s2 2p4", "1s2 2s2 2p6", "1s2 2s1 2p5", "1s2 2p6"],
-    "respuesta_correcta": "1s2 2s2 2p4"
-  },
-  {
-    "id": 61,
-    "tema": "Configuración electrónica",
-    "pregunta": "Los electrones de valencia son los que se encuentran en:",
-    "opciones": [
-      "El nivel más interno",
-      "El núcleo",
-      "El nivel energético más externo",
-      "Los protones"
-    ],
-    "respuesta_correcta": "El nivel energético más externo"
-  },
-  {
-    "id": 62,
-    "tema": "Configuración electrónica",
-    "pregunta": "¿Cuántos electrones de valencia tiene el sodio (Z=11)?",
-    "opciones": ["1", "2", "3", "11"],
-    "respuesta_correcta": "1"
-  },
-  {
-    "id": 63,
-    "tema": "Configuración electrónica",
-    "pregunta": "¿Cuántos electrones de valencia tiene el cloro (Z=17)?",
-    "opciones": ["5", "6", "7", "8"],
-    "respuesta_correcta": "7"
-  },
-  {
-    "id": 64,
-    "tema": "Nomenclatura",
-    "pregunta": "La nomenclatura química permite:",
-    "opciones": [
-      "Nombrar correctamente los compuestos",
-      "Separar mezclas",
-      "Contar neutrones",
-      "Medir temperatura"
-    ],
-    "respuesta_correcta": "Nombrar correctamente los compuestos"
-  },
-  {
-    "id": 65,
-    "tema": "Nomenclatura",
-    "pregunta": "¿Cuál de los siguientes sistemas de nomenclatura aparece en la guía?",
-    "opciones": ["Clásico", "Genético", "Biológico", "Astronómico"],
-    "respuesta_correcta": "Clásico"
-  },
-  {
-    "id": 66,
-    "tema": "Nomenclatura",
-    "pregunta": "¿Cuál de los siguientes sistemas también aparece en la guía?",
-    "opciones": ["Stock", "Cartesiano", "Binomial", "Empírico"],
-    "respuesta_correcta": "Stock"
-  },
-  {
-    "id": 67,
-    "tema": "Nomenclatura",
-    "pregunta": "¿Cuál es el nombre stock de FeCl2?",
-    "opciones": [
-      "Cloruro de hierro (II)",
-      "Cloruro férrico",
-      "Dicloruro de hierro",
-      "Hierro clorado"
-    ],
-    "respuesta_correcta": "Cloruro de hierro (II)"
-  },
-  {
-    "id": 68,
-    "tema": "Nomenclatura",
-    "pregunta": "¿Cuál es el nombre stock de FeCl3?",
-    "opciones": [
-      "Cloruro de hierro (III)",
-      "Cloruro ferroso",
-      "Tricloruro de hierro",
-      "Hierro (II) cloruro"
-    ],
-    "respuesta_correcta": "Cloruro de hierro (III)"
-  },
-  {
-    "id": 69,
-    "tema": "Nomenclatura",
-    "pregunta": "¿Cuál es el nombre estequiométrico de CO2?",
-    "opciones": [
-      "Monóxido de carbono",
-      "Dióxido de carbono",
-      "Óxido carbonoso",
-      "Óxido de carbono (I)"
-    ],
-    "respuesta_correcta": "Dióxido de carbono"
-  },
-  {
-    "id": 70,
-    "tema": "Nomenclatura",
-    "pregunta": "¿Cuál es el nombre de NaCl?",
-    "opciones": [
-      "Cloruro de sodio",
-      "Sodio de cloro",
-      "Monocloruro de sodio",
-      "Clorito de sodio"
-    ],
-    "respuesta_correcta": "Cloruro de sodio"
-  },
-  {
-    "id": 71,
-    "tema": "Nomenclatura",
-    "pregunta": "¿Cuál es el nombre de CaO?",
-    "opciones": [
-      "Óxido de calcio",
-      "Peróxido de calcio",
-      "Dióxido de calcio",
-      "Calcio oxidado"
-    ],
-    "respuesta_correcta": "Óxido de calcio"
-  },
-  {
-    "id": 72,
-    "tema": "Nomenclatura",
-    "pregunta": "¿Cuál es el nombre estequiométrico de N2O5?",
-    "opciones": [
-      "Pentóxido de dinitrógeno",
-      "Óxido de nitrógeno",
-      "Nitrato de oxígeno",
-      "Óxido nitroso"
-    ],
-    "respuesta_correcta": "Pentóxido de dinitrógeno"
-  },
-  {
-    "id": 73,
-    "tema": "Enlaces químicos",
-    "pregunta": "Un enlace químico es:",
-    "opciones": [
-      "La fuerza que mantiene unidos a los átomos",
-      "Una mezcla física de átomos",
-      "La separación de electrones",
-      "Un cambio nuclear"
-    ],
-    "respuesta_correcta": "La fuerza que mantiene unidos a los átomos"
-  },
-  {
-    "id": 74,
-    "tema": "Enlaces químicos",
-    "pregunta": "¿Qué ocurre en un enlace iónico?",
-    "opciones": [
-      "Se comparten electrones",
-      "Se transfieren electrones",
-      "Se comparten protones",
-      "Se eliminan neutrones"
-    ],
-    "respuesta_correcta": "Se transfieren electrones"
-  },
-  {
-    "id": 75,
-    "tema": "Enlaces químicos",
-    "pregunta": "¿Qué ocurre en un enlace covalente?",
-    "opciones": [
-      "Se transfieren neutrones",
-      "Se comparten electrones",
-      "Se forman iones metálicos libres",
-      "Se destruye el átomo"
-    ],
-    "respuesta_correcta": "Se comparten electrones"
-  },
-  {
-    "id": 76,
-    "tema": "Enlaces químicos",
-    "pregunta": "El enlace metálico se caracteriza por:",
-    "opciones": [
-      "Un mar de electrones deslocalizados",
-      "Transferencia completa de protones",
-      "Compartición exclusiva entre no metales",
-      "Ausencia total de electrones"
-    ],
-    "respuesta_correcta": "Un mar de electrones deslocalizados"
-  },
-  {
-    "id": 77,
-    "tema": "Enlaces químicos",
-    "pregunta": "¿Cuál compuesto presenta enlace iónico principalmente?",
-    "opciones": ["NaCl", "H2O", "CO2", "O2"],
-    "respuesta_correcta": "NaCl"
-  },
-  {
-    "id": 78,
-    "tema": "Enlaces químicos",
-    "pregunta": "¿Cuál molécula presenta enlace covalente apolar?",
-    "opciones": ["HCl", "H2O", "O2", "NaCl"],
-    "respuesta_correcta": "O2"
-  },
-  {
-    "id": 79,
-    "tema": "Enlaces químicos",
-    "pregunta": "¿Cuál molécula presenta enlace covalente polar?",
-    "opciones": ["Cl2", "O2", "HCl", "N2"],
-    "respuesta_correcta": "HCl"
-  },
-  {
-    "id": 80,
-    "tema": "Enlaces químicos",
-    "pregunta": "Entre un metal y un no metal es más probable formar un enlace:",
-    "opciones": ["Covalente apolar", "Iónico", "Metálico", "Puente de hidrógeno"],
-    "respuesta_correcta": "Iónico"
-  },
-  {
-    "id": 81,
-    "tema": "Lewis",
-    "pregunta": "Las estructuras de Lewis representan principalmente:",
-    "opciones": [
-      "Los electrones de valencia",
-      "La masa atómica",
-      "Los neutrones del núcleo",
-      "El estado físico"
-    ],
-    "respuesta_correcta": "Los electrones de valencia"
-  },
-  {
-    "id": 82,
-    "tema": "Lewis",
-    "pregunta": "¿Cuántos electrones de valencia tiene el oxígeno para dibujar en Lewis?",
-    "opciones": ["2", "4", "6", "8"],
-    "respuesta_correcta": "6"
-  },
-  {
-    "id": 83,
-    "tema": "Lewis",
-    "pregunta": "¿Cuántos electrones de valencia tiene el nitrógeno?",
-    "opciones": ["3", "4", "5", "7"],
-    "respuesta_correcta": "5"
-  },
-  {
-    "id": 84,
-    "tema": "Lewis",
-    "pregunta": "¿Cuántos electrones de valencia tiene el carbono?",
-    "opciones": ["2", "4", "6", "8"],
-    "respuesta_correcta": "4"
-  },
-  {
-    "id": 85,
-    "tema": "Lewis",
-    "pregunta": "La regla del octeto indica que muchos átomos tienden a completar:",
-    "opciones": [
-      "2 electrones en su capa externa",
-      "8 electrones en su capa de valencia",
-      "10 protones en el núcleo",
-      "12 neutrones en el átomo"
-    ],
-    "respuesta_correcta": "8 electrones en su capa de valencia"
-  },
-  {
-    "id": 86,
-    "tema": "Lewis",
-    "pregunta": "¿Cuál ion monoatómico se forma cuando el sodio pierde un electrón?",
-    "opciones": ["Na-", "Na+", "Na2+", "Na="],
-    "respuesta_correcta": "Na+"
-  },
-  {
-    "id": 87,
-    "tema": "Lewis",
-    "pregunta": "¿Cuál ion monoatómico se forma cuando el cloro gana un electrón?",
-    "opciones": ["Cl+", "Cl2+", "Cl-", "Cl2-"],
-    "respuesta_correcta": "Cl-"
-  },
-  {
-    "id": 88,
-    "tema": "Ecuación química",
-    "pregunta": "Una ecuación química representa:",
-    "opciones": [
-      "Una reacción química mediante símbolos y fórmulas",
-      "Solo una mezcla de sustancias",
-      "La masa del núcleo",
-      "Un cambio físico exclusivamente"
-    ],
-    "respuesta_correcta": "Una reacción química mediante símbolos y fórmulas"
-  },
-  {
-    "id": 89,
-    "tema": "Ecuación química",
-    "pregunta": "Las sustancias iniciales en una ecuación química se llaman:",
-    "opciones": ["Productos", "Reactivos", "Catalizadores", "Solventes"],
-    "respuesta_correcta": "Reactivos"
-  },
-  {
-    "id": 90,
-    "tema": "Ecuación química",
-    "pregunta": "Las sustancias obtenidas al final de una reacción se llaman:",
-    "opciones": ["Reactivos", "Moléculas base", "Productos", "Elementos libres"],
-    "respuesta_correcta": "Productos"
-  },
-  {
-    "id": 91,
-    "tema": "Ecuación química",
-    "pregunta": "En una ecuación química, la flecha indica:",
-    "opciones": [
-      "Separación de átomos",
-      "Produce o da lugar a",
-      "Suma de neutrones",
-      "Estado sólido"
-    ],
-    "respuesta_correcta": "Produce o da lugar a"
-  },
-  {
-    "id": 92,
-    "tema": "Ecuación química",
-    "pregunta": "Balancear una ecuación química significa:",
-    "opciones": [
-      "Igualar el número de átomos de cada elemento en ambos lados",
-      "Cambiar los subíndices de las fórmulas",
-      "Eliminar reactivos",
-      "Aumentar la masa de los productos"
-    ],
-    "respuesta_correcta": "Igualar el número de átomos de cada elemento en ambos lados"
-  },
-  {
-    "id": 93,
-    "tema": "Ecuación química",
-    "pregunta": "¿Qué se puede modificar para balancear una ecuación?",
-    "opciones": [
-      "Los coeficientes",
-      "Los subíndices de las fórmulas",
-      "Los símbolos químicos",
-      "Los elementos presentes"
-    ],
-    "respuesta_correcta": "Los coeficientes"
-  },
-  {
-    "id": 94,
-    "tema": "Ecuación química",
-    "pregunta": "¿Cuál es la ecuación balanceada para H2 + O2 -> H2O?",
-    "opciones": [
-      "H2 + O2 -> H2O",
-      "2H2 + O2 -> 2H2O",
-      "H2 + 2O2 -> H2O",
-      "2H2 + 2O2 -> H2O"
-    ],
-    "respuesta_correcta": "2H2 + O2 -> 2H2O"
-  },
-  {
-    "id": 95,
-    "tema": "Ecuación química",
-    "pregunta": "¿Cuál es la ecuación balanceada para N2 + H2 -> NH3?",
-    "opciones": [
-      "N2 + H2 -> NH3",
-      "N2 + 2H2 -> 2NH3",
-      "N2 + 3H2 -> 2NH3",
-      "2N2 + 3H2 -> NH3"
-    ],
-    "respuesta_correcta": "N2 + 3H2 -> 2NH3"
-  },
-  {
-    "id": 96,
-    "tema": "Tipos de reacción",
-    "pregunta": "Cuando dos o más sustancias se unen para formar un solo producto, la reacción es de:",
-    "opciones": ["Descomposición", "Síntesis", "Sustitución simple", "Combustión"],
-    "respuesta_correcta": "Síntesis"
-  },
-  {
-    "id": 97,
-    "tema": "Tipos de reacción",
-    "pregunta": "Cuando un compuesto se rompe en sustancias más simples, la reacción es de:",
-    "opciones": ["Síntesis", "Descomposición", "Neutralización", "Precipitación"],
-    "respuesta_correcta": "Descomposición"
-  },
-  {
-    "id": 98,
-    "tema": "Tipos de reacción",
-    "pregunta": "En una reacción de sustitución simple:",
-    "opciones": [
-      "Un elemento desplaza a otro en un compuesto",
-      "Dos compuestos intercambian iones",
-      "Solo se forma agua",
-      "No hay cambio químico"
-    ],
-    "respuesta_correcta": "Un elemento desplaza a otro en un compuesto"
-  },
-  {
-    "id": 99,
-    "tema": "Tipos de reacción",
-    "pregunta": "En una reacción de doble sustitución:",
-    "opciones": [
-      "Dos compuestos intercambian iones",
-      "Un átomo se convierte en neutrón",
-      "Se libera solo oxígeno",
-      "Un elemento reemplaza a otro metal libre"
-    ],
-    "respuesta_correcta": "Dos compuestos intercambian iones"
-  },
-  {
-    "id": 100,
-    "tema": "Tipos de reacción",
-    "pregunta": "La combustión de un compuesto orgánico ocurre típicamente en presencia de:",
-    "opciones": ["Nitrógeno", "Oxígeno", "Helio", "Cloro"],
-    "respuesta_correcta": "Oxígeno"
-  }
-]
+{
+  "facil": [
+    {
+      "pregunta": "¿Cuál es la partícula subatómica con carga negativa?",
+      "opciones": ["Protón", "Neutrón", "Electrón", "Núcleo"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Cuál es la partícula subatómica con carga positiva?",
+      "opciones": ["Electrón", "Protón", "Neutrón", "Isótopo"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué partícula subatómica no tiene carga eléctrica?",
+      "opciones": ["Protón", "Electrón", "Neutrón", "Catión"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Dónde se encuentran los protones y neutrones en el átomo?",
+      "opciones": ["En la nube electrónica", "En el núcleo", "En los orbitales externos", "En el enlace químico"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué representa el número atómico?",
+      "opciones": ["Número de neutrones", "Número de electrones y neutrones", "Número de protones", "Número de orbitales"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Qué es un átomo?",
+      "opciones": ["La partícula más pequeña de un elemento que conserva sus propiedades", "Una mezcla de sustancias", "Una partícula sin protones", "Una molécula siempre diatómica"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Qué es un elemento químico?",
+      "opciones": ["Sustancia formada por átomos del mismo tipo", "Mezcla homogénea", "Combinación de metales y no metales", "Grupo de moléculas diferentes"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Qué es una molécula?",
+      "opciones": ["Partícula formada por dos o más átomos unidos", "Solo un átomo con carga", "Un protón libre", "Un electrón con energía"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Qué son los isótopos?",
+      "opciones": ["Átomos de distintos elementos con igual masa", "Átomos del mismo elemento con diferente número de neutrones", "Moléculas con distinta carga", "Iones con el mismo número atómico"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cuál es el símbolo químico del sodio?",
+      "opciones": ["So", "Sd", "Na", "S"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Cuál es el símbolo químico del potasio?",
+      "opciones": ["Po", "Pt", "K", "Ka"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Cuál es el símbolo químico del hierro?",
+      "opciones": ["Hi", "Fe", "Ir", "He"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿En qué tabla se organizan los elementos químicos?",
+      "opciones": ["Tabla molecular", "Tabla periódica", "Tabla estequiométrica", "Tabla de valencias"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cómo se llaman las filas horizontales de la tabla periódica?",
+      "opciones": ["Grupos", "Períodos", "Familias", "Series"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cómo se llaman las columnas verticales de la tabla periódica?",
+      "opciones": ["Períodos", "Niveles", "Grupos", "Órbitas"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Qué tipo de elementos se ubican mayormente a la izquierda de la tabla periódica?",
+      "opciones": ["No metales", "Metales", "Gases nobles", "Halógenos solamente"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué tipo de elementos se ubican mayormente a la derecha de la tabla periódica?",
+      "opciones": ["Metales", "No metales", "Lantánidos", "Actínidos"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué tipo de elemento tiene propiedades intermedias entre metales y no metales?",
+      "opciones": ["Gas noble", "Halógeno", "Metaloide", "Isótopo"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Cuál de estos elementos es diatómico en su estado natural?",
+      "opciones": ["Neón", "Oxígeno", "Sodio", "Calcio"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cuál es el número de Avogadro aproximadamente?",
+      "opciones": ["6.02 × 10^23", "3.14 × 10^8", "9.8 × 10^2", "1.6 × 10^-19"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Qué representa un mol?",
+      "opciones": ["Una masa fija para todas las sustancias", "Una cantidad de sustancia", "Una unidad de volumen", "Un tipo de átomo"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cuántos mililitros hay en 1 litro?",
+      "opciones": ["10", "100", "1000", "10000"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Cuántos gramos hay en 1 kilogramo?",
+      "opciones": ["10", "100", "1000", "10000"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Cuántos miligramos hay en 1 gramo?",
+      "opciones": ["10", "100", "1000", "10000"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Qué indica la configuración electrónica?",
+      "opciones": ["La masa del átomo", "La distribución de los electrones", "El número de neutrones", "El tipo de enlace"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cómo se llaman los electrones del nivel más externo?",
+      "opciones": ["Electrones internos", "Electrones de valencia", "Electrones neutros", "Electrones isotópicos"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué tipo de enlace se forma por transferencia de electrones?",
+      "opciones": ["Covalente", "Metálico", "Iónico", "Puente de hidrógeno"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Qué tipo de enlace se forma por compartición de electrones?",
+      "opciones": ["Iónico", "Covalente", "Metálico", "Nuclear"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué tipo de enlace es característico entre átomos metálicos?",
+      "opciones": ["Iónico", "Covalente", "Metálico", "Doble"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Qué representa una ecuación química?",
+      "opciones": ["Solo el nombre de un compuesto", "Una reacción química mediante símbolos y fórmulas", "Una mezcla de elementos", "Una tabla periódica resumida"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cómo se llaman las sustancias iniciales en una reacción química?",
+      "opciones": ["Productos", "Reactivos", "Catalizadores", "Valencias"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cómo se llaman las sustancias formadas en una reacción química?",
+      "opciones": ["Reactivos", "Iones", "Productos", "Metales"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Qué se busca al balancear una ecuación química?",
+      "opciones": ["Cambiar los productos", "Igualar el número de átomos de cada elemento en ambos lados", "Eliminar reactivos", "Aumentar la masa"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes es un compuesto inorgánico?",
+      "opciones": ["NaCl", "C6H12O6", "CH4", "C2H5OH"],
+      "correcta": 0
+    }
+  ],
+  "media": [
+    {
+      "pregunta": "¿Cuántos protones tiene un átomo con número atómico 17?",
+      "opciones": ["8", "17", "18", "34"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "Un átomo neutro con número atómico 12 tiene:",
+      "opciones": ["12 protones y 10 electrones", "12 protones y 12 electrones", "12 neutrones y 12 electrones", "24 protones y 12 electrones"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "Si un átomo tiene número atómico 11 y número másico 23, ¿cuántos neutrones tiene?",
+      "opciones": ["11", "12", "23", "34"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cuál opción describe correctamente a un catión?",
+      "opciones": ["Átomo que gana electrones", "Átomo que pierde electrones y queda con carga positiva", "Átomo sin neutrones", "Molécula sin enlaces"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cuál opción describe correctamente a un anión?",
+      "opciones": ["Átomo que gana electrones y queda con carga negativa", "Átomo que pierde protones", "Átomo sin carga", "Elemento metálico neutro"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Cuál es la tendencia general del radio atómico al bajar en un grupo?",
+      "opciones": ["Disminuye", "Aumenta", "No cambia", "Se vuelve negativo"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cuál es la tendencia general de la electronegatividad al avanzar de izquierda a derecha en un período?",
+      "opciones": ["Disminuye", "Aumenta", "No cambia", "Se vuelve cero"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué propiedad periódica mide la capacidad de un átomo para atraer electrones en un enlace?",
+      "opciones": ["Radio atómico", "Electronegatividad", "Peso fórmula", "Número másico"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué propiedad periódica se relaciona con el tamaño del átomo?",
+      "opciones": ["Radio atómico", "Energía de ionización", "Electronegatividad", "Valencia fija"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Qué propiedad periódica representa la energía necesaria para quitar un electrón a un átomo gaseoso?",
+      "opciones": ["Carácter metálico", "Electronegatividad", "Energía de ionización", "Afinidad nuclear"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Cuál de estos elementos pertenece a los metaloides?",
+      "opciones": ["Na", "Cl", "Si", "Mg"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes pertenece a los gases nobles?",
+      "opciones": ["Ne", "Na", "N", "Ni"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Cuál es el peso fórmula aproximado de H2O?",
+      "opciones": ["16", "17", "18", "20"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Cuál es el peso fórmula aproximado de CO2?",
+      "opciones": ["28", "44", "32", "46"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cuántos moles hay en 12.04 × 10^23 moléculas?",
+      "opciones": ["1 mol", "2 mol", "3 mol", "0.5 mol"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cuántas moléculas hay en 1 mol de cualquier sustancia molecular?",
+      "opciones": ["3.01 × 10^23", "6.02 × 10^23", "1.00 × 10^3", "12.0 × 10^23"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cuántos átomos hay en 2 moles de átomos de sodio?",
+      "opciones": ["6.02 × 10^23", "12.04 × 10^23", "3.01 × 10^23", "2 átomos"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cuántos gramos hay en 2500 mg?",
+      "opciones": ["0.25 g", "2.5 g", "25 g", "250 g"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cuántos litros equivalen a 500 mL?",
+      "opciones": ["5 L", "0.5 L", "50 L", "0.05 L"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "La configuración semidesarrollada 2,8,1 corresponde a un átomo con:",
+      "opciones": ["1 electrón total", "11 electrones", "8 electrones", "3 protones"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "Un átomo con configuración 2,8,7 tiene cuántos electrones de valencia?",
+      "opciones": ["2", "7", "8", "17"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué fórmula corresponde al cloruro de sodio?",
+      "opciones": ["NaCl", "NaCl2", "Na2Cl", "ClNa2"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Cómo se nombra FeCl2 en sistema Stock?",
+      "opciones": ["Cloruro de hierro", "Cloruro férrico", "Cloruro de hierro (II)", "Dicloruro de hierro (III)"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Cómo se nombra FeCl3 en sistema Stock?",
+      "opciones": ["Cloruro de hierro (III)", "Cloruro de hierro (II)", "Cloruro ferroso", "Tricloruro de hierro (II)"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Cómo se nombra Na2O en sistema estequiométrico?",
+      "opciones": ["Óxido de sodio", "Monóxido de disodio", "Dióxido de sodio", "Óxido sódico (II)"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué tipo de enlace presenta NaCl?",
+      "opciones": ["Covalente apolar", "Covalente polar", "Iónico", "Metálico"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Qué tipo de enlace presenta O2?",
+      "opciones": ["Iónico", "Covalente apolar", "Metálico", "Covalente coordinado siempre"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué tipo de enlace presenta HCl?",
+      "opciones": ["Iónico puro", "Covalente polar", "Metálico", "Apolar"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué representa una estructura de Lewis?",
+      "opciones": ["Los protones del núcleo", "Los electrones de valencia de átomos, iones o moléculas", "La masa molecular solamente", "La velocidad de reacción"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué símbolo separa reactivos de productos en una ecuación química?",
+      "opciones": ["=", "→", "+", "÷"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cuál ecuación está balanceada?",
+      "opciones": ["H2 + O2 → H2O", "2H2 + O2 → 2H2O", "H2 + O2 → 2H2O", "2H2 + 2O2 → H2O"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué tipo de reacción es A + B → AB?",
+      "opciones": ["Descomposición", "Síntesis o combinación", "Sustitución doble", "Combustión"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué tipo de reacción es AB → A + B?",
+      "opciones": ["Síntesis", "Descomposición", "Neutralización", "Precipitación"],
+      "correcta": 1
+    }
+  ],
+  "dificil": [
+    {
+      "pregunta": "Un átomo neutro tiene 15 protones y 16 neutrones. ¿Cuál es su número másico?",
+      "opciones": ["15", "16", "31", "1"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Cuál afirmación sobre isótopos es correcta?",
+      "opciones": ["Tienen diferente número atómico y mismo número de neutrones", "Tienen el mismo número atómico y diferente número másico", "Tienen diferente número de protones y electrones siempre", "Son moléculas diatómicas del mismo elemento"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "Si un ion Al3+ tiene 13 protones, ¿cuántos electrones posee?",
+      "opciones": ["10", "13", "16", "3"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "Si un ion S2- tiene 16 protones, ¿cuántos electrones posee?",
+      "opciones": ["14", "16", "18", "32"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Cuál opción describe mejor la tendencia del carácter metálico en la tabla periódica?",
+      "opciones": ["Aumenta hacia la derecha y hacia arriba", "Aumenta hacia la izquierda y hacia abajo", "Disminuye hacia abajo", "No presenta tendencia"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿En cuál de los siguientes elementos se espera mayor energía de ionización?",
+      "opciones": ["Na", "Mg", "Cl", "K"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Cuál par de elementos está formado por elementos diatómicos en su estado natural?",
+      "opciones": ["Na y K", "O y N", "Ca y Mg", "He y Ne"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cuál es el peso fórmula aproximado de CaCO3? (Ca=40, C=12, O=16)",
+      "opciones": ["84", "92", "100", "116"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Cuál es el peso fórmula aproximado de H2SO4? (H=1, S=32, O=16)",
+      "opciones": ["96", "98", "100", "102"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cuántos moles hay en 18 g de agua? (PM H2O = 18 g/mol)",
+      "opciones": ["0.5 mol", "1 mol", "2 mol", "18 mol"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cuántos gramos corresponden a 2 moles de CO2? (PM CO2 = 44 g/mol)",
+      "opciones": ["22 g", "44 g", "66 g", "88 g"],
+      "correcta": 3
+    },
+    {
+      "pregunta": "¿Cuántos moles representan 3.01 × 10^23 moléculas?",
+      "opciones": ["0.5 mol", "1 mol", "2 mol", "5 mol"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Cuántos átomos de oxígeno hay en 1 mol de O2?",
+      "opciones": ["6.02 × 10^23", "12.04 × 10^23", "3.01 × 10^23", "2 átomos"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cuántos iones totales se obtienen al considerar 1 mol de NaCl completamente separado en iones?",
+      "opciones": ["6.02 × 10^23", "12.04 × 10^23", "3.01 × 10^23", "1.00 × 10^3"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "Si una muestra contiene 0.25 mol, ¿cuántas moléculas tiene aproximadamente?",
+      "opciones": ["1.505 × 10^23", "6.02 × 10^23", "12.04 × 10^23", "2.41 × 10^24"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Cuántos mililitros hay en 2.5 litros?",
+      "opciones": ["25 mL", "250 mL", "2500 mL", "25000 mL"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Cuántos gramos hay en 0.75 kg?",
+      "opciones": ["7.5 g", "75 g", "750 g", "7500 g"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "La configuración semidesarrollada 2,8,8,1 corresponde a cuántos electrones totales?",
+      "opciones": ["18", "19", "20", "21"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cuántos electrones de valencia tiene un átomo con configuración 2,8,18,7?",
+      "opciones": ["2", "7", "18", "35"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cómo se nombra Cu2O en sistema Stock?",
+      "opciones": ["Óxido de cobre (II)", "Óxido de cobre (I)", "Monóxido de dicobre (II)", "Óxido cúprico"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cómo se nombra CuO en sistema Stock?",
+      "opciones": ["Óxido de cobre (I)", "Óxido de cobre (II)", "Monóxido de dicobre", "Óxido cuproso"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cómo se nombra Fe2O3 en sistema Stock?",
+      "opciones": ["Óxido de hierro (II)", "Óxido de hierro (III)", "Trióxido de hierro", "Óxido ferroso"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué tipo de enlace predomina en MgO?",
+      "opciones": ["Covalente apolar", "Covalente polar", "Iónico", "Metálico"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Qué compuesto presenta enlace covalente apolar?",
+      "opciones": ["NaCl", "H2", "HCl", "MgO"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cuál es la estructura de Lewis más apropiada para Na+?",
+      "opciones": ["Na con un punto", "[Na]+ sin puntos de valencia", "Na con ocho puntos", "Na-"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cuál ecuación está correctamente balanceada?",
+      "opciones": ["Na + Cl2 → NaCl", "2Na + Cl2 → 2NaCl", "Na + 2Cl2 → NaCl2", "2Na + Cl → 2NaCl"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cuál ecuación está correctamente balanceada?",
+      "opciones": ["C3H8 + O2 → CO2 + H2O", "C3H8 + 5O2 → 3CO2 + 4H2O", "C3H8 + 3O2 → 3CO2 + 4H2O", "2C3H8 + O2 → CO2 + H2O"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué tipo de reacción representa Zn + 2HCl → ZnCl2 + H2?",
+      "opciones": ["Síntesis", "Descomposición", "Sustitución simple", "Sustitución doble"],
+      "correcta": 2
+    },
+    {
+      "pregunta": "¿Qué tipo de reacción representa AgNO3 + NaCl → AgCl + NaNO3?",
+      "opciones": ["Combustión", "Sustitución doble", "Síntesis", "Descomposición"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Qué tipo de reacción representa 2KClO3 → 2KCl + 3O2?",
+      "opciones": ["Descomposición", "Síntesis", "Sustitución simple", "Neutralización"],
+      "correcta": 0
+    },
+    {
+      "pregunta": "¿Qué significa el coeficiente 3 en 3H2O dentro de una ecuación química?",
+      "opciones": ["Tres átomos de hidrógeno", "Tres moléculas o moles de agua según el contexto", "Tres gramos de agua", "Tres electrones de valencia"],
+      "correcta": 1
+    },
+    {
+      "pregunta": "¿Cuál es la suma total de átomos en la fórmula Al2(SO4)3?",
+      "opciones": ["9", "12", "15", "17"],
+      "correcta": 3
+    },
+    {
+      "pregunta": "Si 1 mol de CaCl2 se disocia completamente, ¿cuántos moles de iones totales se obtienen?",
+      "opciones": ["1 mol", "2 mol", "3 mol", "4 mol"],
+      "correcta": 2
+    }
+  ]
+}

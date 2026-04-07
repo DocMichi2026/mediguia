@@ -152,6 +152,1510 @@
         radial-gradient(circle at 20% 20%, rgba(124,200,255,0.18), transparent 35%),
         radial-gradient(circle at 80% 30%, rgba(126,240,197,0.16), transparent 30%);
       border: 1px solid var(--line);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .heroMascot {
+      position: absolute;
+      right: 18px;
+      bottom: 18px;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 26px;
+      border: 2px solid rgba(255,255,255,0.22);
+      box-shadow: 0 14px 30px rgba(0,0,0,0.28);
+      animation: floatMascot 3.6s ease-in-out infinite;
+      background: rgba(255,255,255,0.08);
+    }
+
+    .mascotBubble {
+      position: absolute;
+      right: 110px;
+      bottom: 112px;
+      max-width: 210px;
+      padding: 12px 14px;
+      border-radius: 18px 18px 6px 18px;
+      background: rgba(8,17,30,0.72);
+      border: 1px solid rgba(255,255,255,0.12);
+      color: var(--text);
+      font-size: 0.92rem;
+      line-height: 1.45;
+      box-shadow: var(--shadow);
+    }
+
+    .playerPortrait {
+      width: 100%;
+      max-width: 180px;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 24px;
+      border: 2px solid rgba(255,255,255,0.14);
+      box-shadow: 0 14px 28px rgba(0,0,0,0.22);
+      margin: 0 auto 14px;
+      display: block;
+      background: rgba(255,255,255,0.06);
+    }
+
+    .pulseRing {
+      position: absolute;
+      inset: auto 18px 18px auto;
+      width: 120px;
+      height: 120px;
+      border-radius: 26px;
+      border: 2px solid rgba(126,240,197,0.18);
+      animation: pulseRing 2.2s ease-out infinite;
+      pointer-events: none;
+    }
+
+    .tipBar {
+      margin-top: 18px;
+      padding: 14px 16px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      color: var(--muted);
+      min-height: 54px;
+      display: flex;
+      align-items: center;
+    }
+
+    .feedbackText {
+      margin-top: 16px;
+      padding: 14px 16px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      line-height: 1.55;
+      display: none;
+    }
+
+    .feedbackText.show { display: block; }
+
+    @keyframes floatMascot {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+    }
+
+    @keyframes pulseRing {
+      0% { transform: scale(0.94); opacity: 0.7; }
+      100% { transform: scale(1.14); opacity: 0; }
+    }
+
+    .subjectTile {
+      border-radius: 22px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 120px;
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(255,255,255,0.05);
+    }
+
+    .subjectTile .icon { font-size: 1.6rem; margin-bottom: 10px; }
+    .subjectTile strong { font-size: 1rem; }
+    .subjectTile small { color: var(--muted); }
+
+    .section {
+      margin-top: 24px;
+      padding: 24px;
+    }
+
+    .classGrid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .classCard, .modeCard {
+      padding: 20px;
+      border-radius: 22px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.05);
+      transition: transform .18s ease, border-color .18s ease;
+    }
+
+    .classCard:hover, .modeCard:hover {
+      transform: translateY(-4px);
+      border-color: rgba(124,200,255,0.55);
+    }
+
+    .classCard .emoji, .modeCard .emoji {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .classCard ul, .modeCard ul {
+      color: var(--muted);
+      padding-left: 18px;
+      line-height: 1.5;
+    }
+
+    .hud {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .sidebar, .battleArea { padding: 20px; }
+
+    .playerCard, .enemyCard, .questionCard, .actionCard, .logCard {
+      padding: 18px;
+      border-radius: 22px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.05);
+      margin-bottom: 16px;
+    }
+
+    .avatar {
+      width: 72px;
+      height: 72px;
+      border-radius: 20px;
+      display: grid;
+      place-items: center;
+      font-size: 2rem;
+      background: linear-gradient(135deg, rgba(124,200,255,0.25), rgba(126,240,197,0.25));
+      border: 1px solid rgba(255,255,255,0.15);
+      margin-bottom: 12px;
+    }
+
+    .barWrap { margin: 12px 0; }
+    .barLabel {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    .bar {
+      height: 12px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 999px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .fill {
+      height: 100%;
+      width: 0;
+      border-radius: inherit;
+      transition: width .35s ease;
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    }
+
+    .fill.hpEnemy { background: linear-gradient(90deg, #ff9b9b, #ffd0a8); }
+    .fill.energy { background: linear-gradient(90deg, #b7a6ff, #7cc8ff); }
+    .fill.xp { background: linear-gradient(90deg, #ffd57a, #7ef0c5); }
+
+    .stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 8px;
+    }
+
+    .statBox {
+      background: rgba(255,255,255,0.05);
+      padding: 12px;
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .statBox span {
+      display: block;
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    .subjectHeader {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .questionText {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 16px;
+      color: var(--text);
+    }
+
+    .options {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .optionBtn {
+      width: 100%;
+      text-align: left;
+      padding: 14px 16px;
+      border-radius: 18px;
+      color: var(--text);
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      box-shadow: none;
+    }
+
+    .optionBtn:hover { background: rgba(255,255,255,0.1); }
+    .optionBtn.correct { background: rgba(126,240,197,0.16); border-color: rgba(126,240,197,0.55); }
+    .optionBtn.wrong { background: rgba(255,138,138,0.16); border-color: rgba(255,138,138,0.55); }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .log {
+      max-height: 170px;
+      overflow: auto;
+      color: var(--muted);
+      line-height: 1.5;
+      font-size: 0.95rem;
+      padding-right: 6px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.1);
+      padding: 8px 12px;
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .topRow {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 18px;
+    }
+
+    .resultBox {
+      text-align: center;
+      padding: 26px;
+    }
+
+    .resultBox .big {
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      margin-bottom: 10px;
+    }
+
+    .shopList {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .shopItem {
+      padding: 14px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.05);
+    }
+
+    .footerNote {
+      margin-top: 16px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 980px) {
+      .hero, .hud { grid-template-columns: 1fr; }
+      .panelGrid, .classGrid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 720px) {
+      .panelGrid, .classGrid, .options, .heroVisual, .shopList { grid-template-columns: 1fr; }
+      .app { width: min(95vw, 95vw); }
+      .hero { padding: 20px; }
+      .section, .sidebar, .battleArea { padding: 16px; }
+      button { width: 100%; }
+      .actions button, .menuButtons button, .buttons button { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+
+    <section id="homeScreen" class="screen active">
+      <div class="hero glass">
+        <div>
+          <div class="logoRow">
+            <div class="logo">🩺</div>
+            <div>
+              <strong style="font-size:1.15rem;">MediGuía Quest</strong>
+              <p style="margin:4px 0 0;">Juego de estudio estilo RPG</p>
+            </div>
+          </div>
+          <h1>Convierte el repaso en una aventura</h1>
+          <p class="subtitle">
+            Explora módulos de Biología, Química, Habilidad Verbal y Habilidad Numérica. Responde preguntas, derrota jefes, gana experiencia y desbloquea mejoras para seguir avanzando.
+          </p>
+          <div class="menuButtons">
+            <button onclick="goToClassSelection()">Iniciar partida</button>
+            <button class="btnSecondary" onclick="loadGame()">Continuar</button>
+            <button class="btnSecondary" onclick="showScreen('howScreen')">Cómo jugar</button>
+          </div>
+
+          <div class="panelGrid">
+            <div class="miniCard">
+              <span>Materias</span>
+              <strong>4 módulos jugables</strong>
+            </div>
+            <div class="miniCard">
+              <span>Modo</span>
+              <strong>Combate + repaso</strong>
+            </div>
+            <div class="miniCard">
+              <span>Progreso</span>
+              <strong>XP, monedas y objetos</strong>
+            </div>
+            <div class="miniCard">
+              <span>Objetivo</span>
+              <strong>Vencer al jefe final</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="heroVisual glass">
+          <div class="subjectTile">
+            <div>
+              <div class="icon">🧬</div>
+              <strong>Biología</strong>
+            </div>
+            <small>Célula, genética, anatomía, fisiología</small>
+          </div>
+          <div class="subjectTile">
+            <div>
+              <div class="icon">⚗️</div>
+              <strong>Química</strong>
+            </div>
+            <small>Átomo, enlaces, reacciones, soluciones</small>
+          </div>
+          <div class="subjectTile">
+            <div>
+              <div class="icon">📘</div>
+              <strong>Verbal</strong>
+            </div>
+            <small>Analogías, vocabulario, relaciones lógicas</small>
+          </div>
+          <div class="subjectTile">
+            <div>
+              <div class="icon">🔢</div>
+              <strong>Numérica</strong>
+            </div>
+            <small>Patrones, proporciones, porcentajes</small>
+          </div>
+          <div class="mascotBubble" id="mascotBubble">Docmichi te acompaña: estudia, pelea y no te rindas.</div>
+          <div class="pulseRing"></div>
+          <img class="heroMascot" id="heroMascot" alt="Docmichi" />
+        </div>
+      </div>
+    </section>
+
+    <section id="howScreen" class="screen">
+      <div class="section glass">
+        <h2>Cómo funciona</h2>
+        <p>
+          Escoges una clase, eliges una materia y entras a una serie de combates. Cada pregunta correcta te permite dañar al enemigo o activar habilidades. Si fallas, el enemigo te castiga. Cuando derrotas enemigos normales llegas al jefe del módulo. Al ganar, recibes monedas y experiencia.
+        </p>
+        <div class="classGrid">
+          <div class="modeCard">
+            <span class="emoji">⚔️</span>
+            <h3>Combate por turnos</h3>
+            <ul>
+              <li>Respuesta correcta = daño al enemigo</li>
+              <li>Respuesta incorrecta = daño recibido</li>
+              <li>Puedes usar habilidades y objetos</li>
+            </ul>
+          </div>
+          <div class="modeCard">
+            <span class="emoji">🧠</span>
+            <h3>Repaso útil</h3>
+            <ul>
+              <li>Preguntas por materia</li>
+              <li>Dificultad progresiva</li>
+              <li>Ideal para adaptar bancos grandes</li>
+            </ul>
+          </div>
+          <div class="modeCard">
+            <span class="emoji">🛒</span>
+            <h3>Tienda</h3>
+            <ul>
+              <li>Compra botiquines</li>
+              <li>Recupera energía</li>
+              <li>Consigue ventajas para el jefe</li>
+            </ul>
+          </div>
+          <div class="modeCard">
+            <span class="emoji">💾</span>
+            <h3>Guardado</h3>
+            <ul>
+              <li>Se guarda en tu navegador</li>
+              <li>Puedes continuar luego</li>
+              <li>Ideal para GitHub Pages</li>
+            </ul>
+          </div>
+        </div>
+        <div class="buttons">
+          <button onclick="goToClassSelection()">Ir a selección</button>
+          <button class="btnSecondary" onclick="showScreen('homeScreen')">Volver</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="classScreen" class="screen">
+      <div class="section glass">
+        <h2>Elige tu clase</h2>
+        <p>
+          Cada clase tiene un estilo distinto. Puedes cambiarla en otra partida.
+        </p>
+        <div class="classGrid" id="classGrid"></div>
+        <div class="buttons">
+          <button class="btnSecondary" onclick="showScreen('homeScreen')">Volver</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="modeScreen" class="screen">
+      <div class="section glass">
+        <div class="subjectHeader">
+          <div>
+            <h2>Elige el modo de juego</h2>
+            <p>Escoge cómo quieres estudiar dentro de MediGuía Quest.</p>
+          </div>
+          <div class="pill" id="chosenClassLabel">Clase: —</div>
+        </div>
+        <div class="classGrid">
+          <div class="classCard">
+            <span class="emoji">⚔️</span>
+            <h3>Aventura</h3>
+            <p>Modo principal con enemigos, jefe final, monedas y experiencia.</p>
+            <button onclick="chooseMode('adventure')">Jugar aventura</button>
+          </div>
+          <div class="classCard">
+            <span class="emoji">📚</span>
+            <h3>Repaso</h3>
+            <p>Lee conceptos clave, responde preguntas y revisa explicaciones sin combate.</p>
+            <button onclick="chooseMode('review')">Entrar a repaso</button>
+          </div>
+          <div class="classCard">
+            <span class="emoji">🔥</span>
+            <h3>Supervivencia</h3>
+            <p>Sin rondas fijas. Aguanta todo lo posible mientras la dificultad sube.</p>
+            <button onclick="chooseMode('survival')">Entrar a supervivencia</button>
+          </div>
+          <div class="classCard">
+            <span class="emoji">🎯</span>
+            <h3>Práctica rápida</h3>
+            <p>Mini sesión corta para contestar preguntas directas con estadísticas.</p>
+            <button onclick="chooseMode('practice')">Ir a práctica</button>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="btnSecondary" onclick="goToClassSelection()">Cambiar clase</button>
+          <button class="btnSecondary" onclick="showScreen('homeScreen')">Menú principal</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="subjectScreen" class="screen">
+      <div class="section glass">
+        <div class="subjectHeader">
+          <div>
+            <h2>Selecciona el módulo</h2>
+            <p>Elige la materia con la que quieres estudiar.</p>
+          </div>
+          <div class="pill" id="modeLabel">Modo: —</div>
+        </div>
+        <div class="classGrid" id="subjectGrid"></div>
+        <div class="buttons">
+          <button class="btnSecondary" onclick="showScreen('modeScreen')">Cambiar modo</button>
+          <button class="btnSecondary" onclick="goToClassSelection()">Cambiar clase</button>
+          <button class="btnSecondary" onclick="showScreen('homeScreen')">Menú principal</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviewScreen" class="screen">
+      <div class="section glass">
+        <div class="subjectHeader">
+          <div>
+            <h2 id="reviewTitle">Repaso</h2>
+            <p id="reviewMeta">Materia y progreso</p>
+          </div>
+          <div class="pill" id="reviewCounter">1 / 10</div>
+        </div>
+        <div class="questionCard" style="margin-bottom:18px;">
+          <h3 id="reviewCategory">Tema</h3>
+          <div class="questionText" id="reviewQuestion">Pregunta</div>
+          <div class="options" id="reviewOptions"></div>
+          <div id="reviewExplanation" style="display:none; margin-top:16px; padding:16px; border-radius:18px; background:rgba(255,255,255,0.05); border:1px solid var(--line);"></div>
+        </div>
+        <div class="buttons">
+          <button id="reviewNextBtn" onclick="nextReviewQuestion()" disabled>Siguiente</button>
+          <button class="btnSecondary" onclick="goToSubjects()">Cambiar materia</button>
+          <button class="btnSecondary" onclick="showScreen('modeScreen')">Cambiar modo</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="battleScreen" class="screen">
+      <div class="topRow">
+        <div class="pill" id="stageInfo">Ronda 1</div>
+        <div class="pill" id="coinsInfo">Monedas: 0</div>
+        <div class="pill" id="classInfo">Clase: —</div>
+        <div class="pill" id="subjectInfo">Materia: —</div>
+      </div>
+
+      <div class="hud">
+        <aside class="sidebar glass">
+          <div class="playerCard">
+            <img class="playerPortrait" id="playerPortrait" alt="Docmichi retrato" />
+            <div class="avatar" id="playerAvatar">🧪</div>
+            <h3 id="playerName">Jugador</h3>
+            <p id="playerClassDescription">Clase</p>
+
+            <div class="barWrap">
+              <div class="barLabel"><span>Vida</span><span id="hpText">0 / 0</span></div>
+              <div class="bar"><div class="fill" id="hpFill"></div></div>
+            </div>
+
+            <div class="barWrap">
+              <div class="barLabel"><span>Energía</span><span id="energyText">0 / 0</span></div>
+              <div class="bar"><div class="fill energy" id="energyFill"></div></div>
+            </div>
+
+            <div class="barWrap">
+              <div class="barLabel"><span>Experiencia</span><span id="xpText">0 / 100</span></div>
+              <div class="bar"><div class="fill xp" id="xpFill"></div></div>
+            </div>
+
+            <div class="stats" id="statsGrid"></div>
+          </div>
+
+          <div class="actionCard">
+            <h3>Objetos y acciones</h3>
+            <div class="actions">
+              <button class="btnSecondary" onclick="usePotion()">Usar botiquín</button>
+              <button class="btnSecondary" onclick="useFocus()">Concentración</button>
+              <button class="btnSecondary" onclick="openShop()">Tienda</button>
+              <button class="btnSecondary" onclick="saveGame()">Guardar</button>
+            </div>
+            <p class="footerNote" id="inventoryInfo">Botiquines: 0 · Concentraciones: 0</p>
+          </div>
+
+          <div class="logCard">
+            <h3>Registro</h3>
+            <div class="log" id="battleLog"></div>
+          </div>
+        </aside>
+
+        <main class="battleArea glass">
+          <div class="enemyCard">
+            <div class="subjectHeader">
+              <div>
+                <h2 id="enemyName">Enemigo</h2>
+                <p id="enemyType">Tipo enemigo</p>
+              </div>
+              <div class="pill" id="enemyLevel">Nivel 1</div>
+            </div>
+            <div class="barWrap">
+              <div class="barLabel"><span>Vida enemiga</span><span id="enemyHpText">0 / 0</span></div>
+              <div class="bar"><div class="fill hpEnemy" id="enemyHpFill"></div></div>
+            </div>
+          </div>
+
+          <div class="questionCard">
+            <div class="subjectHeader">
+              <h3 id="questionCategory">Pregunta</h3>
+              <div class="pill" id="difficultyTag">Dificultad 1</div>
+            </div>
+            <div class="questionText" id="questionText">Aquí aparecerá la pregunta.</div>
+            <div class="options" id="optionsWrap"></div>
+            <div class="feedbackText" id="feedbackText"></div>
+            <div class="tipBar" id="tipBar">Tip de Docmichi: respira y piensa la relación antes de responder.</div>
+          </div>
+        </main>
+      </div>
+    </section>
+
+    <section id="resultScreen" class="screen">
+      <div class="section glass resultBox">
+        <div class="big" id="resultEmoji">🏆</div>
+        <h2 id="resultTitle">Resultado</h2>
+        <p id="resultDescription">Aquí aparecerá el resultado.</p>
+        <div class="buttons" style="justify-content:center;">
+          <button onclick="goToSubjects()">Elegir otra materia</button>
+          <button class="btnSecondary" onclick="restartCurrentSubject()">Reintentar módulo</button>
+          <button class="btnSecondary" onclick="showScreen('homeScreen')">Menú principal</button>
+        </div>
+      </div>
+    </section>
+
+    <div id="shopModal" style="display:none; position:fixed; inset:0; background:rgba(3,8,20,0.72); backdrop-filter:blur(8px); padding:20px; z-index:100;">
+      <div class="glass" style="width:min(760px, 96vw); margin:40px auto; padding:24px; border-radius:28px;">
+        <div class="subjectHeader">
+          <div>
+            <h2>Tienda de MediGuía</h2>
+            <p>Compra mejoras antes de seguir peleando.</p>
+          </div>
+          <button class="btnSecondary" onclick="closeShop()" style="width:auto;">Cerrar</button>
+        </div>
+
+        <div class="shopList">
+          <div class="shopItem">
+            <h3>🩹 Botiquín</h3>
+            <p>Recupera 35 de vida durante el combate.</p>
+            <button onclick="buyItem('potion')">Comprar · 20 monedas</button>
+          </div>
+          <div class="shopItem">
+            <h3>🎯 Concentración</h3>
+            <p>Reduce el castigo de un fallo y recupera energía.</p>
+            <button onclick="buyItem('focus')">Comprar · 18 monedas</button>
+          </div>
+          <div class="shopItem">
+            <h3>⚡ Mejora de energía</h3>
+            <p>Aumenta tu energía máxima en 10 durante esta partida.</p>
+            <button onclick="buyItem('energyBoost')">Comprar · 35 monedas</button>
+          </div>
+          <div class="shopItem">
+            <h3>🛡️ Refuerzo</h3>
+            <p>Sube tu defensa en 1 durante esta partida.</p>
+            <button onclick="buyItem('defenseBoost')">Comprar · 40 monedas</button>
+          </div>
+        </div>
+        <p class="footerNote">Tip: cuando metas tus propios bancos de preguntas, este juego se vuelve todavía más potente para repasar.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    const DOCMICHI_URL = 'https://files.catbox.moe/z442hc.png';
+
+    const docmichiLines = [
+      'Docmichi dice: una buena racha empieza con una pregunta bien leída.',
+      'Tip de Docmichi: elimina opciones imposibles antes de decidir.',
+      'No corras. En verbal y numérica, entender la relación vale oro.',
+      'Si fallas una, no pasa nada. Ajusta y sigue avanzando.',
+      'Docmichi te está viendo estudiar en serio 😼🩺'
+    ];
+
+    const classes = [
+      {
+        id: 'analista',
+        name: 'Analista',
+        emoji: '🧠',
+        description: 'Más daño intelectual y mejor recuperación de energía.',
+        hp: 110,
+        energy: 100,
+        atk: 18,
+        def: 5,
+        crit: 0.18,
+        passive: 'Recupera 8 de energía al acertar.'
+      },
+      {
+        id: 'medico',
+        name: 'Médico',
+        emoji: '🩺',
+        description: 'Más vida y mejor capacidad de curación.',
+        hp: 135,
+        energy: 85,
+        atk: 15,
+        def: 7,
+        crit: 0.1,
+        passive: 'Los botiquines curan 15 más.'
+      },
+      {
+        id: 'estratega',
+        name: 'Estratega',
+        emoji: '♟️',
+        description: 'Equilibrado, crítico decente y buena defensa táctica.',
+        hp: 120,
+        energy: 90,
+        atk: 16,
+        def: 6,
+        crit: 0.14,
+        passive: 'Reduce más daño cuando usa concentración.'
+      },
+      {
+        id: 'explorador',
+        name: 'Explorador',
+        emoji: '🧭',
+        description: 'Rápido, más crítico y gana más monedas.',
+        hp: 105,
+        energy: 95,
+        atk: 17,
+        def: 4,
+        crit: 0.22,
+        passive: 'Gana 20% más monedas.'
+      }
+    ];
+
+    const subjects = [
+      {
+        id: 'biologia',
+        name: 'Biología',
+        emoji: '🧬',
+        desc: 'Célula, genética, tejidos, anatomía y fisiología.',
+        enemies: ['Célula mutante', 'Guardia histológico', 'Vector genético'],
+        boss: 'Titán del núcleo'
+      },
+      {
+        id: 'quimica',
+        name: 'Química',
+        emoji: '⚗️',
+        desc: 'Átomo, tabla periódica, enlaces, reacciones y soluciones.',
+        enemies: ['Molécula inestable', 'Catión salvaje', 'Nube reactiva'],
+        boss: 'Señor de las reacciones'
+      },
+      {
+        id: 'verbal',
+        name: 'Habilidad Verbal',
+        emoji: '📘',
+        desc: 'Analogías, sinónimos, antónimos y relaciones lógicas.',
+        enemies: ['Eco semántico', 'Centinela léxico', 'Sombra analógica'],
+        boss: 'Maestro de las palabras'
+      },
+      {
+        id: 'numerica',
+        name: 'Habilidad Numérica',
+        emoji: '🔢',
+        desc: 'Porcentajes, fracciones, series, álgebra y proporciones.',
+        enemies: ['Secuencia rota', 'Fracción espectral', 'Guardián decimal'],
+        boss: 'Arquitecto del cálculo'
+      }
+    ];
+
+    let questionBank = {
+      biologia: [],
+      quimica: [],
+      verbal: [],
+      numerica: []
+    };
+
+    const jsonPaths = {
+      biologia: 'data/biologia.json',
+      quimica: 'data/quimica.json',
+      verbal: 'data/verbal.json',
+      numerica: 'data/numerica.json'
+    };
+
+    let state = {};
+
+    function createFreshState() {
+      return {
+        player: null,
+        chosenClass: null,
+        subject: null,
+        round: 1,
+        totalRounds: 4,
+        coins: 0,
+        xp: 0,
+        level: 1,
+        xpToNext: 100,
+        hp: 0,
+        maxHp: 0,
+        energy: 0,
+        maxEnergy: 0,
+        atk: 0,
+        def: 0,
+        crit: 0,
+        inventory: { potion: 2, focus: 1 },
+        enemy: null,
+        question: null,
+        usedQuestions: [],
+        focusShield: false,
+        completedSubjects: []
+      };
+    }
+
+    function showScreen(id) {
+      document.querySelectorAll('.screen').forEach(screen => screen.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      updateMascotLine();
+    }
+
+    function updateMascotAssets() {
+      const heroMascot = document.getElementById('heroMascot');
+      const playerPortrait = document.getElementById('playerPortrait');
+      if (heroMascot) heroMascot.src = DOCMICHI_URL;
+      if (playerPortrait) playerPortrait.src = DOCMICHI_URL;
+    }
+
+    function updateMascotLine(extra) {
+      const bubble = document.getElementById('mascotBubble');
+      const tipBar = document.getElementById('tipBar');
+      const line = extra || docmichiLines[Math.floor(Math.random() * docmichiLines.length)];
+      if (bubble) bubble.textContent = line;
+      if (tipBar) tipBar.textContent = line;
+    }
+
+    function log(message) {
+      const box = document.getElementById('battleLog');
+      if (!box) return;
+      const time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+      box.innerHTML = `<div><strong>[${time}]</strong> ${message}</div>` + box.innerHTML;
+    }
+
+    function goToClassSelection() {
+      if (!state.player) state = createFreshState();
+      updateMascotAssets();
+    renderClasses();
+    loadQuestionBanks();
+      showScreen('classScreen');
+    }
+
+    function renderClasses() {
+      const grid = document.getElementById('classGrid');
+      grid.innerHTML = classes.map(c => `
+        <div class="classCard">
+          <span class="emoji">${c.emoji}</span>
+          <h3>${c.name}</h3>
+          <p>${c.description}</p>
+          <ul>
+            <li>Vida: ${c.hp}</li>
+            <li>Energía: ${c.energy}</li>
+            <li>Ataque: ${c.atk}</li>
+            <li>Pasiva: ${c.passive}</li>
+          </ul>
+          <button onclick="selectClass('${c.id}')">Elegir</button>
+        </div>
+      `).join('');
+    }
+
+    function selectClass(classId) {
+      const cls = classes.find(c => c.id === classId);
+      state = createFreshState();
+      state.chosenClass = cls;
+      state.player = 'Estudiante';
+      state.maxHp = cls.hp;
+      state.hp = cls.hp;
+      state.maxEnergy = cls.energy;
+      state.energy = cls.energy;
+      state.atk = cls.atk;
+      state.def = cls.def;
+      state.crit = cls.crit;
+      document.getElementById('chosenClassLabel').textContent = `Clase: ${cls.name}`;
+      showScreen('modeScreen');
+    }
+
+    function goToSubjects() {
+      document.getElementById('modeLabel').textContent = `Modo: ${state.modeLabel || '—'}`;
+      const grid = document.getElementById('subjectGrid');
+      grid.innerHTML = subjects.map(s => `
+        <div class="classCard">
+          <span class="emoji">${s.emoji}</span>
+          <h3>${s.name}</h3>
+          <p>${s.desc}</p>
+          <ul>
+            <li>${state.mode === 'adventure' ? '3 enemigos + 1 jefe' : state.mode === 'survival' ? 'Oleadas infinitas' : state.mode === 'practice' ? '10 preguntas cortas' : 'Repaso con explicación'}</li>
+            <li>Preguntas temáticas</li>
+            <li>${(questionBank[s.id] || []).length} preguntas cargadas</li>
+          </ul>
+          <button onclick="startSubject('${s.id}')">Entrar al módulo</button>
+        </div>
+      `).join('');
+      showScreen('subjectScreen');
+    }
+
+    function chooseMode(mode) {
+      state.mode = mode;
+      const labels = {
+        adventure: 'Aventura',
+        review: 'Repaso',
+        survival: 'Supervivencia',
+        practice: 'Práctica rápida'
+      };
+      state.modeLabel = labels[mode];
+      goToSubjects();
+    }
+
+    function startSubject(subjectId) {
+      state.subject = subjects.find(s => s.id === subjectId);
+      state.round = 1;
+      state.usedQuestions = [];
+      state.reviewIndex = 0;
+      state.reviewSet = [];
+      if (state.mode === 'review' || state.mode === 'practice') {
+        startReviewMode(state.mode === 'practice' ? 10 : 12);
+        return;
+      }
+      if (state.mode === 'survival') {
+        state.totalRounds = 9999;
+      } else {
+        state.totalRounds = 4;
+      }
+      generateEnemy();
+      generateQuestion();
+      renderBattle();
+      showScreen('battleScreen');
+      log(`Entraste al módulo de <strong>${state.subject.name}</strong> en modo <strong>${state.modeLabel}</strong>.`);
+    }
+
+    function startReviewMode(limit = 12) {
+      const pool = [...questionBank[state.subject.id]];
+      const shuffled = pool.sort(() => Math.random() - 0.5);
+      state.reviewSet = shuffled.slice(0, Math.min(limit, shuffled.length));
+      state.reviewIndex = 0;
+      renderReviewQuestion();
+      showScreen('reviewScreen');
+    }
+
+    function renderReviewQuestion() {
+      const item = state.reviewSet[state.reviewIndex];
+      if (!item) {
+        document.getElementById('resultEmoji').textContent = '✅';
+        document.getElementById('resultTitle').textContent = `${state.modeLabel} completado`;
+        document.getElementById('resultDescription').textContent = `Terminaste ${state.reviewSet.length} preguntas de ${state.subject.name}. Este modo sirve perfecto para estudiar sin combate.`;
+        showScreen('resultScreen');
+        return;
+      }
+      document.getElementById('reviewTitle').textContent = `${state.modeLabel} · ${state.subject.name}`;
+      document.getElementById('reviewMeta').textContent = `Pregunta ${state.reviewIndex + 1} de ${state.reviewSet.length}`;
+      document.getElementById('reviewCounter').textContent = `${state.reviewIndex + 1} / ${state.reviewSet.length}`;
+      document.getElementById('reviewCategory').textContent = `${item.category} · Dificultad ${item.difficulty}`;
+      document.getElementById('reviewQuestion').textContent = item.q;
+      document.getElementById('reviewExplanation').style.display = 'none';
+      document.getElementById('reviewExplanation').innerHTML = '';
+      document.getElementById('reviewNextBtn').disabled = true;
+      const wrap = document.getElementById('reviewOptions');
+      wrap.innerHTML = '';
+      item.options.forEach((opt, idx) => {
+        const btn = document.createElement('button');
+        btn.className = 'optionBtn';
+        btn.textContent = `${String.fromCharCode(65 + idx)}) ${opt}`;
+        btn.onclick = () => answerReviewQuestion(idx, btn);
+        wrap.appendChild(btn);
+      });
+    }
+
+    function answerReviewQuestion(selectedIndex, btn) {
+      const item = state.reviewSet[state.reviewIndex];
+      const buttons = [...document.querySelectorAll('#reviewOptions .optionBtn')];
+      buttons.forEach(b => b.disabled = true);
+      buttons[item.answer].classList.add('correct');
+      if (selectedIndex !== item.answer) btn.classList.add('wrong');
+      const ok = selectedIndex === item.answer;
+      if (ok && state.mode === 'practice') state.coins += 4;
+      document.getElementById('reviewExplanation').style.display = 'block';
+      document.getElementById('reviewExplanation').innerHTML = `<strong>${ok ? 'Correcto' : 'Respuesta correcta:'}</strong> ${item.options[item.answer]}<br><br>${item.explanation || 'Sin explicación añadida todavía.'}`;
+      document.getElementById('reviewNextBtn').disabled = false;
+    }
+
+    function nextReviewQuestion() {
+      state.reviewIndex += 1;
+      renderReviewQuestion();
+    }
+
+    function generateEnemy() {
+      const isBoss = state.round === state.totalRounds;
+      const baseHp = isBoss ? 110 : 55 + state.round * 12;
+      const baseAtk = isBoss ? 18 : 10 + state.round * 3;
+      const name = isBoss
+        ? state.subject.boss
+        : state.subject.enemies[(state.round - 1) % state.subject.enemies.length];
+
+      state.enemy = {
+        name,
+        type: isBoss ? 'Jefe del módulo' : 'Enemigo de estudio',
+        level: state.round,
+        hp: baseHp,
+        maxHp: baseHp,
+        atk: baseAtk,
+        boss: isBoss
+      };
+    }
+
+    function normalizeQuestion(item, subjectId) {
+      return {
+        q: item.q || item.question || 'Pregunta sin texto',
+        options: item.options || item.choices || [],
+        answer: typeof item.answer === 'number' ? item.answer : 0,
+        category: item.category || subjects.find(s => s.id === subjectId)?.name || 'General',
+        difficulty: item.difficulty || 1,
+        explanation: item.explanation || 'Sigue repasando este tema para reforzarlo.'
+      };
+    }
+
+    async function loadQuestionBanks() {
+      const entries = Object.entries(jsonPaths);
+      for (const [subjectId, path] of entries) {
+        try {
+          const res = await fetch(path);
+          if (!res.ok) throw new Error(`No se pudo cargar ${path}`);
+          const data = await res.json();
+          const list = Array.isArray(data) ? data : (Array.isArray(data.questions) ? data.questions : []);
+          questionBank[subjectId] = list.map(item => normalizeQuestion(item, subjectId));
+        } catch (error) {
+          console.error(error);
+          questionBank[subjectId] = [];
+        }
+      }
+      renderClasses();
+      if (state.mode) goToSubjects();
+      updateMascotLine('Docmichi: bancos cargados. Ya puedes estudiar con tus preguntas reales.');
+    }
+
+    function getUnusedQuestion(subjectId) {
+      const pool = questionBank[subjectId] || [];
+      if (!pool.length) {
+        return {
+          q: 'No se encontraron preguntas en el banco de esta materia.',
+          options: ['Volver luego', 'Revisar JSON', 'Subir preguntas', 'Intentar después'],
+          answer: 1,
+          category: 'Sistema',
+          difficulty: 1,
+          explanation: 'Verifica que el archivo JSON exista en la carpeta data y que tenga un arreglo válido de preguntas.'
+        };
+      }
+      const available = pool.filter((_, idx) => !state.usedQuestions.includes(idx));
+      if (available.length === 0) {
+        state.usedQuestions = [];
+        return getUnusedQuestion(subjectId);
+      }
+      const chosen = available[Math.floor(Math.random() * available.length)];
+      const realIndex = pool.findIndex(item => item === chosen);
+      state.usedQuestions.push(realIndex);
+      return chosen;
+    }
+
+    function generateQuestion() {
+      state.question = getUnusedQuestion(state.subject.id);
+    }
+
+    function renderBattle() {
+      updateMascotAssets();
+      document.getElementById('stageInfo').textContent = `Ronda ${state.round} de ${state.totalRounds}`;
+      document.getElementById('coinsInfo').textContent = `Monedas: ${state.coins}`;
+      document.getElementById('classInfo').textContent = `Clase: ${state.chosenClass.name}`;
+      document.getElementById('subjectInfo').textContent = `Materia: ${state.subject.name}`;
+
+      document.getElementById('playerAvatar').textContent = state.chosenClass.emoji;
+      document.getElementById('playerName').textContent = `${state.player} · Nv. ${state.level}`;
+      document.getElementById('playerClassDescription').textContent = `${state.chosenClass.name} · ${state.chosenClass.passive}`;
+      document.getElementById('hpText').textContent = `${state.hp} / ${state.maxHp}`;
+      document.getElementById('energyText').textContent = `${state.energy} / ${state.maxEnergy}`;
+      document.getElementById('xpText').textContent = `${state.xp} / ${state.xpToNext}`;
+      document.getElementById('hpFill').style.width = `${(state.hp / state.maxHp) * 100}%`;
+      document.getElementById('energyFill').style.width = `${(state.energy / state.maxEnergy) * 100}%`;
+      document.getElementById('xpFill').style.width = `${(state.xp / state.xpToNext) * 100}%`;
+      document.getElementById('inventoryInfo').textContent = `Botiquines: ${state.inventory.potion} · Concentraciones: ${state.inventory.focus}`;
+
+      document.getElementById('enemyName').textContent = state.enemy.name;
+      document.getElementById('enemyType').textContent = state.enemy.type;
+      document.getElementById('enemyLevel').textContent = `Nivel ${state.enemy.level}${state.enemy.boss ? ' · Jefe' : ''}`;
+      document.getElementById('enemyHpText').textContent = `${state.enemy.hp} / ${state.enemy.maxHp}`;
+      document.getElementById('enemyHpFill').style.width = `${(state.enemy.hp / state.enemy.maxHp) * 100}%`;
+
+      document.getElementById('questionCategory').textContent = state.question.category;
+      document.getElementById('difficultyTag').textContent = `Dificultad ${state.question.difficulty}`;
+      document.getElementById('questionText').textContent = state.question.q;
+
+      document.getElementById('statsGrid').innerHTML = `
+        <div class="statBox"><span>Ataque</span><strong>${state.atk}</strong></div>
+        <div class="statBox"><span>Defensa</span><strong>${state.def}</strong></div>
+        <div class="statBox"><span>Crítico</span><strong>${Math.round(state.crit * 100)}%</strong></div>
+        <div class="statBox"><span>Monedas</span><strong>${state.coins}</strong></div>
+      `;
+
+      const wrap = document.getElementById('optionsWrap');
+      wrap.innerHTML = '';
+      state.question.options.forEach((opt, idx) => {
+        const btn = document.createElement('button');
+        btn.className = 'optionBtn';
+        btn.textContent = `${String.fromCharCode(65 + idx)}) ${opt}`;
+        btn.onclick = () => answerQuestion(idx, btn);
+        wrap.appendChild(btn);
+      });
+    }
+
+    function answerQuestion(selectedIndex, btn) {
+      const buttons = [...document.querySelectorAll('.optionBtn')];
+      buttons.forEach(b => b.disabled = true);
+      const correct = state.question.answer;
+      const feedback = document.getElementById('feedbackText');
+      buttons[correct].classList.add('correct');
+
+      if (selectedIndex === correct) {
+        btn.classList.add('correct');
+        if (feedback) {
+          feedback.className = 'feedbackText show';
+          feedback.innerHTML = `<strong>Correcto.</strong> ${state.question.explanation || 'Buen trabajo.'}`;
+        }
+        updateMascotLine('Docmichi: buena esa, sigue con el combo.');
+        playerAttack();
+      } else {
+        btn.classList.add('wrong');
+        if (feedback) {
+          feedback.className = 'feedbackText show';
+          feedback.innerHTML = `<strong>Respuesta correcta:</strong> ${state.question.options[correct]}<br><br>${state.question.explanation || 'Revísala con calma y vuelve a intentarlo.'}`;
+        }
+        updateMascotLine('Docmichi: no pasa nada, mira la explicación y remonta.');
+        enemyAttack();
+      }
+    }
+
+    function playerAttack() {
+      let damage = state.atk + Math.floor(Math.random() * 8) + state.question.difficulty * 2;
+      const crit = Math.random() < state.crit;
+      if (crit) damage = Math.floor(damage * 1.6);
+      state.enemy.hp = Math.max(0, state.enemy.hp - damage);
+
+      state.energy = Math.min(state.maxEnergy, state.energy + (state.chosenClass.id === 'analista' ? 8 : 4));
+      gainXP(20 + state.question.difficulty * 8);
+      log(`Acertaste y golpeaste a <strong>${state.enemy.name}</strong> por <strong>${damage}</strong>${crit ? ' con crítico' : ''}.`);
+
+      if (state.enemy.hp <= 0) {
+        winRound();
+      } else {
+        setTimeout(() => {
+          generateQuestion();
+          renderBattle();
+        }, 850);
+      }
+    }
+
+    function enemyAttack() {
+      let damage = state.enemy.atk + Math.floor(Math.random() * 6) - state.def;
+      if (state.focusShield) {
+        damage -= state.chosenClass.id === 'estratega' ? 10 : 6;
+        state.focusShield = false;
+      }
+      damage = Math.max(4, damage);
+      state.hp = Math.max(0, state.hp - damage);
+      state.energy = Math.max(0, state.energy - 6);
+
+      log(`Fallaste. <strong>${state.enemy.name}</strong> te hizo <strong>${damage}</strong> de daño.`);
+
+      if (state.hp <= 0) {
+        loseGame();
+      } else {
+        setTimeout(() => {
+          generateQuestion();
+          renderBattle();
+        }, 850);
+      }
+    }
+
+    function winRound() {
+      const rewardCoinsBase = state.enemy.boss ? 60 : 24 + state.round * 8;
+      const rewardCoins = state.chosenClass.id === 'explorador'
+        ? Math.floor(rewardCoinsBase * 1.2)
+        : rewardCoinsBase;
+
+      state.coins += rewardCoins;
+      gainXP(state.enemy.boss ? 55 : 28);
+      log(`Derrotaste a <strong>${state.enemy.name}</strong> y ganaste <strong>${rewardCoins}</strong> monedas.`);
+
+      if (state.mode === 'survival') {
+        state.round += 1;
+        state.energy = Math.min(state.maxEnergy, state.energy + 6);
+        generateEnemy();
+        generateQuestion();
+        renderBattle();
+        return;
+      }
+
+      if (state.round >= state.totalRounds) {
+        if (!state.completedSubjects.includes(state.subject.id)) {
+          state.completedSubjects.push(state.subject.id);
+        }
+        saveGame();
+        document.getElementById('resultEmoji').textContent = '🏆';
+        document.getElementById('resultTitle').textContent = `Módulo completado: ${state.subject.name}`;
+        document.getElementById('resultDescription').textContent = `Venciste al jefe final, ganaste experiencia y dejaste listo este módulo para seguir expandiéndolo con más preguntas en MediGuía.`;
+        showScreen('resultScreen');
+        return;
+      }
+
+      state.round += 1;
+      state.energy = Math.min(state.maxEnergy, state.energy + 8);
+      generateEnemy();
+      generateQuestion();
+      renderBattle();
+    }
+
+    function loseGame() {
+      saveGame();
+      document.getElementById('resultEmoji').textContent = state.mode === 'survival' ? '🔥' : '💀';
+      document.getElementById('resultTitle').textContent = state.mode === 'survival' ? 'Fin de la supervivencia' : 'Has sido derrotado';
+      document.getElementById('resultDescription').textContent = state.mode === 'survival'
+        ? `Aguantaste hasta la ronda ${state.round} en ${state.subject.name}. Nada mal.`
+        : 'No pasa nada. Compra objetos, mejora tu estrategia y vuelve a intentarlo.';
+      showScreen('resultScreen');
+    }
+
+    function gainXP(amount) {
+      state.xp += amount;
+      while (state.xp >= state.xpToNext) {
+        state.xp -= state.xpToNext;
+        state.level += 1;
+        state.xpToNext = Math.floor(state.xpToNext * 1.18);
+        state.maxHp += 12;
+        state.hp = Math.min(state.maxHp, state.hp + 16);
+        state.maxEnergy += 6;
+        state.energy = Math.min(state.maxEnergy, state.energy + 8);
+        state.atk += 2;
+        state.def += 1;
+        log(`Subiste a <strong>nivel ${state.level}</strong>. Tus estadísticas mejoraron.`);
+      }
+    }
+
+    function usePotion() {
+      if (state.inventory.potion <= 0) {
+        log('No te quedan botiquines.');
+        return;
+      }
+      if (state.hp >= state.maxHp) {
+        log('Ya tienes la vida al máximo.');
+        return;
+      }
+      state.inventory.potion -= 1;
+      const heal = 35 + (state.chosenClass.id === 'medico' ? 15 : 0);
+      state.hp = Math.min(state.maxHp, state.hp + heal);
+      log(`Usaste un botiquín y recuperaste <strong>${heal}</strong> de vida.`);
+      renderBattle();
+    }
+
+    function useFocus() {
+      if (state.inventory.focus <= 0) {
+        log('No te quedan concentraciones.');
+        return;
+      }
+      state.inventory.focus -= 1;
+      state.focusShield = true;
+      state.energy = Math.min(state.maxEnergy, state.energy + 12);
+      log('Activaste <strong>Concentración</strong>. El próximo fallo te castigará menos.');
+      renderBattle();
+    }
+
+    function openShop() {
+      document.getElementById('shopModal').style.display = 'block';
+      updateMascotLine('Docmichi: usa tus monedas con cabeza, que el jefe no perdona.');
+    }
+
+    function closeShop() {
+      document.getElementById('shopModal').style.display = 'none';
+    }
+
+    function buyItem(type) {
+      const prices = {
+        potion: 20,
+        focus: 18,
+        energyBoost: 35,
+        defenseBoost: 40
+      };
+      const price = prices[type];
+      if (state.coins < price) {
+        log('No tienes suficientes monedas.');
+        return;
+      }
+      state.coins -= price;
+
+      if (type === 'potion') {
+        state.inventory.potion += 1;
+        log('Compraste un <strong>botiquín</strong>.');
+      }
+      if (type === 'focus') {
+        state.inventory.focus += 1;
+        log('Compraste una <strong>concentración</strong>.');
+      }
+      if (type === 'energyBoost') {
+        state.maxEnergy += 10;
+        state.energy += 10;
+        log('Compraste una <strong>mejora de energía</strong>.');
+      }
+      if (type === 'defenseBoost') {
+        state.def += 1;
+        log('Compraste un <strong>refuerzo defensivo</strong>.');
+      }
+
+      renderBattle();
+    }
+
+    function restartCurrentSubject() {
+      if (!state.subject) {
+        goToSubjects();
+        return;
+      }
+      state.hp = state.maxHp;
+      state.energy = state.maxEnergy;
+      state.round = 1;
+      state.usedQuestions = [];
+      state.inventory.potion += 1;
+      generateEnemy();
+      generateQuestion();
+      renderBattle();
+      showScreen('battleScreen');
+      log(`Reiniciaste el módulo de <strong>${state.subject.name}</strong>.`);
+    }
+
+    function saveGame() {
+      localStorage.setItem('mediguiaQuestSave', JSON.stringify(state));
+      log('Partida guardada.');
+    }
+
+    function loadGame() {
+      const raw = localStorage.getItem('mediguiaQuestSave');
+      if (!raw) {
+        alert('No hay una partida guardada todavía.');
+        return;
+      }
+      try {
+        state = JSON.parse(raw);
+        if (!state.chosenClass || !state.subject || !state.enemy || !state.question) {
+          goToClassSelection();
+          return;
+        }
+        renderBattle();
+        showScreen('battleScreen');
+        log('Partida cargada correctamente.');
+      } catch (err) {
+        alert('La partida guardada está dañada o incompleta.');
+      }
+    }
+
+    renderClasses();
+  </script>
+</body>
+</html>
+
+    .app {
+      width: min(1200px, 94vw);
+      margin: 0 auto;
+      padding: 24px 0 48px;
+    }
+
+    .screen { display: none; }
+    .screen.active { display: block; }
+
+    .glass {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(16px);
+    }
+
+    .hero {
+      padding: 30px;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 24px;
+      align-items: center;
+      margin-top: 18px;
+    }
+
+    .logoRow {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+
+    .logo {
+      width: 56px;
+      height: 56px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, rgba(124,200,255,0.25), rgba(126,240,197,0.24));
+      font-size: 28px;
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { font-size: clamp(2.2rem, 5vw, 4rem); line-height: 1.02; margin-bottom: 14px; }
+    h2 { font-size: clamp(1.4rem, 2.5vw, 2rem); }
+    h3 { font-size: 1.06rem; }
+    p { color: var(--muted); line-height: 1.6; }
+
+    .hero .subtitle { font-size: 1.08rem; max-width: 60ch; }
+
+    .buttons, .menuButtons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    button {
+      border: 0;
+      cursor: pointer;
+      color: #08111e;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      padding: 14px 20px;
+      border-radius: 16px;
+      font-weight: 700;
+      font-size: 0.97rem;
+      transition: transform .18s ease, box-shadow .18s ease, opacity .18s ease;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+    }
+
+    button:hover { transform: translateY(-2px) scale(1.01); }
+    button:disabled { opacity: 0.55; cursor: not-allowed; transform: none; }
+
+    .btnSecondary {
+      background: rgba(255,255,255,0.09);
+      color: var(--text);
+      border: 1px solid var(--line);
+      box-shadow: none;
+    }
+
+    .panelGrid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .miniCard {
+      padding: 18px;
+      border-radius: 22px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid var(--line);
+    }
+
+    .miniCard span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin-bottom: 6px;
+    }
+
+    .miniCard strong { font-size: 1.15rem; }
+
+    .heroVisual {
+      min-height: 340px;
+      border-radius: 28px;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03)),
+        radial-gradient(circle at 20% 20%, rgba(124,200,255,0.18), transparent 35%),
+        radial-gradient(circle at 80% 30%, rgba(126,240,197,0.16), transparent 30%);
+      border: 1px solid var(--line);
     }
 
     .subjectTile {

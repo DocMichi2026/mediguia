@@ -1,1 +1,503 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habilidad Numérica | MediGuía</title>
+  <style>
+    *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+    }
 
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg,#eef6ff,#ffffff);
+      color:#1a2b3c;
+      min-height:100vh;
+    }
+
+    header{
+      background:#2f80ed;
+      color:white;
+      padding:15px 40px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
+      gap:12px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .logo{
+      font-size:24px;
+      font-weight:bold;
+      text-decoration:none;
+      color:white;
+    }
+
+    nav{
+      display:flex;
+      flex-wrap:wrap;
+      gap:16px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      font-weight:bold;
+    }
+
+    nav a:hover{
+      text-decoration:underline;
+    }
+
+    .container{
+      width:min(1000px, 92vw);
+      margin:0 auto;
+      padding:35px 0 60px;
+    }
+
+    .hero{
+      background:white;
+      border-radius:22px;
+      box-shadow:0 8px 20px rgba(0,0,0,0.08);
+      padding:30px;
+      margin-bottom:24px;
+      text-align:center;
+    }
+
+    .hero h1{
+      color:#1d4f91;
+      font-size:40px;
+      margin-bottom:10px;
+    }
+
+    .hero p{
+      font-size:18px;
+      line-height:1.6;
+      max-width:750px;
+      margin:0 auto;
+    }
+
+    .panel{
+      background:white;
+      border-radius:22px;
+      box-shadow:0 8px 20px rgba(0,0,0,0.08);
+      padding:28px;
+      margin-bottom:24px;
+    }
+
+    .panel h2{
+      color:#2f80ed;
+      margin-bottom:14px;
+      font-size:28px;
+    }
+
+    .panel p{
+      font-size:17px;
+      line-height:1.6;
+    }
+
+    .topics{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:14px;
+      margin-top:18px;
+    }
+
+    .topic{
+      background:#f5fbff;
+      border:1px solid #d8ebff;
+      border-radius:16px;
+      padding:16px;
+      font-weight:bold;
+      color:#1d4f91;
+    }
+
+    .controls{
+      display:grid;
+      grid-template-columns:1fr auto auto;
+      gap:14px;
+      align-items:end;
+      margin-top:20px;
+    }
+
+    label{
+      display:block;
+      margin-bottom:8px;
+      font-weight:bold;
+    }
+
+    select{
+      width:100%;
+      padding:12px 14px;
+      border-radius:12px;
+      border:1px solid #b9d7ff;
+      font-size:16px;
+      background:white;
+    }
+
+    button, .btn{
+      display:inline-block;
+      background:#2f80ed;
+      color:white;
+      padding:12px 22px;
+      border:none;
+      border-radius:10px;
+      cursor:pointer;
+      font-size:16px;
+      text-decoration:none;
+      font-weight:bold;
+      transition:0.25s;
+    }
+
+    button:hover, .btn:hover{
+      background:#2369c7;
+      transform:translateY(-2px);
+    }
+
+    .btnSecondary{
+      background:#eef6ff;
+      color:#1d4f91;
+      border:1px solid #cfe4ff;
+    }
+
+    .btnSecondary:hover{
+      background:#dceeff;
+    }
+
+    #quizBox, #resultBox{
+      display:none;
+    }
+
+    .statusBar{
+      display:flex;
+      justify-content:space-between;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-bottom:16px;
+      font-weight:bold;
+      color:#1d4f91;
+    }
+
+    .questionText{
+      font-size:22px;
+      line-height:1.5;
+      margin:16px 0 22px;
+      color:#1a2b3c;
+    }
+
+    .options{
+      display:grid;
+      gap:12px;
+    }
+
+    .optionBtn{
+      width:100%;
+      text-align:left;
+      padding:14px 16px;
+      border:none;
+      border-radius:12px;
+      background:#eef6ff;
+      color:#1a2b3c;
+      font-size:16px;
+      cursor:pointer;
+      transition:0.2s;
+      font-weight:bold;
+    }
+
+    .optionBtn:hover{
+      background:#dceeff;
+    }
+
+    .optionBtn.selected{
+      background:#2f80ed;
+      color:white;
+    }
+
+    .quizActions{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-top:20px;
+    }
+
+    .scoreBig{
+      font-size:26px;
+      font-weight:bold;
+      color:#1d4f91;
+      margin-bottom:18px;
+    }
+
+    .reviewItem{
+      margin-bottom:18px;
+      padding:16px;
+      border-radius:14px;
+      border:1px solid #dbeeff;
+      background:#f7fbff;
+      text-align:left;
+    }
+
+    .reviewItem.bad{
+      background:#fff5f5;
+      border-color:#f3c1c1;
+    }
+
+    .reviewItem.good{
+      background:#f1fbf4;
+      border-color:#bfe5c8;
+    }
+
+    .smallMuted{
+      color:#5d7287;
+      font-size:15px;
+    }
+
+    @media (max-width: 760px){
+      .controls{
+        grid-template-columns:1fr;
+      }
+
+      .topics{
+        grid-template-columns:1fr;
+      }
+
+      .hero h1{
+        font-size:32px;
+      }
+
+      .questionText{
+        font-size:20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">MediGuía 🩺</a>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="quienes-somos.html">Quiénes somos</a>
+      <a href="Juego.html">Juego</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Habilidad Numérica 🔢</h1>
+      <p>
+        Practica Habilidad Numérica con preguntas cargadas desde tu banco JSON. Puedes hacer un mini examen de 5 preguntas o un simulador más largo de 30.
+      </p>
+    </section>
+
+    <section class="panel" id="setupBox">
+      <h2>Temas principales</h2>
+      <p>Esta página está pensada para tomar directamente las preguntas de <strong>data/numerica.json</strong>.</p>
+
+      <div class="topics">
+        <div class="topic">Porcentajes</div>
+        <div class="topic">Fracciones</div>
+        <div class="topic">Series numéricas</div>
+        <div class="topic">Álgebra básica</div>
+        <div class="topic">Proporciones</div>
+        <div class="topic">Razonamiento lógico</div>
+      </div>
+
+      <div class="controls">
+        <div>
+          <label for="difficultySelect">Dificultad</label>
+          <select id="difficultySelect">
+            <option value="facil">Fácil</option>
+            <option value="media">Media</option>
+            <option value="dificil">Difícil</option>
+          </select>
+        </div>
+
+        <button onclick="startQuiz(5, 'Mini examen')">📝 Mini examen</button>
+        <button onclick="startQuiz(30, 'Simulador')">📚 Simulador</button>
+      </div>
+    </section>
+
+    <section class="panel" id="quizBox">
+      <div class="statusBar">
+        <div id="quizMode">Modo</div>
+        <div id="quizProgress">Pregunta 1 de 5</div>
+        <div id="quizDifficulty">Dificultad: Fácil</div>
+      </div>
+
+      <div class="questionText" id="questionText">Pregunta</div>
+      <div class="options" id="optionsWrap"></div>
+
+      <div class="quizActions">
+        <button id="nextBtn" onclick="nextQuestion()">Siguiente</button>
+        <button class="btnSecondary" onclick="resetToSetup()">Salir</button>
+      </div>
+    </section>
+
+    <section class="panel" id="resultBox">
+      <h2>Resultado final</h2>
+      <div class="scoreBig" id="scoreText">Obtuviste 0 de 0</div>
+      <div id="reviewWrap"></div>
+      <div class="quizActions">
+        <button onclick="resetToSetup()">Volver a Numérica</button>
+        <a href="index.html" class="btn btnSecondary">Ir al inicio</a>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    let bancoNumerica = null;
+    let quizState = {
+      preguntas: [],
+      actual: 0,
+      puntaje: 0,
+      seleccionada: null,
+      respuestasUsuario: [],
+      modo: '',
+      dificultad: 'facil'
+    };
+
+    async function loadBank() {
+      if (bancoNumerica) return bancoNumerica;
+
+      try {
+        const res = await fetch(`data/numerica.json?cache=${Date.now()}`);
+        if (!res.ok) throw new Error('No se pudo cargar data/numerica.json');
+        bancoNumerica = await res.json();
+        return bancoNumerica;
+      } catch (error) {
+        console.error(error);
+        alert('No se pudo cargar el archivo data/numerica.json');
+        return null;
+      }
+    }
+
+    function shuffle(array) {
+      const copy = [...array];
+      for (let i = copy.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [copy[i], copy[j]] = [copy[j], copy[i]];
+      }
+      return copy;
+    }
+
+    function prettyDifficulty(value) {
+      if (value === 'facil') return 'Fácil';
+      if (value === 'media') return 'Media';
+      if (value === 'dificil') return 'Difícil';
+      return value;
+    }
+
+    function getPreguntasPorDificultad(banco, dificultad) {
+      if (!banco) return [];
+      if (Array.isArray(banco[dificultad])) return banco[dificultad];
+      return [];
+    }
+
+    async function startQuiz(limit, modo) {
+      const banco = await loadBank();
+      if (!banco) return;
+
+      const dificultad = document.getElementById('difficultySelect').value;
+      const preguntas = getPreguntasPorDificultad(banco, dificultad);
+
+      if (!preguntas.length) {
+        alert(`No hay preguntas en numérica para la dificultad ${dificultad}.`);
+        return;
+      }
+
+      quizState = {
+        preguntas: shuffle(preguntas).slice(0, Math.min(limit, preguntas.length)),
+        actual: 0,
+        puntaje: 0,
+        seleccionada: null,
+        respuestasUsuario: [],
+        modo,
+        dificultad
+      };
+
+      document.getElementById('setupBox').style.display = 'none';
+      document.getElementById('resultBox').style.display = 'none';
+      document.getElementById('quizBox').style.display = 'block';
+      renderQuestion();
+    }
+
+    function renderQuestion() {
+      const preguntaActual = quizState.preguntas[quizState.actual];
+      document.getElementById('quizMode').textContent = quizState.modo;
+      document.getElementById('quizProgress').textContent = `Pregunta ${quizState.actual + 1} de ${quizState.preguntas.length}`;
+      document.getElementById('quizDifficulty').textContent = `Dificultad: ${prettyDifficulty(quizState.dificultad)}`;
+      document.getElementById('questionText').textContent = preguntaActual.pregunta;
+      quizState.seleccionada = null;
+
+      const wrap = document.getElementById('optionsWrap');
+      wrap.innerHTML = '';
+
+      preguntaActual.opciones.forEach((opcion, index) => {
+        const btn = document.createElement('button');
+        btn.className = 'optionBtn';
+        btn.textContent = opcion;
+        btn.onclick = () => {
+          document.querySelectorAll('.optionBtn').forEach(b => b.classList.remove('selected'));
+          btn.classList.add('selected');
+          quizState.seleccionada = index;
+        };
+        wrap.appendChild(btn);
+      });
+    }
+
+    function nextQuestion() {
+      if (quizState.seleccionada === null) {
+        alert('Selecciona una respuesta antes de continuar.');
+        return;
+      }
+
+      const preguntaActual = quizState.preguntas[quizState.actual];
+      const acerto = quizState.seleccionada === preguntaActual.correcta;
+
+      quizState.respuestasUsuario.push(quizState.seleccionada);
+      if (acerto) quizState.puntaje++;
+
+      quizState.actual++;
+
+      if (quizState.actual < quizState.preguntas.length) {
+        renderQuestion();
+      } else {
+        showResults();
+      }
+    }
+
+    function showResults() {
+      document.getElementById('quizBox').style.display = 'none';
+      document.getElementById('resultBox').style.display = 'block';
+      document.getElementById('scoreText').textContent = `Obtuviste ${quizState.puntaje} de ${quizState.preguntas.length} respuestas correctas.`;
+
+      const reviewWrap = document.getElementById('reviewWrap');
+      reviewWrap.innerHTML = '';
+
+      quizState.preguntas.forEach((pregunta, index) => {
+        const userAnswer = quizState.respuestasUsuario[index];
+        const correct = pregunta.correcta;
+        const ok = userAnswer === correct;
+
+        const div = document.createElement('div');
+        div.className = `reviewItem ${ok ? 'good' : 'bad'}`;
+        div.innerHTML = `
+          <p><strong>Pregunta ${index + 1}:</strong> ${pregunta.pregunta}</p>
+          <p class="smallMuted" style="margin-top:8px;">Tu respuesta: ${pregunta.opciones[userAnswer] ?? 'Sin respuesta'}</p>
+          ${ok ? '' : `<p class="smallMuted">Respuesta correcta: ${pregunta.opciones[correct]}</p>`}
+        `;
+        reviewWrap.appendChild(div);
+      });
+    }
+
+    function resetToSetup() {
+      document.getElementById('setupBox').style.display = 'block';
+      document.getElementById('quizBox').style.display = 'none';
+      document.getElementById('resultBox').style.display = 'none';
+    }
+  </script>
+</body>
+</html>

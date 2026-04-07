@@ -310,6 +310,78 @@
       border: 1px solid var(--line);
       background: rgba(255,255,255,0.05);
       margin-bottom: 16px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .combatFlash {
+      animation: combatFlash .45s ease;
+    }
+
+    .combatShake {
+      animation: combatShake .42s ease;
+    }
+
+    .criticalStamp {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255,213,122,0.18);
+      color: #ffe6a8;
+      border: 1px solid rgba(255,213,122,0.4);
+      font-weight: 800;
+      letter-spacing: .04em;
+      display: none;
+      z-index: 5;
+    }
+
+    .criticalStamp.show { display: inline-flex; }
+
+    .comboBadge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 92px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(126,240,197,0.12);
+      color: var(--text);
+      border: 1px solid rgba(126,240,197,0.25);
+      font-weight: 700;
+    }
+
+    .bossBadge {
+      display: inline-flex;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255,138,138,0.14);
+      border: 1px solid rgba(255,138,138,0.35);
+      color: #ffd1d1;
+      font-weight: 700;
+    }
+
+    .rankBox {
+      margin-top: 18px;
+      padding: 18px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    @keyframes combatFlash {
+      0% { box-shadow: 0 0 0 rgba(126,240,197,0); }
+      50% { box-shadow: 0 0 40px rgba(126,240,197,0.28); }
+      100% { box-shadow: 0 0 0 rgba(126,240,197,0); }
+    }
+
+    @keyframes combatShake {
+      0%,100% { transform: translateX(0); }
+      20% { transform: translateX(-6px); }
+      40% { transform: translateX(6px); }
+      60% { transform: translateX(-4px); }
+      80% { transform: translateX(4px); }
     }
 
     .avatar {
@@ -564,8 +636,8 @@
             <small>Patrones, proporciones, porcentajes</small>
           </div>
           <div class="mascotBubble" id="mascotBubble">Docmichi te acompaña: estudia, pelea y no te rindas.</div>
-<div class="pulseRing"></div>
-<img class="heroMascot" id="heroMascot" src="https://files.catbox.moe/z442hc.png" alt="Docmichi" />
+          <div class="pulseRing"></div>
+          <img class="heroMascot" id="heroMascot" alt="Docmichi" />
         </div>
       </div>
     </section>
@@ -685,6 +757,20 @@
           </div>
           <div class="pill" id="modeLabel">Modo: —</div>
         </div>
+
+        <div class="glass" style="padding:18px; margin-bottom:18px; border-radius:22px; border:1px solid var(--line); background:rgba(255,255,255,0.04);">
+          <div class="subjectHeader" style="margin-bottom:10px;">
+            <h3 style="margin:0;">Dificultad</h3>
+            <div class="pill" id="difficultyModeLabel">Actual: Mixto</div>
+          </div>
+          <div class="actions">
+            <button class="btnSecondary" onclick="setDifficultyFilter('mixto')">Mixto</button>
+            <button class="btnSecondary" onclick="setDifficultyFilter('facil')">Fácil</button>
+            <button class="btnSecondary" onclick="setDifficultyFilter('media')">Media</button>
+            <button class="btnSecondary" onclick="setDifficultyFilter('dificil')">Difícil</button>
+          </div>
+        </div>
+
         <div class="classGrid" id="subjectGrid"></div>
         <div class="buttons">
           <button class="btnSecondary" onclick="showScreen('modeScreen')">Cambiar modo</button>
@@ -723,6 +809,7 @@
         <div class="pill" id="coinsInfo">Monedas: 0</div>
         <div class="pill" id="classInfo">Clase: —</div>
         <div class="pill" id="subjectInfo">Materia: —</div>
+        <div class="comboBadge" id="comboInfo">Combo x0</div>
       </div>
 
       <div class="hud">
@@ -769,13 +856,17 @@
         </aside>
 
         <main class="battleArea glass">
-          <div class="enemyCard">
+          <div class="enemyCard" id="enemyCard">
+            <div class="criticalStamp" id="criticalStamp">CRÍTICO</div>
             <div class="subjectHeader">
               <div>
                 <h2 id="enemyName">Enemigo</h2>
                 <p id="enemyType">Tipo enemigo</p>
               </div>
-              <div class="pill" id="enemyLevel">Nivel 1</div>
+              <div style="display:flex; gap:10px; flex-wrap:wrap;">
+                <div class="bossBadge" id="bossBadge" style="display:none;">Jefe</div>
+                <div class="pill" id="enemyLevel">Nivel 1</div>
+              </div>
             </div>
             <div class="barWrap">
               <div class="barLabel"><span>Vida enemiga</span><span id="enemyHpText">0 / 0</span></div>
@@ -802,6 +893,10 @@
         <div class="big" id="resultEmoji">🏆</div>
         <h2 id="resultTitle">Resultado</h2>
         <p id="resultDescription">Aquí aparecerá el resultado.</p>
+        <div class="rankBox" id="rankBox">
+          <strong id="rankTitle">Rango:</strong>
+          <p id="rankDescription" style="margin:10px 0 0;">Aquí aparecerá tu rango.</p>
+        </div>
         <div class="buttons" style="justify-content:center;">
           <button onclick="goToSubjects()">Elegir otra materia</button>
           <button class="btnSecondary" onclick="restartCurrentSubject()">Reintentar módulo</button>
@@ -964,6 +1059,9 @@
     function createFreshState() {
       return {
         player: null,
+        difficultyFilter: 'mixto',
+        combo: 0,
+        bestCombo: 0,
         chosenClass: null,
         subject: null,
         round: 1,
@@ -1060,8 +1158,12 @@
 
     function goToSubjects() {
       document.getElementById('modeLabel').textContent = `Modo: ${state.modeLabel || '—'}`;
+      document.getElementById('difficultyModeLabel').textContent = `Actual: ${state.difficultyFilter === 'mixto' ? 'Mixto' : prettyDifficulty(state.difficultyFilter)}`;
       const grid = document.getElementById('subjectGrid');
-      grid.innerHTML = subjects.map(s => `
+      grid.innerHTML = subjects.map(s => {
+        const all = questionBank[s.id] || [];
+        const filtered = state.difficultyFilter === 'mixto' ? all : all.filter(q => q.difficultyLabel === state.difficultyFilter);
+        return `
         <div class="classCard">
           <span class="emoji">${s.emoji}</span>
           <h3>${s.name}</h3>
@@ -1069,12 +1171,18 @@
           <ul>
             <li>${state.mode === 'adventure' ? '3 enemigos + 1 jefe' : state.mode === 'survival' ? 'Oleadas infinitas' : state.mode === 'practice' ? '10 preguntas cortas' : 'Repaso con explicación'}</li>
             <li>Preguntas temáticas</li>
-            <li>${(questionBank[s.id] || []).length} preguntas cargadas</li>
+            <li>${filtered.length} preguntas disponibles</li>
           </ul>
           <button onclick="startSubject('${s.id}')">Entrar al módulo</button>
-        </div>
-      `).join('');
+        </div>`;
+      }).join('');
       showScreen('subjectScreen');
+    }
+
+    function setDifficultyFilter(value) {
+      state.difficultyFilter = value;
+      goToSubjects();
+      updateMascotLine(`Docmichi: dificultad puesta en ${value === 'mixto' ? 'mixto' : prettyDifficulty(value)}.`);
     }
 
     function chooseMode(mode) {
@@ -1260,17 +1368,23 @@
     }
 
     function getUnusedQuestion(subjectId) {
-      const pool = questionBank[subjectId] || [];
+      const originalPool = questionBank[subjectId] || [];
+      const pool = state.difficultyFilter === 'mixto'
+        ? originalPool
+        : originalPool.filter(item => item.difficultyLabel === state.difficultyFilter);
+
       if (!pool.length) {
         return {
-          q: 'No se encontraron preguntas en el banco de esta materia.',
-          options: ['Volver luego', 'Revisar JSON', 'Subir preguntas', 'Intentar después'],
+          q: 'No se encontraron preguntas con esa dificultad para esta materia.',
+          options: ['Volver luego', 'Cambiar filtro', 'Revisar JSON', 'Intentar después'],
           answer: 1,
           category: 'Sistema',
           difficulty: 1,
-          explanation: 'Verifica que el archivo JSON exista en la carpeta data y que tenga un arreglo válido de preguntas.'
+          difficultyLabel: 'facil',
+          explanation: 'Prueba usar otra dificultad o revisa que el archivo JSON tenga preguntas en esa sección.'
         };
       }
+
       const available = pool.filter((_, idx) => !state.usedQuestions.includes(idx));
       if (available.length === 0) {
         state.usedQuestions = [];
@@ -1288,10 +1402,11 @@
 
     function renderBattle() {
       updateMascotAssets();
-      document.getElementById('stageInfo').textContent = `Ronda ${state.round} de ${state.totalRounds}`;
+      document.getElementById('stageInfo').textContent = `Ronda ${state.round}${state.mode === 'survival' ? '' : ` de ${state.totalRounds}`}`;
       document.getElementById('coinsInfo').textContent = `Monedas: ${state.coins}`;
       document.getElementById('classInfo').textContent = `Clase: ${state.chosenClass.name}`;
       document.getElementById('subjectInfo').textContent = `Materia: ${state.subject.name}`;
+      document.getElementById('comboInfo').textContent = `Combo x${state.combo}`;
 
       document.getElementById('playerAvatar').textContent = state.chosenClass.emoji;
       document.getElementById('playerName').textContent = `${state.player} · Nv. ${state.level}`;
@@ -1306,7 +1421,8 @@
 
       document.getElementById('enemyName').textContent = state.enemy.name;
       document.getElementById('enemyType').textContent = state.enemy.type;
-      document.getElementById('enemyLevel').textContent = `Nivel ${state.enemy.level}${state.enemy.boss ? ' · Jefe' : ''}`;
+      document.getElementById('enemyLevel').textContent = `Nivel ${state.enemy.level}`;
+      document.getElementById('bossBadge').style.display = state.enemy.boss ? 'inline-flex' : 'none';
       document.getElementById('enemyHpText').textContent = `${state.enemy.hp} / ${state.enemy.maxHp}`;
       document.getElementById('enemyHpFill').style.width = `${(state.enemy.hp / state.enemy.maxHp) * 100}%`;
 
@@ -1364,9 +1480,12 @@
       if (crit) damage = Math.floor(damage * 1.6);
       state.enemy.hp = Math.max(0, state.enemy.hp - damage);
 
+      state.combo += 1;
+      state.bestCombo = Math.max(state.bestCombo, state.combo);
       state.energy = Math.min(state.maxEnergy, state.energy + (state.chosenClass.id === 'analista' ? 8 : 4));
       gainXP(20 + state.question.difficulty * 8);
       log(`Acertaste y golpeaste a <strong>${state.enemy.name}</strong> por <strong>${damage}</strong>${crit ? ' con crítico' : ''}.`);
+      animateAttack(crit);
 
       if (state.enemy.hp <= 0) {
         winRound();
@@ -1387,6 +1506,8 @@
       damage = Math.max(4, damage);
       state.hp = Math.max(0, state.hp - damage);
       state.energy = Math.max(0, state.energy - 6);
+      state.combo = 0;
+      animateHit();
 
       log(`Fallaste. <strong>${state.enemy.name}</strong> te hizo <strong>${damage}</strong> de daño.`);
 
@@ -1424,9 +1545,12 @@
           state.completedSubjects.push(state.subject.id);
         }
         saveGame();
+        const [rank, rankDesc] = computeRank();
         document.getElementById('resultEmoji').textContent = '🏆';
         document.getElementById('resultTitle').textContent = `Módulo completado: ${state.subject.name}`;
         document.getElementById('resultDescription').textContent = `Venciste al jefe final, ganaste experiencia y dejaste listo este módulo para seguir expandiéndolo con más preguntas en MediGuía.`;
+        document.getElementById('rankTitle').textContent = `Rango: ${rank}`;
+        document.getElementById('rankDescription').textContent = `${rankDesc} Mejor combo: x${state.bestCombo}.`;
         showScreen('resultScreen');
         return;
       }
@@ -1440,11 +1564,14 @@
 
     function loseGame() {
       saveGame();
+      const [rank, rankDesc] = computeRank();
       document.getElementById('resultEmoji').textContent = state.mode === 'survival' ? '🔥' : '💀';
       document.getElementById('resultTitle').textContent = state.mode === 'survival' ? 'Fin de la supervivencia' : 'Has sido derrotado';
       document.getElementById('resultDescription').textContent = state.mode === 'survival'
         ? `Aguantaste hasta la ronda ${state.round} en ${state.subject.name}. Nada mal.`
         : 'No pasa nada. Compra objetos, mejora tu estrategia y vuelve a intentarlo.';
+      document.getElementById('rankTitle').textContent = `Rango: ${rank}`;
+      document.getElementById('rankDescription').textContent = `${rankDesc} Mejor combo: x${state.bestCombo}.`;
       showScreen('resultScreen');
     }
 
@@ -1490,6 +1617,41 @@
       state.energy = Math.min(state.maxEnergy, state.energy + 12);
       log('Activaste <strong>Concentración</strong>. El próximo fallo te castigará menos.');
       renderBattle();
+    }
+
+    function animateAttack(isCritical = false) {
+      const card = document.getElementById('enemyCard');
+      const stamp = document.getElementById('criticalStamp');
+      if (card) {
+        card.classList.remove('combatFlash');
+        void card.offsetWidth;
+        card.classList.add('combatFlash');
+      }
+      if (isCritical && stamp) {
+        stamp.classList.add('show');
+        setTimeout(() => stamp.classList.remove('show'), 900);
+      }
+    }
+
+    function animateHit() {
+      const card = document.getElementById('enemyCard');
+      if (card) {
+        card.classList.remove('combatShake');
+        void card.offsetWidth;
+        card.classList.add('combatShake');
+      }
+    }
+
+    function computeRank() {
+      if (state.mode === 'survival') {
+        if (state.round >= 12) return ['Modo bestia', 'Aguantaste una barbaridad. Ya hueles a leyenda.'];
+        if (state.round >= 8) return ['Sobreviviente', 'Te mantuviste firme y resististe bastante.'];
+        return ['Aspirante', 'Buen inicio. La próxima racha puede ser mejor.'];
+      }
+      if (state.bestCombo >= 8) return ['Modo bestia', 'Hiciste una racha brutal y dominaste el módulo.'];
+      if (state.bestCombo >= 5) return ['Aspirante USAC', 'Muy buen ritmo. Ya se nota el nivel.'];
+      if (state.bestCombo >= 3) return ['Sobreviviente', 'Supiste mantenerte y avanzar con orden.'];
+      return ['Novato', 'Vas empezando, pero ya entraste al juego.'];
     }
 
     function openShop() {
@@ -1545,6 +1707,8 @@
       state.energy = state.maxEnergy;
       state.round = 1;
       state.usedQuestions = [];
+      state.combo = 0;
+      state.bestCombo = 0;
       state.inventory.potion += 1;
       generateEnemy();
       generateQuestion();
